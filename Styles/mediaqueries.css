@@ -1,0 +1,22 @@
+@media screen and (max-width: 990px) {
+  .slogan-green,
+  .slogan-white {
+    font-size: 80px;
+  }
+  .text-2-1 {
+    font-size: 18px;
+  }
+  .menu {
+    display: none;
+  }
+  .persona-1 img{
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .paso img {
+    width: 75%;
+  }
+
+}

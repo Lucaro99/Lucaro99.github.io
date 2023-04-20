@@ -129,6 +129,7 @@
   color: var(--green);
   justify-content: center;
 }
+
 .btn-stc {
   cursor: pointer;
   color: var(--white);
@@ -297,8 +298,8 @@ label {
   font-style: italic;
   font-weight: 500;
   border-radius: 50px;
+  margin-top: 3%;
   border: none;
-  white-space: pre;
 }
 
 button p {
@@ -306,30 +307,13 @@ button p {
   align-items: center;
 }
 
-span {
-  color: var(--white);
-}
-
 .aviso {
   font-size: 13px;
   color: var(--white);
 }
 
-h1 {
-  font-size: 39px;
-  text-align: letf;
-  padding-bottom: 20px;
-  color: var(--white);
-}
-
-h3 {
-  font-size: 16px;
-  padding-bottom: 30px;
-  color: var(--white);
-}
-
-p {
-  font-size: 14px;
+.colocar {
+  font-size: 20px;
   color: var(--white);
 }
 
@@ -343,14 +327,43 @@ p {
 
 .formulario input:focus {
   outline: 0;
-  border: 1px solid #97d848;
+  border: 1px solid var(--Fucsia)
 }
 
 .formulario textarea:focus {
   outline: 0;
-  border: 1px solid #97d848;
+  border: 1px solid var(--Fucsia)
+}
+/*============================================CONTACTO=========================================*/
+.invitación-3{
+  color: var(--white);
+  padding-top: 1%;
+}
+.btn_redes:hover {
+  transform: scale(1.1);
+  box-shadow: var(--box-shadow-cyan);
 }
 
+.btn_redes {
+  background: var(--D-Cyan-iz);
+  padding: 7px 5px;
+  width: 50px;
+  height: 50px;
+  font-style: italic;
+  font-weight: 500;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--white);
+  box-shadow: none;
+  border-bottom: none;
+  border: none;
+  margin-top: 10%;
+}
+
+.btn_redes a {
+  text-decoration: none;
+  color: var(--white);
+}
 /*============================================CONTACTO=========================================*/
 
 .info-contacto {
