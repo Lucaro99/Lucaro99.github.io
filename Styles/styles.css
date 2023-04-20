@@ -10,10 +10,7 @@
   font-size: 21px;
   font-style: italic;
 }
-body {
-  max-width: 100% !important;
-  overflow-x: hidden !important;
-}
+
 .bg-image {
   background: url("/Img/Fondos/Fondo-principal.png");
   background-repeat: no-repeat;
@@ -85,7 +82,7 @@ body {
 .logo img {
   width: 220px;
   padding: 10px;
-  margin: 0% 0% 0% 10%;
+  margin: 0% 0% 0% 0%;
   align-items: center;
 }
 .menu ul {
@@ -124,6 +121,7 @@ body {
 .main-1 {
   padding-top: 6%;
   justify-content: center;
+  width: 100%;
 }
 .text-1 {
   text-justify: center;
@@ -161,7 +159,7 @@ body {
 
 .pasos {
   background: var(--D-Cyan-De);
-  padding: 0% 6% 6% 6%;
+  padding-bottom: 5%;
 }
 .titulo {
   padding: 2%;
@@ -208,7 +206,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 0% 10% 6% 10%;
+  padding: 0% 10% 0% 10%;
   
 }
 
@@ -268,7 +266,7 @@ body {
 
 .footer {
   background: var(--D-Fucsia-De);
-  padding: 10% 10% 6% 10%;
+  padding: 5% 10% 3% 10%;
 }
 /*============================================FORMS=========================================*/
 .contact_form {
