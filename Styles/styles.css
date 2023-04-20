@@ -10,6 +10,10 @@
   font-size: 21px;
   font-style: italic;
 }
+body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
 .bg-image {
   background: url("/Img/Fondos/Fondo-principal.png");
   background-repeat: no-repeat;
@@ -189,7 +193,7 @@
 }
 
 .paso img {
-  width: 100%;
+  width: 80%;
   margin: 10% 10% 0 10%;
 }
 
@@ -204,6 +208,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
 }
 
 .banner {
@@ -222,21 +227,40 @@
 
 /*============================================REQUISITOS=========================================*/
 
-.requisitos,
-.pagos {
+.requisitos {
   background: var(--D-Cyan-De);
   padding: 0% 10% 6% 10%;
 }
 .requisitos-icon img {
-  width: 100%;
+  width: 70%;
   filter: drop-shadow(0px 0px 8px #ed1e79);
 }
 
 /*============================================PAGOS=========================================*/
 
 .pagos-icon img {
-  width: 70%;
+  width: 100%;
   filter: drop-shadow(0px 0px 8px #ed1e79);
+}
+.pagos .text-2{
+  color:var(--green);
+  text-shadow: none;
+}
+.pagos .text-2-1{
+  color:var(--green);
+  text-shadow: none;
+}
+#titulo-pagos{
+  color:var(--green);
+  text-shadow: none;
+  font-size: 2rem;
+}
+.bg-image-3 {
+  background: url("/Img/Fondos/Ladrillos.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0% 10% 6% 10%;
 }
 
 /*============================================FOOTER=========================================*/

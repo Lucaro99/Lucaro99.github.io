@@ -49,6 +49,9 @@
     .pagos hr{
         display: none;
     }
+    .requisitos-icon img {
+        width: 100%;
+    }
 
   
   }
