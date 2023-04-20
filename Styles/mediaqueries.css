@@ -3,7 +3,7 @@
   .slogan-white {
     font-size: 75px;
   }
-  .text-2{
+  .text-2 {
     font-size: 25px;
   }
   .text-2-1 {
@@ -11,9 +11,7 @@
   }
   .menu {
     display: none;
-  }
-  .persona-1 img{
-    height: 400px;
+    width: 0%;
   }
 }
 
@@ -26,52 +24,89 @@
     font-size: 60px;
   }
 
-  .banner h1{
+  .banner h1 {
     font-size: 25px;
   }
-  .info-contacto ul{
+  .info-contacto ul {
     display: none;
   }
-  .requisitos-icon{
+  .requisitos-icon {
     width: 100%;
-}
-.text-1-1{
+  }
+  .text-1-1 {
     font-size: 35px;
   }
-
 }
 
 @media screen and (max-width: 576px) {
-    .paso img {
-      width: 50%;
-    }
-    .slogan-green,
-    .slogan-white {
-      font-size: 70px;
-    }
-    #Persona-2 {
-        display: none;
-    }
-    .pagos hr{
-        display: none;
-    }
-    .requisitos-icon{
-        display: none;
-    }
-
-    .bg-image-2{
-        padding: 0% 6% 6% 6%;
-    }
-
+  .pasos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .paso img {
+    width: 150px;
+  }
+  .slogan-green,
+  .slogan-white {
+    font-size: 70px;
+  }
+  #Persona-2 {
+    display: none;
   }
 
-  @media screen and (max-width: 390px) {
-    .paso img {
-      width: 50%;
-    }
-
-    .requisitos-icon img {
-        width: 40%;
-        justify-self: center;
-    }
+  .requisitos-a h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
+  .requisitos-a p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .requisitos-icon {
+    display: none;
+  }
+
+  .pagos hr {
+    display: none;
+  }
+  .pagos h2 {
+    text-align: center;
+  }
+  .pagos p {
+    text-align: center;
+  }
+  .pagos .pagos-icon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .pagos-icon img{
+    width: 80px;
+}
+  .bg-image-2 {
+    padding: 0% 6% 0% 6%;
+  }
+
+  .persona-1 {
+    height: 49%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .paso img {
+    width: 50%;
+  }
+
+  .requisitos-icon img {
+    width: 40%;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .persona-1 {
+    height: 50%;
+  }
+}
