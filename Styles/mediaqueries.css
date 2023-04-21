@@ -114,9 +114,7 @@
   .bg-image-2 {
     padding: 0% 6% 0% 6%;
   }
-  .bg-image {
-    height: 100vh;
-  }
+
   .persona-1 {
     height: 60%;
   }
@@ -128,9 +126,7 @@
   }
 }
 @media screen and (max-width: 414px) {
-  .bg-image {
-    height: 100vh;
-  }
+
   .bg-image-2 {
     height: 60vh;
   }
