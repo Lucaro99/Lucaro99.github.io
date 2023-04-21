@@ -116,7 +116,7 @@
 }
 @media screen and (max-width: 414px) {
   .bg-image {
-    height: 80vh;
+    height: 100vh;
   }
   .bg-image-2 {
     height: 40vh;
@@ -127,26 +127,26 @@
     width: 50%;
   }
 
-.slogan-green,
-.slogan-white {
-  font-size: 60px;
-}
+  .slogan-green,
+  .slogan-white {
+    font-size: 60px;
+  }
 
-.requisitos-icon img {
-  width: 40%;
-  justify-self: center;
-  justify-content: center;
-  align-items: center;
-}
-.persona-1 {
-  height: 60%;
-}
-.banner {
-  padding: 0% 6% 0% 6%;
-}
-.bg-image-2 {
-  height: 70vh;
-}
+  .requisitos-icon img {
+    width: 40%;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .persona-1 {
+    height: 60%;
+  }
+  .banner {
+    padding: 0% 6% 0% 6%;
+  }
+  .bg-image-2 {
+    height: 70vh;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -161,16 +161,25 @@
     font-size: 60px;
   }
 }
-  @media screen and (max-width: 360px) {
-    .main-1 {
-      height: 80vh;
-    }
-    .persona-1 {
-      top: -10px;
-      height: 45%;
-    }
+@media screen and (max-width: 360px) {
+  .main-1 {
+    height: 100vh;
+  }
+  .persona-1 {
+    height: 45%;
+  }
+  .slogan-green,
+  .slogan-white {
+    font-size: 60px;
+  }
+  @media screen and (max-width: 280px) {
+
     .slogan-green,
     .slogan-white {
-      font-size: 60px;
+      font-size: 40px;
     }
+    .text-1-1{
+      font-size: 25px;
+    }
+  }
 }

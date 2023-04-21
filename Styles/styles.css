@@ -16,7 +16,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
+  height: 100vh;
 }
 :root {
   --green: #01686d;
@@ -75,11 +75,11 @@
 .header {
   padding: 0px;
   margin: 0px;
-  display: flex;
   position: fixed;
   z-index: 5;
   align-items: center;
   width: 100%;
+  height: auto;
   justify-content: space-evenly;
 }
 
@@ -89,16 +89,15 @@
 }
 
 .logo{
-  display: flex;
-  justify-content: center;
   align-items: center;
+  height: auto;
 }
 
 .logo img {
-  width: 250px;
-  padding: 20px;
+  width: auto;
+  padding: 10px;
   margin: 0px;
-  align-items: center;
+  height: 100%;
 }
 .menu {
   display: flex;
@@ -121,8 +120,8 @@
 
 .btn-fullmenu {
   padding: 0px;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  align-items: end;
 }
 .btn-fullmenu button {
   background: var(--D-Fucsia-iz);
@@ -171,12 +170,14 @@
   box-shadow: none;
 }
 .persona-1 {
+  display: flex;
   height: 100%;
+  justify-content: center;
   align-self: end;
 }
 .persona-1 img {
   height:100%;
-  align-self: end;
+  align-items: end;
 
 }
 
