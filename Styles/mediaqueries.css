@@ -161,3 +161,16 @@
     font-size: 60px;
   }
 }
+  @media screen and (max-width: 360px) {
+    .main-1 {
+      height: 80vh;
+    }
+    .persona-1 {
+      top: -10px;
+      height: 45%;
+    }
+    .slogan-green,
+    .slogan-white {
+      font-size: 60px;
+    }
+}
