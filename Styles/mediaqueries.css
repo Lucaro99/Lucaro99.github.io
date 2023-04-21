@@ -1,3 +1,5 @@
+@media screen and (max-width: 1400px) {
+}
 @media screen and (max-width: 992px) {
   .slogan-green,
   .slogan-white {
@@ -23,7 +25,6 @@
   .slogan-white {
     font-size: 60px;
   }
-
   .banner h1 {
     font-size: 25px;
   }
@@ -35,6 +36,17 @@
   }
   .text-1-1 {
     font-size: 35px;
+  }
+  .persona-1 {
+    height: 100%;
+  }
+  .main-1 {
+    padding-top: 6%;
+    width: 100%;
+    height: 80vh;
+  }
+  .pasos {
+    padding: 0% 0% 5% 0%;
   }
 }
 
@@ -83,30 +95,69 @@
     justify-content: center;
     text-align: center;
   }
-  .pagos-icon img{
+  .pagos-icon img {
     width: 80px;
-}
+  }
   .bg-image-2 {
     padding: 0% 6% 0% 6%;
   }
-
+  .bg-image {
+    height: 100vh;
+  }
   .persona-1 {
-    height: 49%;
+    height: 62%;
+  }
+  .banner {
+    padding: 0% 6% 0% 6%;
+  }
+  .bg-image-2 {
+    height: 70vh;
   }
 }
-
+@media screen and (max-width: 414px) {
+  .bg-image {
+    height: 80vh;
+  }
+  .bg-image-2 {
+    height: 40vh;
+  }
+}
 @media screen and (max-width: 390px) {
   .paso img {
     width: 50%;
   }
 
-  .requisitos-icon img {
-    width: 40%;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
+.slogan-green,
+.slogan-white {
+  font-size: 60px;
+}
+
+.requisitos-icon img {
+  width: 40%;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+}
+.persona-1 {
+  height: 60%;
+}
+.banner {
+  padding: 0% 6% 0% 6%;
+}
+.bg-image-2 {
+  height: 70vh;
+}
+}
+
+@media screen and (max-width: 375px) {
+  .main-1 {
+    height: 100vh;
   }
   .persona-1 {
-    height: 50%;
+    height: 49%;
+  }
+  .slogan-green,
+  .slogan-white {
+    font-size: 60px;
   }
 }

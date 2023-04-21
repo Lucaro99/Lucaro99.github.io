@@ -35,30 +35,32 @@
   <body class="container-fluid p-0 m-0">
     <div class="bg-image">
       <!------------------------------------------------Nav-Bar---------------------------------------------------->
-      <nav class="nav-bar m-0 row " id="navbar">
+      <header class="header row p-0 m-0" id="navbar">
         <div class="logo m-0 col-3">
-          <img src="Img/Logos/1_Logotipo-Original.svg" alt="" />
+          <a href=""><img src="Img/Logos/1_Logotipo-Original.svg" alt="" /></a>
         </div>
-        <div class="menu col">
-          <ul>
-            <li>
-              <a href="Index.html"> Personas</a>
-            </li>
-            <li>
-              <a href=""> Aliados Comerciales</a>
-            </li>
-            <li>
-              <a href="https://financiate.netlify.app/"> Inicia Sesión</a>
-            </li>
-          </ul>
-        </div>
-        <div class="btn-fullmenu col-2">
-          <button>menu <span class="fa fa-bars"></span></button>
-        </div>
-      </nav>
+        <nav class="nav-bar m-0 col-9">
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="Index.html"> Personas</a>
+              </li>
+              <li>
+                <a href=""> Aliados Comerciales</a>
+              </li>
+              <li>
+                <a href="https://financiate.netlify.app/"> Inicia Sesión</a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-fullmenu">
+            <button>menu <span class="fa fa-bars"></span></button>
+          </div>
+        </nav>
+      </header>
 
       <!------------------------------------------------Main---------------------------------------------------->
-      <main class="main-1 row">
+      <main class="main-1 m-0 row">
         <div class="text-1 col-md-5 align-items-center">
           <div class="row text-center">
             <h1 class="text-1-1 mt-5 mb-0">Solicita tu crédito</h1>
@@ -68,8 +70,8 @@
             <button class="btn-stc">Simula tu crédito</button>
           </div>
         </div>
-        <div class="persona-1 col-md-5 text-center p-0 m-0">
-          <img src="Img/Personas/Persona-1.png" alt="" />
+        <div class="persona-1 col-md-5 p-0 m-0" style="border: 1px solid red;">
+          <img src="Img/Personas/Persona-1.png " alt="" />
         </div>
       </main>
     </div>
@@ -83,7 +85,7 @@
       <hr />
 
       <div class="paso-1-2 row">
-        <div class="paso col-md-3">
+        <div class="paso col-md">
           <img src="Img/Pasos/Paso_1.svg" alt="" />
         </div>
 
@@ -94,7 +96,7 @@
           </p>
         </div>
 
-        <div class="paso col-md-3">
+        <div class="paso col-md">
           <img src="Img/Pasos/Paso_2.svg" alt="" />
         </div>
 
@@ -108,7 +110,7 @@
       </div>
 
       <div class="paso-3-4 row">
-        <div class="paso col-md-3">
+        <div class="paso col-md">
           <img src="Img/Pasos/Paso_3.svg" alt="" />
         </div>
 
@@ -119,7 +121,7 @@
           </p>
         </div>
 
-        <div class="paso col-md-3">
+        <div class="paso col-md">
           <img src="Img/Pasos/Paso_4.svg" alt="" />
         </div>
 
@@ -136,11 +138,11 @@
     <!------------------------------------------------Banner---------------------------------------------------->
 
     <div class="bg-image-2">
-      <div class="banner row">
-        <div class="persona-1 col-sm-6 text-center" id="Persona-2">
+      <div class="banner">
+        <div class="persona-1 col-sm-6" id="Persona-2">
           <img src="Img/Personas/Persona-2.png" alt="" />
         </div>
-        <div class="text-4 col col-md-6 text-center">
+        <div class="text-4 col col-md-6">
           <h1 class="text-1-1 row">Tan fácil como un clic</h1>
           <h2 class="slogan-green row">así de fácil</h2>
           <p class="text-2-1 text-center">Aplica y recibe tu dinero en</p>
@@ -223,14 +225,14 @@
       </div>
       <hr />
 
-      <div class="pagos col-8">
+      <div class="pagos col-md-8">
         <div class="row">
-
-          <div class="col-md my-2">
-            <div class="pagos-icon col-md-3">
-              <img src="Img/Metodos de pago/Bancolombia_1.svg" alt="" />
+          <div class="pago-1 col-md my-2">
+            <div class="pagos-icon col-md">
+              <img
+                src="Img/Metodos de pago/Bancolombia_1.svg"/>
             </div>
-            <div class="col">
+            <div class="col-md">
               <h2 class="text-2">Bancolombia</h2>
               <p class="text-2-1">Convenio</p>
               <p class="text-2-1">No. 76733</p>
@@ -239,26 +241,25 @@
           </div>
 
           <div class="col-md my-2">
-            <div class="pagos-icon col-md-3">
+            <div class="pagos-icon col-md text-center">
               <img src="Img/Metodos de pago/Nequi_1.svg" alt="" />
             </div>
-            <div class="col">
+            <div class="col-md">
               <h2 class="text-2">Nequi</h2>
               <p class="text-2-1">Pagos en línea</p>
               <p class="text-2-1">Pasarela Wompi</p>
             </div>
           </div>
-
         </div>
 
-        <hr/>
+        <hr />
 
         <div class="row">
           <div class="col-md my-2">
-            <div class="pagos-icon col-md-3">
+            <div class="pagos-icon col-md">
               <img src="Img/Metodos de pago/Occidente.svg" alt="" />
             </div>
-            <div class="col">
+            <div class="col-md">
               <h2 class="text-2">Banco de Occidente</h2>
               <p class="text-2-1">Cta. de Ahorros</p>
               <p class="text-2-1">No. 530-80349-3</p>
@@ -267,10 +268,10 @@
           </div>
 
           <div class="col-md my-2">
-            <div class="pagos-icon col-md-3">
+            <div class="pagos-icon col-md">
               <img src="Img/Metodos de pago/PSE_1.svg" alt="" />
             </div>
-            <div class="col">
+            <div class="col-md">
               <h2 class="text-2">PSE</h2>
               <p class="text-2-1">Pagos en línea</p>
               <p class="text-2-1">Pasarela Wompi</p>
@@ -282,7 +283,7 @@
 
         <div class="row">
           <div class="col-md my-2">
-            <div class="pagos-icon col-md-3">
+            <div class="pagos-icon col-md">
               <img src="Img/Metodos de pago/Davivienda.svg" alt="" />
             </div>
             <div class="col">
@@ -293,7 +294,7 @@
             </div>
           </div>
           <div class="col-md my-2">
-            <div class="pagos-icon col-md-3">
+            <div class="pagos-icon col-md">
               <img src="Img/Metodos de pago/Oficina.svg" alt="" />
             </div>
             <div class="col">
@@ -446,7 +447,7 @@
       </div>
     </footer>
 
-    <div class="info-contacto  m-0 row">
+    <div class="info-contacto m-0 row">
       <ul>
         <li>
           <a href="tel:+"
