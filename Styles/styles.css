@@ -86,6 +86,7 @@
 .nav-bar{
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .logo{
@@ -98,10 +99,12 @@
   padding: 10px;
   margin: 0px;
   height: 100%;
+  min-height:60px ;
 }
 .menu {
   display: flex;
   justify-content: center;
+  margin-right: 10px;
 }
 .menu ul {
   display: flex;
@@ -119,21 +122,21 @@
 }
 
 .btn-fullmenu {
-  padding: 0px;
   justify-content: end;
   align-items: end;
+  height: auto;
 }
 .btn-fullmenu button {
   background: var(--D-Fucsia-iz);
-  padding: 7px 5px;
+  padding: 2px 6px;
   font-style: italic;
   font-weight: 500;
-  border: solid var(--white);
+  border: none;
   cursor: pointer;
   color: var(--white);
-  border-radius: 10px;
+  border-radius: 8px;
   height: auto;
-  width: 110px;
+  width: auto;
 }
 
 /*============================================MAIN=========================================*/

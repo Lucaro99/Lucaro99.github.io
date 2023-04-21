@@ -116,7 +116,7 @@
 }
 @media screen and (max-width: 414px) {
   .bg-image {
-    height: 100vh;
+    height: 80vh;
   }
   .bg-image-2 {
     height: 40vh;
@@ -163,7 +163,7 @@
 }
 @media screen and (max-width: 360px) {
   .main-1 {
-    height: 100vh;
+    height: 80vh;
   }
   .persona-1 {
     height: 45%;
