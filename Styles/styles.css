@@ -44,6 +44,7 @@ body {
     rgba(0, 255, 242, 1) 95%
   );
   --text-shadow: 1px 1px 3px rgb(88, 88, 88);
+  --text-shadow-cyan: 1px 1px 5px rgb(0, 255, 242);
   --box-shadow-fucsia: 0px 0px 31px 2px rgba(237, 30, 121, 1);
   --box-shadow-cyan: 0px 0px 31px 2px rgba(0, 255, 242, 1);
 }
@@ -109,7 +110,7 @@ body {
 .menu {
   display: flex;
   justify-content: center;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .menu ul {
   display: flex;
@@ -119,11 +120,18 @@ body {
 }
 .menu ul li {
   list-style: none;
-  margin: 10px;
+  margin: 20px;
 }
 .menu ul li a {
   text-decoration: none;
   color: var(--green);
+}
+.menu ul li :hover{
+  text-shadow: var(--text-shadow-cyan);
+}
+.menu ul li:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
 }
 
 .btn-fullmenu {
@@ -131,6 +139,12 @@ body {
   align-items: end;
   height: auto;
 }
+.btn-fullmenu button:hover {
+  box-shadow: var(--box-shadow-fucsia);
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
 .btn-fullmenu button {
   background: var(--D-Fucsia-iz);
   padding: 2px 6px;
@@ -170,6 +184,7 @@ body {
   border-radius: 50px;
   border: none;
   white-space: pre;
+  height: 40px;
 }
 .btn-stc:hover {
   box-shadow: none;
@@ -408,7 +423,7 @@ label {
   transition: all 0.3s;
 }
 
-button p {
+.btn-fullmenu button p {
   color: #fff;
   align-items: center;
 }
