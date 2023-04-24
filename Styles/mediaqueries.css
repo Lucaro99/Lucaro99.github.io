@@ -49,10 +49,13 @@
   .persona-1 {
     height: 62%;
   }
-
   .pasos {
     padding: 0% 0% 5% 0%;
   }
+  .header {
+    height: 8vh;
+  }
+  
 }
 @media screen and (max-width: 670px) {
   .paso img {
