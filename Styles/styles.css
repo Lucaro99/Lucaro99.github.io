@@ -102,6 +102,10 @@ body {
   height: 100%;
   min-height:60px ;
 }
+.logo img:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
 .menu {
   display: flex;
   justify-content: center;
@@ -168,9 +172,11 @@ body {
   white-space: pre;
 }
 .btn-stc:hover {
+  box-shadow: none;
+}
+.btn:hover {
   transform: scale(1.2);
   transition: all 0.3s;
-  box-shadow: none;
 }
 .persona-1 {
   display: flex;
@@ -222,6 +228,14 @@ body {
 .paso img {
   width: 80%;
   margin: 10% 10% 0 10%;
+}
+.paso img:hover {
+  filter: drop-shadow(0px 0px 25px #ed1e79);
+  
+}
+.paso:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
 }
 
 .paso-1 {
@@ -275,6 +289,11 @@ body {
   width: 70%;
   filter: drop-shadow(0px 0px 8px #ed1e79);
 }
+.requisitos-icon :hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
 
 /*============================================PAGOS=========================================*/
 .pagos {
@@ -292,6 +311,14 @@ body {
 .pagos-icon img {
   filter: drop-shadow(0px 0px 8px #ed1e79);
   width: 100px;
+}
+.pagos-icon img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.pagos a {
+  text-decoration: none;
+  list-style: none;
 }
 .pagos .text-2 {
   color: var(--green);
@@ -375,6 +402,10 @@ label {
   border-radius: 50px;
   margin-top: 3%;
   border: none;
+}
+.enviar:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
 }
 
 button p {
