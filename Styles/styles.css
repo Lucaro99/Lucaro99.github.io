@@ -543,6 +543,49 @@ label {
   display: flex;
   align-self: center;
 }
+.afiliacion-bg1{
+  background: url("/Img/Empresas/conductora 1.jpg");
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  align-self: center;
+  height: 50vh;
+}
+.afiliacion-bg1:before {
+	content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(1,104,109,0.7);
+}
+.afiliacion-bg2{
+  background: url("/Img/Empresas/conductor 2.jpg");
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  align-self: center;
+  height: 50vh;
+}
+.afiliacion-bg3{
+  background: url("/Img/Empresas/conductor 3.jpg");
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  align-self: center;
+  height: 50vh;
+}
+.afiliacion-bg4{
+  background: url("/Img/Empresas/conductora 4.jpg");
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  align-self: center;
+  height: 50vh;
+}
+
+
 .afiliacion-a{
   align-content: center;
   justify-content: start;
