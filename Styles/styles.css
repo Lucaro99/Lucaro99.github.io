@@ -133,6 +133,9 @@ body {
   text-decoration: none;
   color: var(--green);
 }
+.menu ul li a:focus{
+  color: red;
+}
 .menu ul li:hover{
   transform: scale(1.1);
   transition: all 0.3s;
@@ -532,11 +535,13 @@ label {
 .afiliacion-icon img {
   width: 70%;
   filter: drop-shadow(0px 0px 3px #4d4d4d);
+  
 }
-.afiliacion-icon :hover {
-  transform: scale(1.2);
-  transition: all 0.3s;
+.afiliacion-icon {
+position: absolute;
+z-index: 5;
 }
+
 .afiliacion-2{
   background: var(--D-Negro);
   height: 50vh;
@@ -568,6 +573,15 @@ label {
   align-self: center;
   height: 50vh;
 }
+.afiliacion-bg2 :before {
+	content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(1,104,109,0.2);
+}
 .afiliacion-bg3{
   background: url("/Img/Empresas/conductor 3.jpg");
   background-size: 100%;
@@ -575,6 +589,15 @@ label {
   display: flex;
   align-self: center;
   height: 50vh;
+}
+.afiliacion-bg3 :before {
+	content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(1,104,109,0.2);
 }
 .afiliacion-bg4{
   background: url("/Img/Empresas/conductora 4.jpg");
@@ -584,7 +607,16 @@ label {
   align-self: center;
   height: 50vh;
 }
-
+.afiliacion-bg4 :before {
+	content:'';
+	position: absolute;
+  
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(1,104,109,0.2);
+}
 
 .afiliacion-a{
   align-content: center;
@@ -599,6 +631,8 @@ label {
   color: var(--white);
   text-shadow: var(--text-shadow);
   font-size: 1.5rem;
+  position: absolute;
+  z-index: 4;
 }
 .afiliacion-b .text-2-1 {
   color: var(--white);
@@ -607,4 +641,5 @@ label {
   margin: 0;
   line-height: 130%;
   font-size: 1rem;
+  
 }
