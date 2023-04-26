@@ -108,7 +108,10 @@ body {
 }
 
 /*============================================NAV-BAR=========================================*/
-
+.header li.active a {
+	background-color: red;
+	color: #fff;
+}
 .header {
   padding: 0px;
   margin: 0px;
@@ -121,15 +124,13 @@ body {
   justify-content: space-evenly;
   transition: all 0.3s;
 }
-.active {
-  color: red;
-}
+
 .nav-bar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.nav-link active .logo {
+.nav-link .logo {
   align-items: center;
   height: auto;
 }
@@ -667,7 +668,11 @@ label {
   top: 45%;
 }
 
+.afiliacion::after {
+  content: "";
+  background-color: rgba(1, 104, 109, 0.5);
 
+}
 .afiliacion-b .text-2-1 {
   color: var(--white);
   text-shadow: var(--text-shadow);
