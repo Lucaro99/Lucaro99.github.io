@@ -54,6 +54,30 @@ body {
   --box-shadow-fucsia: 0px 0px 31px 2px rgba(237, 30, 121, 1);
   --box-shadow-cyan: 0px 0px 31px 2px rgba(0, 255, 242, 1);
 }
+/*============================================SCROLLBAR=========================================*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--green); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--D-Negro); 
+}
+/*============================================SLOGAN=========================================*/
+
 .slogan-white {
   color: var(--white);
   font-family: "Century Gothic Paneuropean", sans-serif;
@@ -534,12 +558,11 @@ label {
 }
 .afiliacion-icon img {
   width: 70%;
-  filter: drop-shadow(0px 0px 3px #4d4d4d);
-  
+  filter: drop-shadow(0px 0px 3px #4d4d4d);  
 }
 .afiliacion-icon {
-position: absolute;
-z-index: 5;
+  position: absolute;
+  z-index: 4;  
 }
 
 .afiliacion-2{
@@ -559,6 +582,7 @@ z-index: 5;
 .afiliacion-bg1:before {
 	content:'';
 	position: absolute;
+  z-index: 4;
   top: 0;
 	bottom: 0;
 	left: 0;
@@ -573,14 +597,15 @@ z-index: 5;
   align-self: center;
   height: 50vh;
 }
-.afiliacion-bg2 :before {
+.afiliacion-bg2:before {
 	content:'';
 	position: absolute;
+  z-index: 4;
   top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(1,104,109,0.2);
+	background-color: rgba(1,104,109,0.7);
 }
 .afiliacion-bg3{
   background: url("/Img/Empresas/conductor 3.jpg");
@@ -590,14 +615,15 @@ z-index: 5;
   align-self: center;
   height: 50vh;
 }
-.afiliacion-bg3 :before {
+.afiliacion-bg3:before {
 	content:'';
 	position: absolute;
+  z-index: 4;
   top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(1,104,109,0.2);
+	background-color: rgba(1,104,109,0.7);
 }
 .afiliacion-bg4{
   background: url("/Img/Empresas/conductora 4.jpg");
@@ -607,15 +633,15 @@ z-index: 5;
   align-self: center;
   height: 50vh;
 }
-.afiliacion-bg4 :before {
+.afiliacion-bg4:before {
 	content:'';
 	position: absolute;
-  
+  z-index: 4;
   top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(1,104,109,0.2);
+	background-color: rgba(1,104,109,0.7);
 }
 
 .afiliacion-a{
@@ -632,7 +658,8 @@ z-index: 5;
   text-shadow: var(--text-shadow);
   font-size: 1.5rem;
   position: absolute;
-  z-index: 4;
+  z-index:5;
+  top: 100px;
 }
 .afiliacion-b .text-2-1 {
   color: var(--white);
@@ -641,5 +668,4 @@ z-index: 5;
   margin: 0;
   line-height: 130%;
   font-size: 1rem;
-  
 }
