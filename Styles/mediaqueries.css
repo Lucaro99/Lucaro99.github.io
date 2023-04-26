@@ -19,6 +19,9 @@
     display: none;
     width: 0%;
   }
+  .paso img {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -28,7 +31,7 @@
     text-align: center;
   }
   .paso img {
-    width: 75%;
+    width: 50%;
   }
   .slogan-green,
   .slogan-white {

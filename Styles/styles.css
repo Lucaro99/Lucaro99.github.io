@@ -116,13 +116,15 @@ body {
   justify-content: space-evenly;
   transition: all 0.3s;
 }
-
+.ul .nav-underline li.active {
+  color: red;
+}
 .nav-bar{
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
+.nav-link active
 .logo{
   align-items: center;
   height: auto;
@@ -158,9 +160,7 @@ body {
   text-decoration: none;
   color: var(--green);
 }
-.menu ul li a:focus{
-  color: red;
-}
+
 .menu ul li:hover{
   transform: scale(1.1);
   transition: all 0.3s;
