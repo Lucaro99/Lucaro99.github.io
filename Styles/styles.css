@@ -48,6 +48,7 @@ body {
     rgb(0, 0, 0) 5%,
     rgba(1, 104, 109) 95%
   );  
+  --D-Fucsia: linear-gradient(0deg, rgba(1,104,109,0.5998774509803921) 0%, rgba(237,30,121,1) 100%);
   --D-Negro: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(1,76,80,0.7595413165266106) 56%, rgba(1,104,109,0.5998774509803921) 100%);
   --text-shadow: 1px 1px 3px rgb(88, 88, 88);
   --text-shadow-cyan: 1px 1px 5px rgb(0, 255, 242);
@@ -58,7 +59,7 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 13px;
+  width: 8px;
 }
 
 /* Track */
@@ -68,13 +69,13 @@ body {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--green); 
+  background: var(--D-Fucsia); 
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--D-Negro); 
+  background: var(--D-Fucsia); 
 }
 /*============================================SLOGAN=========================================*/
 
