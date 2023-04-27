@@ -15,7 +15,7 @@ function abrirmenu(){
 }
 
 function cerrarmenu(){
-  document.getElementById("full-menu").style.left = "-100%";
+  document.getElementById("full-menu").style.left = "-110%";
   document.body.style.overflow = 'visible';
 }
 

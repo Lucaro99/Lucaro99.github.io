@@ -90,7 +90,7 @@ body {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  left: -100%;
+  left: -108%;
 }
 .close {
   width: 100%;
@@ -99,19 +99,20 @@ body {
   justify-content: end;
 }
 .close span {
-  font-size: 10%;
+  border: 1px solid red;
+  font-size: 50px;
   cursor: pointer;
   color: var(--white);
   margin: 20px 20px 0 0;
-  border: 1px solid rgb(255, 255, 255);
 }
 .full-menu .navegacion ul {
   display: flex;
   list-style: none;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   padding: 0;
+  justify-content: space-around;
 }
 
 .full-menu .navegacion ul li {
@@ -122,10 +123,9 @@ body {
 
 .full-menu .navegacion ul li a {
   display: flex;
-
   flex-wrap: wrap;
   text-decoration: none;
-  font-size: 5vw;
+  font-size: 50px;
   color: var(--white);
   opacity: 0.3;
 }
