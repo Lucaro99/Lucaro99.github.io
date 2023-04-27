@@ -9,3 +9,13 @@ window.onscroll = function scrollFunction() {
   }
 };
 
+function abrirmenu(){
+  document.getElementById("full-menu").style.left = "0";
+  document.body.style.overflow = 'hidden';
+}
+
+function cerrarmenu(){
+  document.getElementById("full-menu").style.left = "-100%";
+  document.body.style.overflow = 'visible';
+}
+
