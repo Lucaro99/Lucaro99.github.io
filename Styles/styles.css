@@ -80,73 +80,68 @@ body {
 }
 
 /*============================================MENU=========================================*/
-.full-menu{
+.full-menu {
   position: fixed;
-	top: 0;
+  top: 0;
   z-index: 50;
-	width: 100vw;
-	height: 100vh;
-	background: var(--green);
-	-webkit-transition: .2s;
-	-o-transition: .2s;
-	transition: .2s;
+  width: 100vw;
+  height: 100vh;
+  background: var(--green);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   left: -100%;
-  border: 1px solid rgb(0, 238, 255);
-
 }
 .close {
   width: 100%;
   height: 10vh;
   display: flex;
   justify-content: end;
-  border: 1px solid rgb(255, 255, 255);
-
-
 }
-.close span{
-  font-size: 1rem;
+.close span {
+  font-size: 10%;
   cursor: pointer;
   color: var(--white);
   margin: 20px 20px 0 0;
   border: 1px solid rgb(255, 255, 255);
-
 }
-.full-menu .navegacion ul{
+.full-menu .navegacion ul {
   display: flex;
-	list-style: none;
-  flex-direction: column; 
+  list-style: none;
+  flex-direction: column;
   height: 100vh;
   width: 100%;
-  justify-content: start;
-  border: 1px solid rgb(60, 255, 0);
   padding: 0;
-
 }
-.full-menu .navegacion ul li{
-  width: 100%;
-  margin: 10px;
 
+.full-menu .navegacion ul li {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-.full-menu .navegacion ul li a{
-	text-decoration: none;
-	font-size: 5vw;
-	color: var(--white);
-  opacity: .3;
-  border: 1px solid red;
 
+.full-menu .navegacion ul li a {
+  display: flex;
+
+  flex-wrap: wrap;
+  text-decoration: none;
+  font-size: 5vw;
+  color: var(--white);
+  opacity: 0.3;
 }
-.full-menu .navegacion ul li a:hover{
+
+.full-menu .navegacion ul li a:hover {
   opacity: 1;
 }
 
-#Menu-images{
+#Menu-images {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.Menu-image{
+.Menu-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -184,8 +179,8 @@ body {
 
 /*============================================NAV-BAR=========================================*/
 .header li.active a {
-	background-color: red;
-	color: #fff;
+  background-color: red;
+  color: #fff;
 }
 .header {
   padding: 0px;
@@ -746,7 +741,6 @@ label {
 .afiliacion::after {
   content: "";
   background-color: rgba(1, 104, 109, 0.5);
-
 }
 .afiliacion-b .text-2-1 {
   color: var(--white);
