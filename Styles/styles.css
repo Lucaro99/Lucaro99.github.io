@@ -81,7 +81,7 @@ body {
 
 /*============================================MENU=========================================*/
 .full-menu{
-  position: fixed;
+  position: absolute;
 	top: 0;
   z-index: 50;
 	width: 100%;
@@ -91,13 +91,13 @@ body {
 	-o-transition: .2s;
 	transition: .2s;
   left: -100%;
+  overflow: hidden;
 }
 .close {
   width: 100%;
   height: 10vh;
   display: flex;
   justify-content: end;
-  border: 1px solid white;
 
 }
 .close span{
@@ -110,18 +110,15 @@ body {
   display: flex;
 	list-style: none;
   flex-direction: column; 
-  height: 90vh;
-  border: 1px solid palegreen;
-  justify-content: center;
+  height: 100vh;
+  justify-content: start;
 }
 .full-menu .navegacion ul li{
 	margin: 5px 0px;
-  border: 1px solid red;
-  width: 400px;
 }
 .full-menu .navegacion ul li a{
 	text-decoration: none;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	color: var(--white);
   opacity: .3;
 }
