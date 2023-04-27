@@ -90,6 +90,7 @@ body {
 	-webkit-transition: .2s;
 	-o-transition: .2s;
 	transition: .2s;
+  left: -100%;
 }
 .close {
   width: 100%;
