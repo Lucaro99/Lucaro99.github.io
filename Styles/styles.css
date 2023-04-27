@@ -99,7 +99,6 @@ body {
   justify-content: end;
 }
 .close span {
-  border: 1px solid red;
   font-size: 50px;
   cursor: pointer;
   color: var(--white);
