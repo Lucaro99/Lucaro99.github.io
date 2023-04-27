@@ -111,13 +111,13 @@ body {
   height: 90vh;
   width: 100%;
   padding: 0;
-  justify-content: space-around;
 }
 
 .full-menu .navegacion ul li {
+  align-self: center;
+  justify-content: space-evenly;
   display: flex;
   justify-content: center;
-  align-content: center;
 }
 
 .full-menu .navegacion ul li a {
@@ -228,7 +228,7 @@ body {
 }
 .menu ul li {
   list-style: none;
-  margin: 20px;
+  margin: 8px;
 }
 .menu ul li a {
   text-decoration: none;
