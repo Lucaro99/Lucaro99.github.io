@@ -34,6 +34,26 @@
 
   <body class="container-fluid p-0 m-0">
     <div class="bg-image">
+      <!------------------------------------------MENU--------------------------------------------->
+
+      <div class="full-menu" id="full-menu">
+        <div class="wrap">
+          <nav class="navegacion">
+              <div class="close" id="btn-close">
+                <span onclick="cerrarmenu()" class="fa fa-close"></span>
+              </div>
+        
+            <ul class="menu-principal">
+              <li><a href="Nosotros.html">Nosotros</a></li>
+              <li><a href="Requisitos.html">Requisitos</a></li>
+              <li><a href="Pagos.html">Pagos</a></li>
+              <li><a href="#">¿Dudas?</a></li>
+              <li><a href="#">Inicia Sesión</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
       <!------------------------------------------------Nav-Bar---------------------------------------------------->
       <header class="header row p-0 m-0" id="navbar">
         <div class="logo m-0 col-3 align-self-center">
@@ -43,10 +63,10 @@
           <div class="menu">
             <ul class="nav nav-underline">
               <li class="nav-item">
-                <a class="nav-link active" href="Index.html"> Personas</a>
+                <a class="nav-link" href="Index.html"> Personas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Aliados.html"> Aliados Comerciales</a>
+                <a class="nav-link active" href="Aliados.html"> Aliados Comerciales</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://financiate.netlify.app/"> Inicia Sesión</a>
@@ -54,7 +74,7 @@
             </ul>
           </div>
           <div class="btn-fullmenu">
-            <button>menu <span class="fa fa-bars"></span></button>
+            <button onclick="abrirmenu()" id="btn-menu">menu <span class="fa fa-bars"></span></button>
           </div>
         </nav>
       </header>
