@@ -795,13 +795,14 @@ label {
 .banner {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   padding: 0% 6% 0% 6%;
   height: 100%;
 }
 
 .banner .grupo-1 img {
   width: 100%;
-  align-items: end;
+  align-content: end;
+  display: none;
 }
 
