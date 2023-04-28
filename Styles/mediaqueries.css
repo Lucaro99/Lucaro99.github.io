@@ -3,6 +3,7 @@
   .slogan-white {
     font-size: 75px;
   }
+
 }
 @media screen and (max-width: 992px) {
   .slogan-green,
@@ -55,6 +56,9 @@
   }
   .header {
     height: 8vh;
+  }
+  #grupo-2 {
+    display: none;
   }
   
 }
