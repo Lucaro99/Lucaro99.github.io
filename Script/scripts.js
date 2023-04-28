@@ -20,14 +20,14 @@ function cerrarmenu(){
 }
 
 
-
-
-
 $(function () {
+  
   $('.link').on('click', function() {
     $('.active-link').removeClass('active-link');
     $(this).addClass('active-link');
   });
+
+
   $(".full-menu .navegacion ul li").hover (function(){
   
     const index =$(this).index()

@@ -84,9 +84,12 @@ body {
   position: fixed;
   top: 0;
   z-index: 50;
+  background: url("/Img/Fondos/Ladrillos-Azules.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
-  background: var(--green);
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;

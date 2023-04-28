@@ -49,9 +49,7 @@
   .text-1-1 {
     font-size: 35px;
   }
-  .persona-1 {
-    height: 62%;
-  }
+
   .pasos {
     padding: 0% 0% 5% 0%;
   }
@@ -85,7 +83,6 @@
   #Persona-2 {
     display: none;
   }
-
   .requisitos-a h3 {
     display: flex;
     justify-content: center;
@@ -99,7 +96,6 @@
   .requisitos-icon {
     display: none;
   }
-
   .pagos hr {
     display: none;
   }
@@ -133,6 +129,9 @@
   .full-menu .navegacion ul li {
     align-self: center;
     padding-left: 0%;
+  }
+  .Menu-image{
+    display: none;
   }
 }
 @media screen and (max-width: 414px) {
