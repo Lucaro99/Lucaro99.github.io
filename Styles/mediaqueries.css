@@ -130,6 +130,10 @@
   .bg-image-2 {
     height: 70vh;
   }
+  .full-menu .navegacion ul li {
+    align-self: center;
+    padding-left: 0%;
+  }
 }
 @media screen and (max-width: 414px) {
 
@@ -193,6 +197,9 @@
     }
     .persona-1 {
       height: 60%;
+    }
+    .full-menu .navegacion ul li a {
+      font-size: 45px;
     }
   }
 }

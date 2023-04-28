@@ -19,3 +19,25 @@ function cerrarmenu(){
   document.body.style.overflow = 'visible';
 }
 
+
+
+
+
+$(function () {
+  $('.link').on('click', function() {
+    $('.active-link').removeClass('active-link');
+    $(this).addClass('active-link');
+  });
+  $(".full-menu .navegacion ul li").hover (function(){
+  
+    const index =$(this).index()
+    $(".Menu-image:eq(" +index+ ")").fadeIn (400);
+  
+  }, function () {
+  
+    const index =$(this).index()
+    $(".Menu-image:eq(" +index+ ")").fadeOut (400);
+  
+  })
+  
+})

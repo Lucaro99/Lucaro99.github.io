@@ -34,27 +34,55 @@
 
   <body class="container-fluid p-0 m-0">
     <div class="bg-image">
-      
       <!------------------------------------------MENU--------------------------------------------->
 
       <div class="full-menu" id="full-menu">
         <div class="wrap">
           <nav class="navegacion">
-              <div class="close" id="btn-close">
-                <span onclick="cerrarmenu()" class="fa fa-close"></span>
-              </div>
-        
-              <ul class="menu-principal">
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Personas</a></li>
-                <li><a href="Aliados.html">Aliados</a></li>
-                <li><a href="https://checkout.wompi.co/l/FTqfWR">Paga tu cuota</a></li>
-                <li><a href="https://financiate.netlify.app/">Inicia Sesión</a></li>
-                <li><a href="#">¿Dudas?</a></li>
-              </ul>
+            <div class="close" id="btn-close">
+              <span onclick="cerrarmenu()" class="fa fa-close"></span>
+            </div>
+
+            <ul class="menu-principal">
+              <li><a href="">Nosotros</a></li>
+              <li><a href="">Personas</a></li>
+              <li><a href="">Aliados</a></li>
+              <li>
+                <a href="https://checkout.wompi.co/l/FTqfWR">Paga tu cuota</a>
+              </li>
+              <li>
+                <a href="https://financiate.netlify.app/">Inicia Sesión</a>
+              </li>
+              <li><a href="#">¿Dudas?</a></li>
+            </ul>
           </nav>
         </div>
-
+        <div id="Menu-images">
+          <div
+            class="Menu-image"
+            style="background-image: url(Img/Full-menu/Menu_1.png)"
+          ></div>
+          <div
+            class="Menu-image"
+            style="background-image: url(Img/Full-menu/Menu_2.png)"
+          ></div>
+          <div
+            class="Menu-image"
+            style="background-image: url(Img/Full-menu/Menu_3.png)"
+          ></div>
+          <div
+            class="Menu-image"
+            style="background-image: url(Img/Full-menu/Menu_4.png)"
+          ></div>
+          <div
+            class="Menu-image"
+            style="background-image: url(Img/Full-menu/Menu_5.png)"
+          ></div>
+          <div
+            class="Menu-image"
+            style="background-image: url(Img/Full-menu/Menu_6.png)"
+          ></div>
+        </div>
       </div>
       <!------------------------------------------------Nav-Bar---------------------------------------------------->
       <header class="header row p-0 m-0" id="navbar">
@@ -63,23 +91,35 @@
         </div>
         <nav class="nav-bar m-0 col-9">
           <div class="menu">
-            <ul class="nav nav-underline">
+            <ul class="nav">
               <li class="nav-item">
-                <a class="nav-link" href="Index.html"> Personas</a>
+                <a class="link" href="Index.html"> Personas</a>
+                <div class="underline"></div>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="Aliados.html"> Aliados Comerciales</a>
+                <a class="link active-link" id="link" href="Aliados.html">
+                  Aliados Comerciales</a
+                >
+                <div class="underline"></div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://checkout.wompi.co/l/FTqfWR"> Paga tu cuota</a>
+                <a class="link" href="https://checkout.wompi.co/l/FTqfWR">
+                  Paga tu cuota</a
+                >
+                <div class="underline"></div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://financiate.netlify.app/"> Inicia Sesión</a>
+                <a class="link" href="https://financiate.netlify.app/">
+                  Inicia Sesión</a
+                >
+                <div class="underline"></div>
               </li>
             </ul>
           </div>
           <div class="btn-fullmenu">
-            <button onclick="abrirmenu()" id="btn-menu">menu <span class="fa fa-bars"></span></button>
+            <button onclick="abrirmenu()" id="btn-menu">
+              menu <span class="fa fa-bars"></span>
+            </button>
           </div>
         </nav>
       </header>
@@ -105,7 +145,11 @@
           </div>
           <div class="btn row">
             <form action="#formulario">
-              <button class="btn-stc"  data-aos="fade-up" data-aos-duration="1000">¡Empieza ahora!
+              <button
+                class="btn-stc"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              > ¡Empieza ahora!
               </button>
             </form>
           </div>
@@ -266,16 +310,13 @@
         </div>
         <hr />
         <div class="afiliacion col">
-
           <div class="row">
-
             <div
               class="afiliacion-bg1 col"
               data-aos="fade-right"
               data-aos-duration="1000"
             >
               <div class="afiliacion-a row">
-
                 <div class="afiliacion-icon col-sm-3">
                   <img src="Img/Empresas/Formulario.svg" alt="" />
                 </div>
@@ -284,7 +325,6 @@
                   <h3 class="text-2">Llena el formulario</h3>
                   <!--<p class="text-2-1">Cuentanos de ti y de tu negocio</p>-->
                 </div>
-
               </div>
             </div>
 
@@ -320,7 +360,7 @@
                 </div>
                 <div class="afiliacion-b col">
                   <h3 class="text-2">Recibe la aceptación</h3>
-                 <!-- <p class="text-2-1">
+                  <!-- <p class="text-2-1">
                     Nuestros asesores se comunicarán contigo para darte la buena
                     noticia
                   </p>-->
@@ -339,7 +379,7 @@
                 </div>
                 <div class="afiliacion-b col">
                   <h3 class="text-2">Capacitamos a tu personal</h3>
-                 <!-- <p class="text-2-1">
+                  <!-- <p class="text-2-1">
                     Nos aseguramos que tu y tu equipo conozcan cada uno de los
                     beneficios que ofrecemos para tus clientes
                   </p>-->
@@ -350,7 +390,6 @@
         </div>
       </div>
 
-    
       <!-----------------------------------------------Footer---------------------------------------------------->
 
       <footer class="footer col" id="formulario">
