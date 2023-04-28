@@ -133,6 +133,9 @@
   .Menu-image{
     display: none;
   }
+  .full-menu .navegacion ul li a {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 414px) {
 
