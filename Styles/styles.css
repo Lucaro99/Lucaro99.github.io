@@ -704,63 +704,59 @@ label {
 }
 /*============================================AFILIACIÓN=========================================*/
 .bg-image-4 {
-  background: url("/Img/Fondos/Ladrillos.png");
+  background: var(--D-Negro-iz);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: 0px 0px 70px 50px rgba(10, 98, 108, 1);
-  padding: 0% 10% 6% 10%;
+  height: 100vh;
+}
+.afiliacion{
+  height: 100vh;
+}
+.afiliacion-icon{
+  width: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .afiliacion-icon img {
-  width: 10%;
+  width: 60%;
   filter: drop-shadow(0px 0px 3px #4d4d4d);
-  left: 10%;
-  z-index: 4;
-  justify-items: center;
 }
-
-.afiliacion-2 {
-  background: var(--D-Negro);
-  height: 50vh;
+.afiliacion-b{
   display: flex;
-  align-self: center;
+  align-items: center;
+  justify-content: start;
+  z-index: 1;
+  margin: 1%;
 }
 .afiliacion-bg1 {
   background-color: rgba(1, 104, 109, 0.9);
   display: flex;
   align-self: center;
   height: 50vh;
-}
-.afiliacion-bg1:hover::before {
-  content: "";
-  position: absolute;
   z-index: 1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+
+}
+.afiliacion-bg1:hover {
   background: url("/Img/Empresas/conductora 1.jpg");
   background-size: 100%;
   background-position: center;
+  transition: 0.3s;
 }
-
 .afiliacion-bg2 {
   background-color: rgba(1, 104, 109, 0.8);
   display: flex;
   align-self: center;
   height: 50vh;
 }
-.afiliacion-bg2:hover::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.afiliacion-bg2:hover{
   background: url("/Img/Empresas/conductor 2.jpg");
   background-size: 100%;
   background-position: center;
+  transition: 0.3s;
+
 }
 .afiliacion-bg3 {
   background-color: rgba(1, 104, 109, 0.7);
@@ -768,19 +764,13 @@ label {
   align-self: center;
   height: 50vh;
 }
-.afiliacion-bg3:hover::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.afiliacion-bg3:hover{
   background-color: rgba(1, 104, 109, 0.6);
   background: url("/Img/Empresas/conductor 3.jpg");
   background-size: 100%;
   background-position: center;
   transition: 0.3s;
+
 }
 .afiliacion-bg4 {
   background-color: rgba(1, 104, 109, 0.5);
@@ -788,23 +778,14 @@ label {
   align-self: center;
   height: 50vh;
 }
-.afiliacion-bg4:hover::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.afiliacion-bg4:hover{
   background: url("/Img/Empresas/conductora 4.jpg");
   background-size: 100%;
   background-position: center;
+  transition: 0.3s;
+  
 }
 
-.afiliacion-a {
-  align-content: center;
-  justify-content: start;
-}
 .t-afiliacion .titulo-2 {
   color: var(--green);
   margin-top: 2%;
@@ -814,15 +795,9 @@ label {
   color: var(--white);
   text-shadow: #ed1e79;
   font-size: 1.5rem;
-  position: absolute;
   z-index: 5;
   left: 30%;
   top: 45%;
-}
-
-.afiliacion::after {
-  content: "";
-  background-color: rgba(1, 104, 109, 0.5);
 }
 .afiliacion-b .text-2-1 {
   color: var(--white);
@@ -832,6 +807,7 @@ label {
   line-height: 130%;
   font-size: 1rem;
 }
+
 
 /*============================================Banner-grupo=========================================*/
 
@@ -859,5 +835,23 @@ label {
   margin: 0;
   justify-content: center;
 }
+/*============================================Unete=========================================*/
 
+.Unete{
+  display: flex;
+  width: 100vw;
+  height: 30vh;
+  background-color: var(--green);
+}
+
+.unete-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Unete .unete-2 .btn-stc{
+  margin: 2%;
+}
 
