@@ -379,10 +379,18 @@ body {
   line-height: 130%;
   font-size: 1rem;
 }
-
+.paso {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .paso img {
-  width: 80%;
-  margin: 10% 10% 0 10%;
+  width: 100%;
+  margin: 10% 10% 10% 0;
+  padding: 0;
+
 }
 .paso img:hover {
   filter: drop-shadow(0px 0px 25px #ed1e79);
@@ -649,7 +657,51 @@ label {
   line-height: 1px;
 }
 /*============================================EMPRESA=========================================*/
+/*============================================MAIN-2=========================================*/
+.main-2 {
+  width: 100%;
+  height: 85vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 
+.text-1-1 {
+  color: var(--green);
+  justify-content: center;
+}
+
+.btn-stc {
+  cursor: pointer;
+  color: var(--white);
+  box-shadow: var(--box-shadow-fucsia);
+  background: var(--D-Fucsia-iz);
+  padding: 0px 20px;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 500;
+  border-radius: 50px;
+  border: none;
+  white-space: pre;
+  height: 40px;
+}
+.btn-stc:hover {
+  box-shadow: none;
+}
+.btn:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.Grupo {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-self: end;
+}
+.Grupo img {
+  width: 87%;
+  align-self: end;
+}
 /*============================================AFILIACIÓN=========================================*/
 .bg-image-4 {
   background: url("/Img/Fondos/Ladrillos.png");
@@ -660,12 +712,11 @@ label {
   padding: 0% 10% 6% 10%;
 }
 .afiliacion-icon img {
-  width: 150%;
+  width: 10%;
   filter: drop-shadow(0px 0px 3px #4d4d4d);
   left: 10%;
   z-index: 4;
   justify-items: center;
-  display: none;
 }
 
 .afiliacion-2 {
@@ -782,27 +833,31 @@ label {
   font-size: 1rem;
 }
 
-/*============================================AFILIACIÓN=========================================*/
+/*============================================Banner-grupo=========================================*/
 
-.bg-image-2 {
-  background: url("/Img/Fondos/Ladrillos.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.banner {
+.banner .grupo-1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0% 6% 0% 6%;
+  align-content: end;
   height: 100%;
+  padding: 0;
 }
 
 .banner .grupo-1 img {
+  margin: 0%;
   width: 100%;
-  align-content: end;
-  display: none;
+  align-self: end;
 }
+
+.slogan-green-2 {
+  color: var(--green);
+  font-family: "Century Gothic Paneuropean", sans-serif;
+  font-weight: 610;
+  font-style: normal;
+  letter-spacing: -0.3vw;
+  font-size: 80px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
 
