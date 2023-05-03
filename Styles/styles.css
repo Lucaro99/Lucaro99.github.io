@@ -158,7 +158,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  display: block;
+  display: none;
 }
 /*============================================SLOGAN=========================================*/
 
@@ -268,8 +268,6 @@ body {
 	transition: none;
 	background-color: var(--Fucsia);
 }
-
-
 
 .btn-fullmenu {
   justify-content: end;
@@ -711,9 +709,7 @@ label {
   box-shadow: 0px 0px 70px 50px rgba(10, 98, 108, 1);
   
 }
-.afiliacion{
-  
-}
+
 .afiliacion-icon{
   width: 30vh;
   display: flex;
