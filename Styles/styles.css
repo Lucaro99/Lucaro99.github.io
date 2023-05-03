@@ -851,3 +851,84 @@ label {
   margin: 2%;
 }
 
+/*============================================Nosotros=========================================*/
+
+.conocenos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 85vh;
+}
+.conocenos h1{
+  font-size: 80px;
+}
+.amigos{
+  display: flex;
+  width: 100%;
+
+}
+.amigos img{
+  width: 100%;
+}
+
+.nosotros-1, .nosotros-3, .nosotros-5{
+  display: flex;
+  height: 50vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background: var(--D-Cyan-iz);
+}
+.nosotros-2, .nosotros-4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100vw;
+
+  background: var(--D-Fucsia-De);
+}
+
+.nosotros-icon {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.nosotros-icon img {
+  height: 115%;
+}
+.nosotros-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nosotros-1 .nosotros-info{
+  align-items: start;
+  justify-content: start;
+}
+.nosotros-2 .nosotros-info{
+  align-items: end;
+  justify-content: end;
+}
+.nosotros-3 .nosotros-info{
+  align-items: start;
+
+}
+.nosotros-4 .nosotros-info{
+  align-items: end;
+
+}
+.nosotros-1 .nosotros-info p{
+  text-align: justify;
+}
+.nosotros-2 .nosotros-info p{
+  text-align: right;
+}
+
+.nosotros-4 .nosotros-info p{
+  text-align: right;
+}
+

@@ -44,7 +44,7 @@
             </div>
 
             <ul class="menu-principal">
-              <li><a href="">Nosotros</a></li>
+              <li><a href="Nosotros.html">Nosotros</a></li>
               <li><a href="index.html">Personas</a></li>
               <li><a href="Aliados.html">Aliados</a></li>
               <li>
@@ -344,12 +344,14 @@
           >Aumenta las ventas
           </h2>
           <p class="text-2-1 m-0">Al realizar ventas con nuestro servicio asegura tus ventas sin riesgos</p>
-          <button
-          class="btn-stc"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >¡Empieza ahora!
-        </button>
+          <form class="p-0 m-0" action="#formulario">
+            <button
+              class="btn-stc"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >¡Empieza ahora!
+            </button>
+          </form>
         </div>
       </div>
       <!-----------------------------------------------Footer---------------------------------------------------->
@@ -431,14 +433,14 @@
 
           <div class="form col-md-5">
             <div class="contacto row">
-              <form class="form2-col">
+              <form action="https://formsubmit.co/55aff0fe3bd8ed3c7a4bf2ac4dfa6b54" method="post" class="form2-col">
                 <div class="row">
                   <label for="nombre" class="colocar"
                     >Nombre <span class="obligatorio">*</span>
                   </label>
                   <input
                     type="text"
-                    name="introducir_nombre"
+                    name="nombre"
                     id="nombre"
                     required="obligatorio"
                     placeholder="Escribe tu nombre"
@@ -452,7 +454,7 @@
                   </label>
                   <input
                     type="email"
-                    name="introducir_email"
+                    name="email"
                     id="email"
                     required="obligatorio"
                     placeholder="Escribe tu Email"
@@ -463,7 +465,7 @@
                   <label for="telefone" class="colocar">Teléfono </label>
                   <input
                     type="tel"
-                    name="introducir_telefono"
+                    name="telefono"
                     id="telefono"
                     placeholder="Escribe tu teléfono"
                   />
@@ -476,7 +478,7 @@
                   </label>
                   <input
                     type="text"
-                    name="introducir_asunto"
+                    name="asunto"
                     id="assunto"
                     required="obligatorio"
                     placeholder="Escribe un asunto"
@@ -489,7 +491,7 @@
                     <span class="obligatorio">*</span>
                   </label>
                   <textarea
-                    name="introducir_mensaje"
+                    name="mensaje"
                     class="texto_mensaje"
                     id="mensaje"
                     required="obligatorio"
@@ -505,6 +507,11 @@
                 >
                   Enviar
                 </button>
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://financiate.com.co">
+                <input type="text" name="_honey" style="display: none;">
 
                 <p class="aviso">
                   <span class="obligatorio"> * </span>los campos son
