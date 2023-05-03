@@ -12,7 +12,7 @@
 }
 
 body {
-  background: url("/Img/Fondos/Fondo-principal.png");
+  background: url("/Img/Fondos/Fondo-principal.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -84,7 +84,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 50;
-  background: url("/Img/Fondos/Ladrillos-Azules.png");
+  background: url("/Img/Fondos/Ladrillos-Azules.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
