@@ -107,6 +107,7 @@ body {
 }
 .nombre p {
   padding-right: 10%;
+  text-align: justify;
 }
 .datos {
   display: flex;
