@@ -59,7 +59,6 @@
   .text-1-1 {
     font-size: 35px;
   }
-
   .pasos {
     padding: 0% 0% 5% 0%;
   }
@@ -75,6 +74,7 @@
   .Grupo img {
     width: 50%;
   }
+ 
 }
 @media screen and (max-width: 670px) {
   .paso img {
