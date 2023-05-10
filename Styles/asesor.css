@@ -132,8 +132,8 @@ body {
 .btn_datos {
   background: var(--D-Cyan-iz);
   padding: 7px 5px;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   font-style: italic;
   font-weight: 500;
   border-radius: 50%;
@@ -162,7 +162,7 @@ p {
 .info-contacto {
   height: 10%;
   background: var(--green);
-  padding: 0.8% 10% 0.8% 10%;
+  padding: 0.8% 0.9% 0.8% 0.9%;
   align-items: center;
 }
 
@@ -228,11 +228,12 @@ p {
   }
   .datos-1  {
     width: 100%;
+    height: 100%;
     font-size: 25px;
   }
   .datos-1 p {
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .perfil {
@@ -262,5 +263,14 @@ p {
 @media screen and (max-width: 829px) {
   .perfil {
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .perfil {
+    height: 100%;
+  }
+  .info-contacto{
+    display: none;
   }
 }
