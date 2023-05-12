@@ -100,7 +100,6 @@ body {
   height: 10vh;
   display: flex;
   justify-content: end;
-
 }
 .close span {
   font-size: 50px;
@@ -221,7 +220,6 @@ body {
   transition: all 0.3s;
 }
 
-
 .menu {
   display: flex;
   justify-content: center;
@@ -249,24 +247,23 @@ body {
 
 .menu ul li:hover a {
   color: var(--Fucsia);
-
 }
 .menu ul li .underline {
-	height: 3px;
-	background-color: transparent;
-	width: 0%;
-	transition: width 0.2s, background-color 0.5s;
-	margin: 0 auto;
+  height: 3px;
+  background-color: transparent;
+  width: 0%;
+  transition: width 0.2s, background-color 0.5s;
+  margin: 0 auto;
 }
 
 .menu ul li:hover .underline {
   background-color: var(--Fucsia);
-	width: 100%;
+  width: 100%;
 }
 
 .menu ul li:active .underline {
-	transition: none;
-	background-color: var(--Fucsia);
+  transition: none;
+  background-color: var(--Fucsia);
 }
 
 .btn-fullmenu {
@@ -388,7 +385,6 @@ body {
   width: 100%;
   margin: 10% 10% 10% 0;
   padding: 0;
-
 }
 .paso img:hover {
   filter: drop-shadow(0px 0px 25px #ed1e79);
@@ -707,10 +703,9 @@ label {
   background-position: center;
   background-size: cover;
   box-shadow: 0px 0px 70px 50px rgba(10, 98, 108, 1);
-  
 }
 
-.afiliacion-icon{
+.afiliacion-icon {
   width: 30vh;
   display: flex;
   align-items: center;
@@ -720,7 +715,7 @@ label {
   width: 60%;
   filter: drop-shadow(0px 0px 3px #4d4d4d);
 }
-.afiliacion-b{
+.afiliacion-b {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -733,7 +728,6 @@ label {
   align-self: center;
   height: 50vh;
   z-index: 1;
-
 }
 .afiliacion-bg1:hover {
   background: url("/Img/Empresas/conductora 1.jpg");
@@ -747,12 +741,11 @@ label {
   align-self: center;
   height: 50vh;
 }
-.afiliacion-bg2:hover{
+.afiliacion-bg2:hover {
   background: url("/Img/Empresas/conductor 2.jpg");
   background-size: 100%;
   background-position: center;
   transition: 0.3s;
-
 }
 .afiliacion-bg3 {
   background-color: rgba(1, 104, 109, 0.7);
@@ -760,13 +753,12 @@ label {
   align-self: center;
   height: 50vh;
 }
-.afiliacion-bg3:hover{
+.afiliacion-bg3:hover {
   background-color: rgba(1, 104, 109, 0.6);
   background: url("/Img/Empresas/conductor 3.jpg");
   background-size: 100%;
   background-position: center;
   transition: 0.3s;
-
 }
 .afiliacion-bg4 {
   background-color: rgba(1, 104, 109, 0.5);
@@ -774,12 +766,11 @@ label {
   align-self: center;
   height: 50vh;
 }
-.afiliacion-bg4:hover{
+.afiliacion-bg4:hover {
   background: url("/Img/Empresas/conductora 4.jpg");
   background-size: 100%;
   background-position: center;
   transition: 0.3s;
-  
 }
 
 .t-afiliacion .titulo-2 {
@@ -803,7 +794,6 @@ label {
   line-height: 130%;
   font-size: 1rem;
 }
-
 
 /*============================================Banner-grupo=========================================*/
 
@@ -833,59 +823,60 @@ label {
 }
 /*============================================Unete=========================================*/
 
-.Unete{
+.Unete {
   display: flex;
   width: 100vw;
   height: 30vh;
   background-color: var(--green);
 }
 
-.unete-2{
+.unete-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.Unete .unete-2 .btn-stc{
+.Unete .unete-2 .btn-stc {
   margin: 2%;
 }
 
 /*============================================Nosotros=========================================*/
 
 .main-3 {
-  display: flex;
   width: 100%;
   height: 85vh;
   text-align: center;
   justify-content: end;
   align-items: center;
 }
-.conocenos{
+.conocenos {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
   height: 100%;
   width: 100%;
-
 }
-.conocenos h1{
-  font-size: 100px;
-
+.conocenos h1 {
+  font-size: 90px;
 }
-.amigos{
+.amigos {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 75%;
   width: 100%;
 }
-.amigos img{
+.amigos img {
   height: 100%;
 }
+.nosotros{
+  display: flex;
+  flex-direction: column;
+}
 
-.nosotros-1, .nosotros-3, .nosotros-5{
+.nosotros-1, .nosotros-3, .nosotros-5 {
   display: flex;
   height: 50vh;
   width: 100vw;
@@ -893,14 +884,28 @@ label {
   justify-content: center;
   background: var(--D-Cyan-iz);
 }
-.nosotros-2, .nosotros-4{
+.nosotros-2, .nosotros-4 {
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 50vh;
   width: 100vw;
-
+  align-items: center;
+  justify-content: center;
   background: var(--D-Fucsia-De);
+}
+
+.nosotros-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  margin: 0 2% 0 2%;
+}
+.nosotros-info .titulo-2 {
+  margin: 0;
+}
+.nosotros-info .text-2-1 {
+  font-size: 1em;
 }
 
 .nosotros-icon {
@@ -912,36 +917,27 @@ label {
 .nosotros-icon img {
   height: 80%;
 }
-.nosotros-info{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.nosotros-1 .nosotros-info{
+.nosotros-1 .nosotros-info {
   align-items: start;
   justify-content: start;
 }
-.nosotros-2 .nosotros-info{
+.nosotros-2 .nosotros-info {
   align-items: end;
   justify-content: end;
 }
-.nosotros-3 .nosotros-info{
+.nosotros-3 .nosotros-info {
   align-items: start;
-
 }
-.nosotros-4 .nosotros-info{
+.nosotros-4 .nosotros-info {
   align-items: end;
-
 }
-.nosotros-1 .nosotros-info p{
+.nosotros-1 .nosotros-info p {
   text-align: justify;
 }
-.nosotros-2 .nosotros-info p{
+.nosotros-2 .nosotros-info p {
   text-align: right;
 }
 
-.nosotros-4 .nosotros-info p{
+.nosotros-4 .nosotros-info p {
   text-align: right;
 }
-

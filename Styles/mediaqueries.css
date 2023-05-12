@@ -25,6 +25,10 @@
   .paso img {
     width: 75%;
   }
+
+  .nosotros-info .text-2-1 {
+    font-size: 0.8em;
+  }
 }
 @media screen and (max-width: 829px) {
   #grupo-2 {
@@ -74,7 +78,7 @@
   .Grupo img {
     width: 50%;
   }
- 
+
 }
 @media screen and (max-width: 670px) {
   .paso img {
@@ -84,6 +88,7 @@
   .slogan-white {
     font-size: 50px;
   }
+
 }
 @media screen and (max-width: 576px) {
   .pasos {
@@ -153,9 +158,20 @@
   .full-menu .navegacion ul li a {
     opacity: 1;
   }
-
+  .nosotros-info .titulo-2{
+    font-size: 29px;
+  }
+   .nosotros-info .text-2-1{
+    font-size: 13px;
+  }
   .Grupo img {
     width: 70%;
+  }
+  .amigos {
+    height: 70%;
+  }
+  .nosotros-icon img {
+    height: 75%;
   }
 }
 @media screen and (max-width: 414px) {
@@ -165,12 +181,20 @@
   .Grupo img {
     width: 90%;
   }
+  .conocenos h1 {
+    font-size: 70px;
+  }
+  .amigos {
+    height: 50%;
+  }
+  .nosotros-icon img {
+    height: 60%;
+  }
 }
 @media screen and (max-width: 390px) {
   .paso img {
     width: 50%;
   }
-
   .slogan-green,
   .slogan-white {
     font-size: 43px;
@@ -193,6 +217,18 @@
   .bg-image-2 {
     height: 70vh;
   }
+  .nosotros-info .titulo-2 {
+    font-size: 25px;
+  }
+  .nosotros-info .text-2-1 {
+    font-size: 0.6em;
+  }
+  .amigos {
+    height: 45%;
+  }
+  .nosotros-icon img {
+    height: 50%;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -203,6 +239,12 @@
   .slogan-white {
     font-size: 60px;
   }
+  .nosotros-icon img {
+    height: 47%;
+  }
+  .nosotros-5 .nosotros-icon{
+    display: none;
+  }
 }
 @media screen and (max-width: 360px) {
   .persona-1 {
@@ -211,6 +253,12 @@
   .slogan-green,
   .slogan-white {
     font-size: 40px;
+  }
+  .amigos {
+    height: 42%;
+  }
+  .nosotros-icon img {
+    height: 30%;
   }
 }
 @media screen and (max-width: 280px) {
@@ -229,5 +277,28 @@
   }
   .Grupo img {
     width: 90%;
+  }
+  .main-3{
+    height: 50vh;
+  }
+  .conocenos h1{
+    font-size: 50px;
+  }
+  .nosotros-info{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .nosotros-info .titulo-2 {
+    font-size: 18px;
+  }
+  .nosotros-info .text-2-1 {
+    font-size: 0.5em;
+  }
+  .amigos {
+    height: 55%;
+  }
+  .nosotros-icon{
+    display: none;
   }
 }
