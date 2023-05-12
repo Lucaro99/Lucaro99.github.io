@@ -239,11 +239,17 @@
   .slogan-white {
     font-size: 60px;
   }
+  .main-3{
+    height: 50vh;
+  }
   .nosotros-icon img {
-    height: 47%;
+    height: 42%;
   }
   .nosotros-5 .nosotros-icon{
     display: none;
+  }
+  .amigos {
+    height: 60%;
   }
 }
 @media screen and (max-width: 360px) {
@@ -260,6 +266,7 @@
   .nosotros-icon img {
     height: 30%;
   }
+  
 }
 @media screen and (max-width: 280px) {
   .slogan-green,
@@ -278,9 +285,7 @@
   .Grupo img {
     width: 90%;
   }
-  .main-3{
-    height: 50vh;
-  }
+
   .conocenos h1{
     font-size: 50px;
   }
