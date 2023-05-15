@@ -176,7 +176,7 @@
 }
 @media screen and (max-width: 412px) {
 .main-3{
-  height: 50vh;
+  height: 30vh;
 }
 .nosotros-icon {
   height: 40%;
@@ -185,6 +185,9 @@
   display: none;
 }
 .amigos {
+  height: 60%;
+}
+.nosotros-icon{
   height: 60%;
 }
 }
@@ -283,11 +286,14 @@
   .slogan-white {
     font-size: 40px;
   }
+  .main-3{
+    height: 40vh;
+  }
   .amigos {
-    height: 42%;
+    height: 60%;
   }
   .nosotros-icon img {
-    height: 30%;
+    height: 60%;
   }
   
 }
