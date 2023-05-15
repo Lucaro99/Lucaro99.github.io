@@ -12,12 +12,12 @@ window.onscroll = function scrollFunction() {
 function abrirmenu(){
   document.getElementById("full-menu").style.left = "0";
   document.body.style.overflow = 'hidden';
-}
+};
 
 function cerrarmenu(){
   document.getElementById("full-menu").style.left = "-110%";
   document.body.style.overflow = 'visible';
-}
+};
 
 
 $(function () {
@@ -39,5 +39,13 @@ $(function () {
     $(".Menu-image:eq(" +index+ ")").fadeOut (400);
   
   })
-  
-})
+});
+
+window.addEventListener("load", function(event) {
+  const pepito = document.getElementsByClassName("contenedor");
+  for (i=0; i< pepito.length; i++) {
+    pepito[i].addEventListener('click', function () {
+      this.classList.toggle('activa')
+    })
+  }  
+});
