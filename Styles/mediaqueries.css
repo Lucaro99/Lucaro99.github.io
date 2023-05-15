@@ -198,11 +198,20 @@
   .conocenos h1 {
     font-size: 70px;
   }
+  .main-3{
+    height: 50vh;
+  }
+  .nosotros-info .titulo-2 {
+    font-size: 25px;
+  }
+  .nosotros-info .text-2-1 {
+    font-size: 0.6em;
+  }
   .amigos {
-    height: 50%;
+    height: 40%;
   }
   .nosotros-icon img {
-    height: 60%;
+    height: 30%;
   }
 }
 @media screen and (max-width: 390px) {
