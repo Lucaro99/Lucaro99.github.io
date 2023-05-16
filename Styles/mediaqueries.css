@@ -34,6 +34,9 @@
   #grupo-2 {
     display: none;
   }
+  .acordeon .contenedor.activa .contenido {
+    height: 150px;
+  }
 }
 @media screen and (max-width: 768px) {
   .pasos {
@@ -173,6 +176,9 @@
   .nosotros-icon img {
     height: 75%;
   }
+  .acordeon .contenedor.activa .contenido {
+    height: 190px;
+  }
 }
 @media screen and (max-width: 412px) {
 .main-3{
@@ -189,6 +195,12 @@
 }
 .nosotros-icon{
   height: 60%;
+}
+.acordeon .etiqueta {
+  font-size: 25px;
+}
+.acordeon .contenedor.activa .contenido {
+  height: 310px;
 }
 }
 @media screen and (max-width: 414px) {
@@ -295,7 +307,12 @@
   .nosotros-icon img {
     height: 60%;
   }
-  
+  .acordeon .etiqueta {
+    font-size: 20px;
+  }
+  .acordeon .contenedor.activa .contenido {
+    height: 370px;
+  }
 }
 @media screen and (max-width: 280px) {
   .slogan-green,

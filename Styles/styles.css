@@ -963,10 +963,11 @@ label {
 }
 .acordeon-cuerpo{
   display: flex;
-  justify-content: center;
+  justify-content: center;  
 }
 .acordeon {
-  width: 100%;
+  text-align: justify;
+  width: 80%;
   color: var(--white);
   padding: 0 45px;
 }
@@ -974,8 +975,6 @@ label {
   position: relative;
   margin: 10px 10px;
 }
-
-
 .acordeon .etiqueta {
   position: relative;
   padding: 10px 0;
@@ -983,36 +982,29 @@ label {
   color: #fff;
   cursor: 30px;
   cursor: pointer;
-
+  text-align: start;
 }
-
 .acordeon .etiqueta::before {
   content: '+';
   color: #fff;
   position: absolute;
   cursor: pointer;
   top: 50%;
-  right: -5px;
+  right: -11px;
   font-size: 50px;
   transform: translateY(-50%);
 }
-
-
 .acordeon .contenido {
   position: relative;
   height: 0;
-  font-size: 20px;
-  text-align: justify;
-  width: 780px;
+  font-size: 1em;
+  width: 100%;
   overflow: hidden;
   transition: 0.5s;
 }
-
-
 .acordeon hr {
   width: 100%;
   margin-left: 0;
-  border: 1px solid #fff;
 }
 
 .acordeon .contenedor.activa .contenido {
@@ -1022,5 +1014,5 @@ label {
 
 .acordeon .contenedor.activa .etiqueta::before {
   content: '-';
-  font-size: 30px;
+  font-size: 50px;
 }
