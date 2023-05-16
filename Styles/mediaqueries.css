@@ -81,7 +81,6 @@
   .Grupo img {
     width: 50%;
   }
-
 }
 @media screen and (max-width: 670px) {
   .paso img {
@@ -91,7 +90,6 @@
   .slogan-white {
     font-size: 50px;
   }
-
 }
 @media screen and (max-width: 576px) {
   .pasos {
@@ -161,10 +159,10 @@
   .full-menu .navegacion ul li a {
     opacity: 1;
   }
-  .nosotros-info .titulo-2{
+  .nosotros-info .titulo-2 {
     font-size: 29px;
   }
-   .nosotros-info .text-2-1{
+  .nosotros-info .text-2-1 {
     font-size: 13px;
   }
   .Grupo img {
@@ -181,27 +179,27 @@
   }
 }
 @media screen and (max-width: 412px) {
-.main-3{
-  height: 30vh;
-}
-.nosotros-icon {
-  height: 40%;
-}
-.nosotros-5 .nosotros-icon{
-  display: none;
-}
-.amigos {
-  height: 60%;
-}
-.nosotros-icon{
-  height: 60%;
-}
-.acordeon .etiqueta {
-  font-size: 25px;
-}
-.acordeon .contenedor.activa .contenido {
-  height: 310px;
-}
+  .main-3 {
+    height: 30vh;
+  }
+  .nosotros-icon {
+    height: 40%;
+  }
+  .nosotros-5 .nosotros-icon {
+    display: none;
+  }
+  .amigos {
+    height: 60%;
+  }
+  .nosotros-icon {
+    height: 60%;
+  }
+  .acordeon .etiqueta {
+    font-size: 25px;
+  }
+  .acordeon .contenedor.activa .contenido {
+    height: 310px;
+  }
 }
 @media screen and (max-width: 414px) {
   .bg-image-2 {
@@ -213,7 +211,7 @@
   .conocenos h1 {
     font-size: 70px;
   }
-  .main-3{
+  .main-3 {
     height: 50vh;
   }
   .nosotros-info .titulo-2 {
@@ -227,6 +225,12 @@
   }
   .nosotros-icon img {
     height: 30%;
+  }
+  .acordeon .etiqueta {
+    font-size: 24px;
+  }
+  .acordeon .contenedor.activa .contenido {
+    height: 310px;
   }
 }
 @media screen and (max-width: 390px) {
@@ -277,13 +281,13 @@
   .slogan-white {
     font-size: 60px;
   }
-  .main-3{
+  .main-3 {
     height: 50vh;
   }
   .nosotros-icon img {
     height: 42%;
   }
-  .nosotros-5 .nosotros-icon{
+  .nosotros-5 .nosotros-icon {
     display: none;
   }
   .amigos {
@@ -298,7 +302,7 @@
   .slogan-white {
     font-size: 40px;
   }
-  .main-3{
+  .main-3 {
     height: 40vh;
   }
   .amigos {
@@ -332,10 +336,10 @@
     width: 90%;
   }
 
-  .conocenos h1{
+  .conocenos h1 {
     font-size: 50px;
   }
-  .nosotros-info{
+  .nosotros-info {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -349,7 +353,7 @@
   .amigos {
     height: 55%;
   }
-  .nosotros-icon{
+  .nosotros-icon {
     display: none;
   }
 }
