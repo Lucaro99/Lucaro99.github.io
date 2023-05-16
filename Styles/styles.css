@@ -109,6 +109,13 @@ body {
   position: absolute;
   z-index: 10;
 }
+.close span:hover {
+  color: #ed1e79;
+  transition: 0.9s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
 .full-menu .navegacion ul {
   display: flex;
   list-style: none;
@@ -160,6 +167,7 @@ body {
   background-size: cover;
   display: none;
 }
+
 /*============================================SLOGAN=========================================*/
 
 .slogan-white {
@@ -872,12 +880,14 @@ label {
 .amigos img {
   height: 100%;
 }
-.nosotros{
+.nosotros {
   display: flex;
   flex-direction: column;
 }
 
-.nosotros-1, .nosotros-3, .nosotros-5 {
+.nosotros-1,
+.nosotros-3,
+.nosotros-5 {
   display: flex;
   height: 50vh;
   width: 100vw;
@@ -885,7 +895,8 @@ label {
   justify-content: center;
   background: var(--D-Cyan-iz);
 }
-.nosotros-2, .nosotros-4 {
+.nosotros-2,
+.nosotros-4 {
   display: flex;
   height: 50vh;
   width: 100vw;
@@ -962,9 +973,9 @@ label {
   margin: 2% 0 2% 2%;
   font-size: 2rem;
 }
-.acordeon-cuerpo{
+.acordeon-cuerpo {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 .acordeon {
   text-align: justify;
@@ -986,7 +997,7 @@ label {
   text-align: start;
 }
 .acordeon .etiqueta::before {
-  content: '+';
+  content: "+";
   color: #fff;
   position: absolute;
   cursor: pointer;
@@ -1012,8 +1023,7 @@ label {
   height: 100px;
 }
 
-
 .acordeon .contenedor.activa .etiqueta::before {
-  content: '-';
+  content: "-";
   font-size: 50px;
 }
