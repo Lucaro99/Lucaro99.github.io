@@ -126,6 +126,7 @@ body {
   display: flex;
   justify-content: end;
   padding-left: 5%;
+  margin-bottom: 8px;
 }
 
 .full-menu .navegacion ul li a {
