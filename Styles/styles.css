@@ -1028,3 +1028,13 @@ label {
   content: "-";
   font-size: 50px;
 }
+
+/*============================================Simulador=========================================*/
+
+.simulador {
+  width: 100%;
+  height: 77vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
