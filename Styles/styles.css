@@ -1038,3 +1038,160 @@ label {
   justify-content: center;
   align-items: center;
 }
+
+/*============================================Formulario-Poli=========================================*/
+.bg-image-6{
+  padding: 50px;
+  background: url("/Img/Fondos/Ladrillos.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Form_poli {
+  width: 100vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_Fin_Poli{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_Fin_Poli a img{
+  width: auto;
+  height: 70px;
+}
+
+.descripcion h4{
+  font-size: 1.3rem;
+  color: gray;
+}
+
+.estudiante {
+  display: flex;
+  justify-self: start;
+}
+
+.Form_poli label{
+  margin: 0 10px; 
+  color: gray;
+}
+.Form_poli select{
+  border: 3px solid #ed1e79;
+  border-radius: 100px;
+  background-color:none ;
+  height: 45px;
+  width: 80px;
+}
+
+.Form_poli input{
+  border: 3px solid #ed1e79;
+  border-radius: 100px;
+  background-color:none ;
+}
+
+select::selection{
+  border: 3px solid #00ffff;
+  color: #00ffff;
+}
+.Form_poli option{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_aval{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: 100vh;
+}
+
+.datos{
+  display: flex;
+  justify-self: start;
+}
+
+.datos h1{
+  font-size: 30px;
+  color: var(--green);
+}
+
+.form_datos{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  border: 1px solid var(--green);
+}
+.renglon_1_datos{
+  display: flex;
+}
+.renglon_2_datos{
+  display: flex;
+}
+.renglon_3_datos{
+  display: flex;
+}
+
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 13em;
+  margin-bottom: 17px;
+  margin-right: 17px;
+}
+
+.input {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  font-size: 16px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+::placeholder {
+  color: transparent;
+}
+.label {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  padding: 0 4px;
+  color: #DADCE0;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+.input:focus + .label {
+  top: -10px;
+  left: 3px;
+  z-index: 10;
+  font-size: 16px;
+  font-weight: 900;
+  background-color: #f0eeee;
+  border-radius: 100px;
+  color: var(--Fucsia);
+}
+.input:not(:placeholder-shown)+ .label {
+  top: -10px;
+  left: 3px;
+  z-index: 10;
+  font-size: 16px;
+  font-weight: 900;
+  background-color: #f0eeee;
+  border-radius: 100px;
+  color: var(--Fucsia);
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
