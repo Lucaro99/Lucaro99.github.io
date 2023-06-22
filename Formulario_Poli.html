@@ -34,7 +34,7 @@
 
   <body class="bg-image-6">
     <!------------------------------------------------Main---------------------------------------------------->
-    <nav>
+    <nav class="nav_form">
       <div class="logo_Fin_Poli">
         <a href="index.html"
           ><img src="Img/Logos/1_Logotipo-Original.svg" alt="Finánciate"
@@ -54,23 +54,23 @@
         </h4>
       </div>
 
-      <form action="#" class="estudiante">
-        <label for="lang">¿El titular del crédito es el estudiante?</label>
-        <select name="titular" id="titular" required>
-          <option value="-"></option>
-          <option value="si">Si</option>
-          <option value="no">No</option>
-        </select>
-      </form>
+      <form action="#" class="form_aval">
+        <div class="estudiante">
+          <label for="lang">¿El titular del crédito es el estudiante?</label>
+          <select name="titular" id="titular" required>
+            <option value="-"></option>
+            <option value="si">Si</option>
+            <option value="no">No</option>
+          </select>
+        </div>
 
-      <form class="form_aval">
         <div class="datos_personales">
           <div class="datos">
             <h1>Datos Personales</h1>
           </div>
 
           <div class="form_datos">
-          <div class="renglon_1_datos">
+            <div class="renglon_1_datos">
               <div class="inputContainer">
                 <input
                   type="text"
@@ -109,246 +109,372 @@
                 />
                 <label for="" class="label">Lugar de Expedición</label>
               </div>
-          
-          </div>
-          <div class="renglon_2_datos">
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                placeholder="."
-                maxlength="40"
-                required
-              />
-              <label for="" class="label">Dirección</label>
+            </div>
+            <div class="renglon_2_datos">
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="40"
+                  required
+                />
+                <label for="" class="label">Dirección</label>
+              </div>
+
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="30"
+                  required
+                />
+                <label for="" class="label">Tipo de Vivienda</label>
+              </div>
+
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="20"
+                  required
+                />
+                <label for="" class="label">Ciudad</label>
+              </div>
+
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  class="input"
+                  placeholder="."
+                  maxlength="1"
+                  required
+                />
+                <label for="" class="label">Estrato</label>
+              </div>
             </div>
 
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                placeholder="."
-                maxlength="30"
-                required
-              />
-              <label for="" class="label">Tipo de Vivienda</label>
-            </div>
+            <div class="renglon_3_datos">
+              <div class="inputContainer">
+                <input
+                  type="email"
+                  class="input"
+                  placeholder="."
+                  maxlength="50"
+                  required
+                />
+                <label for="" class="label">E-mail</label>
+              </div>
 
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                placeholder="."
-                maxlength="20"
-                required
-              />
-              <label for="" class="label">Ciudad</label>
-            </div>
+              <div class="inputContainer">
+                <input
+                  type="tel"
+                  class="input"
+                  placeholder="."
+                  maxlength="10"
+                  required
+                />
+                <label for="" class="label">Teléfono</label>
+              </div>
 
-            <div class="inputContainer">
-              <input
-                type="text"
-                inputmode="numeric"
-                class="input"
-                placeholder="."
-                maxlength="1"
-                required
-              />
-              <label for="" class="label">Estrato</label>
-            </div>
-          </div>
-
-          <div class="renglon_3_datos">
-            <div class="inputContainer">
-              <input
-                type="email"
-                class="input"
-                placeholder="."
-                maxlength="50"
-                required
-              />
-              <label for="" class="label">E-mail</label>
-            </div>
-
-            <div class="inputContainer">
-              <input
-                type="tel"
-                class="input"
-                placeholder="."
-                maxlength="10"
-                required
-              />
-              <label for="" class="label">Teléfono</label>
-            </div>
-
-            <div class="inputContainer">
-              <input
-                type="tel"
-                class="input"
-                placeholder="."
-                maxlength="10"
-                required
-              />
-              <label for="" class="label">Celular</label>
+              <div class="inputContainer">
+                <input
+                  type="tel"
+                  class="input"
+                  placeholder="."
+                  maxlength="10"
+                  required
+                />
+                <label for="" class="label">Celular</label>
+              </div>
             </div>
           </div>
         </div>
 
+        <div class="datos_personales">
+          <div class="datos">
+            <h1>Información Financiera</h1>
+          </div>
+
+          <div class="form_datos">
+            <div class="renglon_5_datos">
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="40"
+                  required
+                />
+                <label for="" class="label">Nombre Empresa</label>
+              </div>
+
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="40"
+                  required
+                />
+                <label for="" class="label">Cargo</label>
+              </div>
+
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="40"
+                  required
+                />
+                <label for="" class="label">Dirección Empresa</label>
+              </div>
+
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  inputmode="numeric"
+                  placeholder="."
+                  maxlength="40"
+                  required
+                />
+                <label for="" class="label">Ingresos</label>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!--<div>
+        <div class="datos_personales">
           <div class="datos">
             <h1>Referencias</h1>
           </div>
 
-          <div class="form_datos" style="padding-bottom: 0%">
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                placeholder="."
-                maxlength="40"
-                required
-              />
-              <label for="" class="label">Nombre</label>
+          <div class="form_datos">
+            <div class="renglon_1_datos">
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="40"
+                  required
+                />
+                <label for="" class="label">Nombre</label>
+              </div>
+
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="40"
+                  required
+                />
+                <label for="" class="label">Ciudad</label>
+              </div>
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="40"
+                  required
+                />
+                <label for="" class="label">Teléfono</label>
+              </div>
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="40"
+                  required
+                />
+                <label for="" class="label">Parentesco/Relación </label>
+              </div>
             </div>
 
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                placeholder="."
-                maxlength="40"
-                required
-              />
-              <label for="" class="label">Ciudad</label>
-            </div>
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                placeholder="."
-                maxlength="40"
-                required
-              />
-              <label for="" class="label">Teléfono</label>
-            </div>
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                placeholder="."
-                maxlength="40"
-                required
-              />
-              <label for="" class="label">Parentesco/Relación </label>
+            <div class="renglon_1_datos">
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="40"
+                  required
+                />
+                <label for="" class="label">Nombre</label>
+              </div>
+
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="40"
+                  required
+                />
+                <label for="" class="label">Ciudad</label>
+              </div>
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="40"
+                  required
+                />
+                <label for="" class="label">Teléfono</label>
+              </div>
+              <div class="inputContainer">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="."
+                  maxlength="40"
+                  required
+                />
+                <label for="" class="label">Parentesco/Relación </label>
+              </div>
             </div>
           </div>
-          <div class="form_datos">
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                placeholder="."
-                maxlength="40"
-                required
-              />
-              <label for="" class="label">Nombre</label>
+
+          <div class="datos_personales">
+            <div class="datos">
+              <h1>Datos Académicos</h1>
             </div>
 
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                placeholder="."
-                maxlength="40"
-                required
-              />
-              <label for="" class="label">Ciudad</label>
-            </div>
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                placeholder="."
-                maxlength="40"
-                required
-              />
-              <label for="" class="label">Teléfono</label>
-            </div>
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                placeholder="."
-                maxlength="40"
-                required
-              />
-              <label for="" class="label">Parentesco/Relación </label>
+            <div class="form_datos">
+              <div class="renglon_4_datos">
+                <div class="inputContainer">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="."
+                    maxlength="40"
+                    required
+                  />
+                  <label for="" class="label">Pregrado/Posgrado</label>
+                </div>
+
+                <div class="inputContainer">
+                  <input class="input" placeholder="." maxlength="9" required />
+                  <label for="" class="label">Semestre</label>
+                </div>
+
+                <div class="inputContainer">
+                  <input
+                    type="text"
+                    inputmode="numeric"
+                    class="input"
+                    placeholder="."
+                    maxlength="40"
+                    required
+                  />
+                  <label for="" class="label">Programa Académico</label>
+                </div>
+
+                <div class="inputContainer">
+                  <input
+                    type="text"
+                    class="input"
+                    inputmode="numeric"
+                    placeholder="."
+                    maxlength="3"
+                    required
+                  />
+                  <label for="" class="label">Promedio</label>
+                </div>
+
+                <div class="inputContainer">
+                  <input
+                    type="text"
+                    class="input"
+                    inputmode="numeric"
+                    placeholder="."
+                    maxlength="40"
+                    required
+                  />
+                  <label for="" class="label">Valor de matrícula</label>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div>
+        <div class="cedula">
           <div class="datos">
-            <h1>Datos Académicos</h1>
+            <h1>Cédula del titular del crédito</h1>
           </div>
+          <div class="archivos">
+            <input
+              type="file"
+              name="file-1"
+              id="file-1"
+              class="inputfile inputfile-1"
+              data-multiple-caption="{count} archivos seleccionados"
+              multiple
+              required
+            />
+            <label for="file-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="iborrainputfile"
+                width="20"
+                height="17"
+                viewBox="0 0 20 17"
+              >
+                <path
+                  d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"
+                ></path>
+              </svg>
+              <span class="iborrainputfile">Cédula Frente</span>
+            </label>
 
-          <div class="form_datos">
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                placeholder="."
-                maxlength="40"
-                required
-              />
-              <label for="" class="label">Pregrado/Posgrado</label>
-            </div>
-
-            <div class="inputContainer">
-              <input class="input" placeholder="." maxlength="10" required />
-
-              <label for="" class="label">Semestre</label>
-            </div>
-
-            <div class="inputContainer">
-              <input
-                type="text"
-                inputmode="numeric"
-                class="input"
-                placeholder="."
-                maxlength="2"
-                required
-              />
-              <label for="" class="label">Programa Académico</label>
-            </div>
-
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                inputmode="numeric"
-                placeholder="."
-                maxlength="3"
-                required
-              />
-              <label for="" class="label">Promedio Ponderado</label>
-            </div>
-
-            <div class="inputContainer">
-              <input
-                type="text"
-                class="input"
-                inputmode="numeric"
-                placeholder="."
-                maxlength="40"
-                required
-              />
-              <label for="" class="label">Valor de matrícula</label>
-            </div>
+            <input
+              type="file"
+              name="file-1"
+              accept="image/*"
+              id="file-1"
+              class="inputfile inputfile-1"
+              required
+            />
+            <label for="file-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="iborrainputfile"
+                width="20"
+                height="17"
+                viewBox="0 0 20 17"
+              >
+                <path
+                  d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"
+                ></path>
+              </svg>
+              <span class="iborrainputfile">Cédula Posterior</span>
+            </label>
           </div>
-        </div>-->
+        </div>
+
+        <div class="tyc">
+          <div>
+            <input type="checkbox" name="cbox1" value="first_checkbox" required>
+            <label>He leido y acepto los &nbsp<a href="">terminos y condiciones</a></label>
+          </div>
+          <div>
+            <input type="checkbox" id="cbox1" value="first_checkbox" required>
+            <label>He leido y acepto la &nbsp<a href=""> politica de tratamiento de dato</a> </label>
+          </div>
+        </div>
+
+        <div class="btn-enviar">
+          <input  type="submit" id="submit" name="subir-imagen" value="Enviar" />
+        </div>
       </form>
     </main>
     <script

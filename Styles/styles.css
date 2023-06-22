@@ -1040,107 +1040,148 @@ label {
 }
 
 /*============================================Formulario-Poli=========================================*/
-.bg-image-6{
-  padding: 50px;
+.bg-image-6 {
   background: url("/Img/Fondos/Ladrillos.png");
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
 }
 
+.nav_form {
+  margin: 30px;
+}
 .Form_poli {
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 60px 30px 60px;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-.logo_Fin_Poli{
+.logo_Fin_Poli {
   display: flex;
   justify-content: space-between;
 }
 
-.logo_Fin_Poli a img{
+.logo_Fin_Poli a img {
   width: auto;
   height: 70px;
 }
 
-.descripcion h4{
-  font-size: 1.3rem;
+.descripcion h4 {
+  font-size: 1.2rem;
   color: gray;
+}
+
+.estudiante label {
+  font-size: 1.2rem;
 }
 
 .estudiante {
   display: flex;
   justify-self: start;
+  margin: 10px 0 10px 0;
+  width: 100%;
 }
 
-.Form_poli label{
-  margin: 0 10px; 
+.Form_poli label {
+  margin: 0 10px;
   color: gray;
 }
-.Form_poli select{
-  border: 3px solid #ed1e79;
+
+.estudiante select {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1px 10px;
+  height: 35px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  font-size: 1em;
+  color: var(--green);
+  border: 2px solid rgba(237, 30, 121);
   border-radius: 100px;
-  background-color:none ;
-  height: 45px;
-  width: 80px;
+  position: relative;
+  transition: all 0.25s ease;
 }
 
-.Form_poli input{
-  border: 3px solid #ed1e79;
-  border-radius: 100px;
-  background-color:none ;
+.content-select select:hover {
+  background: #b1e8cd;
 }
 
-select::selection{
-  border: 3px solid #00ffff;
-  color: #00ffff;
+.Form_poli input {
+  border: 2px solid #ed1e79;
+  border-radius: 100px;
+  background-color: none;
 }
-.Form_poli option{
+
+.Form_poli option {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form_aval{
+.form_aval {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  height: 100vh;
 }
 
-.datos{
+.datos {
   display: flex;
   justify-self: start;
 }
 
-.datos h1{
+.datos h1 {
   font-size: 30px;
   color: var(--green);
 }
 
-.form_datos{
+.datos_personales {
+  width: 100%;
+}
+
+.form_datos {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
-  border: 1px solid var(--green);
 }
-.renglon_1_datos{
-  display: flex;
+
+.renglon_1_datos,
+.renglon_2_datos {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  width: 100%;
 }
-.renglon_2_datos{
-  display: flex;
+
+.renglon_3_datos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  grid-gap: 5px;
 }
-.renglon_3_datos{
-  display: flex;
+
+.renglon_4_datos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.renglon_5_datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  width: 100%;
 }
 
 .inputContainer {
   position: relative;
   height: 45px;
-  width: 13em;
+  width: 100%;
   margin-bottom: 17px;
   margin-right: 17px;
 }
@@ -1164,7 +1205,7 @@ select::selection{
   top: 7px;
   left: 7px;
   padding: 0 4px;
-  color: #DADCE0;
+  color: #dadce0;
   font-size: 16px;
   transition: 0.5s;
   z-index: 0;
@@ -1179,7 +1220,7 @@ select::selection{
   border-radius: 100px;
   color: var(--Fucsia);
 }
-.input:not(:placeholder-shown)+ .label {
+.input:not(:placeholder-shown) + .label {
   top: -10px;
   left: 3px;
   z-index: 10;
@@ -1189,9 +1230,117 @@ select::selection{
   border-radius: 100px;
   color: var(--Fucsia);
 }
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    }
-input[type=number] { -moz-appearance:textfield; }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.cedula {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px 0;
+}
+
+.archivos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  width: 100%;
+}
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  max-width: 80%;
+  font-size: 1.25rem;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.inputfile + label svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+  margin-top: -0.25em;
+}
+
+.iborrainputfile {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.inputfile-1 + label {
+  color: #fff;
+  background: var(--D-Fucsia-De);
+  border-radius: 50px;
+  width: 250px;
+  height: 45px;
+  box-shadow: var(--box-shadow-fucsia);
+  margin-top: 10px;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+  box-shadow: none;
+}
+
+.tyc{
+  margin-bottom: 10px;
+}
+.tyc div {
+  display: flex;
+  align-items: center;
+  height: 23px;
+}
+
+.tyc input {
+  width: 15px;
+  margin-right: 8px;
+}
+.tyc label {
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.tyc label a {
+  font-size: 15px;
+}
+
+.btn-enviar{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 35px;
+}
+
+#submit{
+    color: #fff;
+    background: var(--D-Fucsia-De);
+    border-radius: 50px;
+    width: 250px;
+    height: 45px;
+    box-shadow: var(--box-shadow-fucsia);
+    margin-top: 10px;
+    border: none;
+  }
+
+  #submit:hover{
+    box-shadow: none;
+  }
+

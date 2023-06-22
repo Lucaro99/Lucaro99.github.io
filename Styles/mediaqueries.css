@@ -54,6 +54,15 @@
   .slogan-white {
     font-size: 75px;
   }
+
+  .renglon_1_datos,
+  .renglon_2_datos, .renglon_5_datos, .renglon_4_datos, .archivos {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .renglon_3_datos {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 @media screen and (max-width: 1024px){
   .persona-1{
