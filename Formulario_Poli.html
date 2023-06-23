@@ -31,8 +31,7 @@
 
     <link rel="icon" type="image/x-icon" href="Img/Logos/favicon.svg" />
 
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
 
   <body class="bg-image-6">
@@ -42,7 +41,7 @@
         <a href="index.html"
           ><img src="Img/Logos/1_Logotipo-Original.svg" alt="Finánciate"
         /></a>
-        <a href="index.html"
+        <a href="https://www.poli.edu.co/"
           ><img src="Img/Logos/Logo_Poli.svg" alt="Politecnico"
         /></a>
       </div>
@@ -126,14 +125,15 @@
               </div>
 
               <div class="inputContainer">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="."
-                  maxlength="30"
-                  required
-                />
-                <label for="" class="label">Tipo de Vivienda</label>
+                <div class="estudiante_2">
+                  <select  class="input"name="Tipo de Vivienda" id="" required>
+                    <option value="" selected class="vacio"></option>
+                    <option value="Propia">Propia</option>
+                    <option value="Arriendo">Arriendo</option>
+                    <option value="Familiar">Familiar</option>
+                  </select>
+                  <label for="" class="label2">Tipo de Vivienda</label>
+                </div>
               </div>
 
               <div class="inputContainer">
@@ -148,16 +148,18 @@
               </div>
 
               <div class="inputContainer">
-                <input
-                  type="text"
-                  inputmode="numeric"
-                  class="input"
-                  placeholder="."
-                  maxlength="1"
-                  required
-                />
-                <label for="" class="label">Estrato</label>
-              </div>
+                <div class="estudiante_2">
+                  <select  class="input"name="Estrato" id="" required>
+                    <option value="a" selected class="vacio"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                  <label for="" class="label2">Estrato</label>
+                </div>
             </div>
 
             <div class="renglon_3_datos">
@@ -539,10 +541,14 @@
           </div>
         </div>
 
-        <div id="recaptcha" class="g-recaptcha" data-sitekey="6LdOeL4mAAAAAE4HQZXDX27u7rR1K2wziUtl6kkQ"></div>
+        <div
+          id="recaptcha"
+          class="g-recaptcha"
+          data-sitekey="6LdOeL4mAAAAAE4HQZXDX27u7rR1K2wziUtl6kkQ"
+        ></div>
 
         <div class="btn-enviar">
-          <input type="submit" id="submit" name="subir-imagen" value="Enviar"/>
+          <input type="submit" id="submit" name="subir-imagen" value="Enviar" />
         </div>
       </form>
     </main>
