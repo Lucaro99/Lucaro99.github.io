@@ -1041,10 +1041,15 @@ label {
 
 /*============================================Formulario-Poli=========================================*/
 .bg-image-6 {
-  background: url("/Img/Fondos/Ladrillos.png");
-  background-repeat: repeat;
-  background-position: center;
+  background: url("/Img/Fondos/Fondo\ ladrillos\ mujer.png");
+  background-repeat:no-repeat;
+  background-position:right bottom;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-image-6::before{
+  border: 1px solid red;
 }
 
 .nav_form {
@@ -1053,7 +1058,7 @@ label {
 .Form_poli {
   display: flex;
   flex-direction: column;
-  margin: 30px 60px 30px 60px;
+  margin: 30px 400px 30px 60px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -1070,36 +1075,40 @@ label {
 }
 
 .descripcion h4 {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: gray;
 }
 
-.estudiante label {
-  font-size: 1.2rem;
+.estudiante label  {
+  font-size: 0.8rem;
+  margin: 0 10px;
+  color: gray;
+
 }
+
 
 .estudiante {
   display: flex;
   justify-self: start;
-  margin: 10px 0 10px 0;
   width: 100%;
 }
 
-.Form_poli label {
+.datos_personales label {
   margin: 0 10px;
   color: gray;
+  font-size: 0.5rem;
 }
 
 .estudiante select {
   display: inline-block;
   cursor: pointer;
   padding: 1px 10px;
-  height: 35px;
+  height: 30px;
   outline: 0;
   border: 0;
   border-radius: 0;
   background: none;
-  font-size: 1em;
+  font-size: 0.8em;
   color: var(--green);
   border: 2px solid rgba(237, 30, 121);
   border-radius: 100px;
@@ -1214,7 +1223,7 @@ label {
   top: -10px;
   left: 3px;
   z-index: 10;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 900;
   background-color: #f0eeee;
   border-radius: 100px;
@@ -1224,7 +1233,7 @@ label {
   top: -10px;
   left: 3px;
   z-index: 10;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 900;
   background-color: #f0eeee;
   border-radius: 100px;
@@ -1407,4 +1416,8 @@ input[type="number"] {
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
+}
+
+.g-recaptcha{
+  margin-top: 10px;
 }
