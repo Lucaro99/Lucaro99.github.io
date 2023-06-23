@@ -30,6 +30,9 @@
     <script src="Script/scripts.js"></script>
 
     <link rel="icon" type="image/x-icon" href="Img/Logos/favicon.svg" />
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    
   </head>
 
   <body class="bg-image-6">
@@ -54,7 +57,7 @@
         </h4>
       </div>
 
-      <form action="#" class="form_aval">
+      <form action="#" class="form_aval" autocomplete="on">
         <div class="estudiante">
           <label for="lang">¿El titular del crédito es el estudiante?</label>
           <select name="titular" id="titular" required>
@@ -90,7 +93,7 @@
 
               <div class="inputContainer">
                 <input
-                  type="text"
+                  type="date"
                   class="input"
                   placeholder="."
                   maxlength="20"
@@ -535,6 +538,8 @@
             </p>
           </div>
         </div>
+
+        <div id="recaptcha" class="g-recaptcha" data-sitekey="6LdOeL4mAAAAAE4HQZXDX27u7rR1K2wziUtl6kkQ"></div>
 
         <div class="btn-enviar">
           <input type="submit" id="submit" name="subir-imagen" value="Enviar" />
