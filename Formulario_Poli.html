@@ -149,8 +149,8 @@
 
               <div class="inputContainer">
                 <div class="estudiante_2">
-                  <select  class="input"name="Estrato" id="" required>
-                    <option value="a" selected class="vacio"></option>
+                  <select  class="input"name="Estrato" id="estratoSelect" required>
+                    <option value="" selected class="vacio"></option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -160,6 +160,7 @@
                   </select>
                   <label for="" class="label2">Estrato</label>
                 </div>
+              </div>
             </div>
 
             <div class="renglon_3_datos">
@@ -357,19 +358,33 @@
             <div class="form_datos">
               <div class="renglon_4_datos">
                 <div class="inputContainer">
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="."
-                    maxlength="40"
-                    required
-                  />
-                  <label for="" class="label">Pregrado/Posgrado</label>
+                  <div class="estudiante_2">
+                    <select  class="input"name="preposgrado" required>
+                      <option value="" selected class="vacio"></option>
+                      <option value="Pregrado">Pregrado</option>
+                      <option value="Posgrado">Posgrado</option>
+                    </select>
+                    <label for="" class="label2">Nivel de Estudio</label>
+                  </div>
                 </div>
 
                 <div class="inputContainer">
-                  <input class="input" placeholder="." maxlength="9" required />
-                  <label for="" class="label">Semestre</label>
+                  <div class="estudiante_2">
+                    <select  class="input"name="Semestre" required>
+                      <option value="" selected class="vacio"></option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                    <label for="" class="label2">Semestre</label>
+                  </div>
                 </div>
 
                 <div class="inputContainer">

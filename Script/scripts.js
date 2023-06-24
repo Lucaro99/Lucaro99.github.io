@@ -57,3 +57,4 @@ $( '#btn-validate' ).click(function(){
     alert( 'reCAPTCHA marked' );
   }
 })
+
