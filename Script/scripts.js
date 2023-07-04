@@ -58,3 +58,9 @@ $( '#btn-validate' ).click(function(){
   }
 })
 
+const f = new Intl.NumberFormat('es-us', {
+  style: 'currency',
+    maximumFractionDigits: 0,
+  currency: 'USD'
+});
+

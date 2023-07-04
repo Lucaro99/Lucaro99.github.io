@@ -27,15 +27,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="script/jquery-3.2.1.js"></script>
-    <script src="Script/scripts.js"></script>
+    
 
     <link rel="icon" type="image/x-icon" href="Img/Logos/favicon.svg" />
   </head>
 
-  <body class="container-fluid p-0 m-0" style="overflow: hidden;">
+  <body class="container-fluid p-0 m-0">
     <div class="bg-image">
       <!------------------------------------------MENU--------------------------------------------->
-
 
       <div class="full-menu" id="full-menu">
         <div class="wrap">
@@ -44,46 +43,46 @@
               <span onclick="cerrarmenu()" class="fa fa-close"></span>
             </div>
 
-          <ul class="menu-principal">
-            <li><a href="Nosotros.html">Nosotros</a></li>
-            <li><a href="index.html">Personas</a></li>
-            <li><a href="Aliados.html">Aliados</a></li>
-            <li>
-              <a href="https://checkout.wompi.co/l/FTqfWR">Negociaciones</a>
-            </li>
-            <li>
-              <a href="https://app.financiate.com.co/">Inicia Sesión</a>
-            </li>
-            <li><a href="dudas.html">¿Dudas?</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div id="Menu-images">
-        <div
-          class="Menu-image"
-          style="background-image: url(Img/Full-menu/Menu_1.png)"
-        ></div>
-        <div
-          class="Menu-image"
-          style="background-image: url(Img/Full-menu/Menu_2.png)"
-        ></div>
-        <div
-          class="Menu-image"
-          style="background-image: url(Img/Full-menu/Menu_3.png)"
-        ></div>
-        <div
-          class="Menu-image"
-          style="background-image: url(Img/Full-menu/Menu_4.png)"
-        ></div>
-        <div
-          class="Menu-image"
-          style="background-image: url(Img/Full-menu/Menu_5.png)"
-        ></div>
-        <div
-          class="Menu-image"
-          style="background-image: url(Img/Full-menu/Menu_6.png)"
-        ></div>
-      </div>
+            <ul class="menu-principal">
+              <li><a href="Nosotros.html">Nosotros</a></li>
+              <li><a href="index.html">Personas</a></li>
+              <li><a href="Aliados.html">Aliados</a></li>
+              <li>
+                <a href="https://checkout.wompi.co/l/FTqfWR">Negociaciones</a>
+              </li>
+              <li>
+                <a href="https://app.financiate.com.co/">Inicia Sesión</a>
+              </li>
+              <li><a href="dudas.html">¿Dudas?</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="Menu-images">
+          <div
+            class="Menu-image"
+            style="background-image: url(Img/Full-menu/Menu_1.png)"
+          ></div>
+          <div
+            class="Menu-image"
+            style="background-image: url(Img/Full-menu/Menu_2.png)"
+          ></div>
+          <div
+            class="Menu-image"
+            style="background-image: url(Img/Full-menu/Menu_3.png)"
+          ></div>
+          <div
+            class="Menu-image"
+            style="background-image: url(Img/Full-menu/Menu_4.png)"
+          ></div>
+          <div
+            class="Menu-image"
+            style="background-image: url(Img/Full-menu/Menu_5.png)"
+          ></div>
+          <div
+            class="Menu-image"
+            style="background-image: url(Img/Full-menu/Menu_6.png)"
+          ></div>
+        </div>
       </div>
       <!------------------------------------------------Nav-Bar---------------------------------------------------->
       <header class="header row p-0 m-0" id="navbar">
@@ -96,9 +95,7 @@
           <div class="menu">
             <ul class="nav">
               <li class="nav-item">
-                <a class="link" href="Nosotros.html">
-                  Nosotros</a
-                >
+                <a class="link" href="Nosotros.html"> Nosotros</a>
                 <div class="underline"></div>
               </li>
               <li class="nav-item">
@@ -132,12 +129,71 @@
       </header>
 
       <!------------------------------------------------Main---------------------------------------------------->
-      <main class="simulador pt-0 m-0">
-       
+      <main class="simulador">
+        <div class="simulador-card">
+          <div class="simulador-info">
+            <h3>Resumen simulador</h3>
+            <div class="contenedorResumen">
+              <hr />
+              <p class="resumenCuota">
+                Valor Solicitado: <span id="valor1">$353,530</span>
+              </p>
+              <hr />
+              <p class="resumenIntereses">
+                Intereses: <span id="intereses">$60,591</span>
+              </p>
+              <hr />
+              <p class="resumenCuota">
+                Aval + IVA: <span id="cuota">$353,530</span>
+              </p>
+              <hr />
+              <p class="resumenTotal">
+                Total crédito a pagar: <span id="total">$1,060,591</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="simulador-range">
+            <h3>Calcula tu Crédito</h3>
+            <div class="container">
+              <div class="contenedorValor">
+                <p class="subTitulo">¿Cuanto dinero necesitas?</p>
+                <p class="v">Valor: <span id="valor"></span></p>
+                <div id="etiqueta"></div>
+                <input
+                  type="range"
+                  min="1000000"
+                  max="10000000"
+                  value="1000000"
+                  class="sliderV"
+                  id="rangoValor"
+                  step="500000"
+                />
+              </div>
+
+              <div class="contenedorTiempo">
+                <p class="subTitulo">¿Cuándo puedes pagar?</p>
+                <p class="v">Meses: <span id="tiempo"></span></p>
+                <input
+                  type="range"
+                  min="3"
+                  max="48"
+                  value="3"
+                  class="sliderT"
+                  id="rangoTiempo"
+                  step="1"
+                />
+              </div>
+              <hr />
+              <p class="resumenCuota">
+                Valor cuota Mensual: <span id="cuota">$353,530</span>
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
-  
-    
-      
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
@@ -148,5 +204,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="Script/simulador.js"></script>
   </body>
 </html>
