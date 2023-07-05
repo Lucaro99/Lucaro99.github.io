@@ -10,11 +10,13 @@ const rangeValor = document.getElementById('rangoValor');
 const rangeTiempo = document.getElementById('rangoTiempo');
 const rangeVValor = document.getElementById('rangeV');
 const rangeVTiempo = document.getElementById('rangeV2');
+const valor = document.getElementById('valor');
 
 const setValueValor = () => {
   const newValue = Number((rangeValor.value - rangeValor.min) * 100 / (rangeValor.max - rangeValor.min));
   const newPosition = 10 - (newValue * 0.2);
   rangeVValor.innerHTML = `<span>${formatCurrency(rangeValor.value)}</span>`;
+  valor.innerHTML = `<span>${formatCurrency(rangeValor.value)}</span>`;
   rangeVValor.style.left = `calc(${newValue}% + (${newPosition}px))`;
 };
 

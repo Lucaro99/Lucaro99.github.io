@@ -1051,6 +1051,7 @@ body {
 }
 .simulador-card {
   display: flex;
+  width: 65%;
   padding: 40px;
   border-radius: 30px;
   background: rgba(1, 104, 109, 0.8);
