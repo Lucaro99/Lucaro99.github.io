@@ -27,13 +27,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="script/jquery-3.2.1.js"></script>
-    
 
     <link rel="icon" type="image/x-icon" href="Img/Logos/favicon.svg" />
   </head>
 
-  <body class="container-fluid p-0 m-0">
-    <div class="bg-image">
+  <body class="container-2">
+    <div class="simulador-1">
       <!------------------------------------------MENU--------------------------------------------->
 
       <div class="full-menu" id="full-menu">
@@ -131,35 +130,13 @@
       <!------------------------------------------------Main---------------------------------------------------->
       <main class="simulador">
         <div class="simulador-card">
-          <div class="simulador-info">
-            <h3>Resumen simulador</h3>
-            <div class="contenedorResumen">
-              <hr />
-              <p class="resumenCuota">
-                Valor Solicitado: <span id="valor1">$353,530</span>
-              </p>
-              <hr />
-              <p class="resumenIntereses">
-                Intereses: <span id="intereses">$60,591</span>
-              </p>
-              <hr />
-              <p class="resumenCuota">
-                Aval + IVA: <span id="cuota">$353,530</span>
-              </p>
-              <hr />
-              <p class="resumenTotal">
-                Total crédito a pagar: <span id="total">$1,060,591</span>
-              </p>
-            </div>
-          </div>
-
           <div class="simulador-range">
-            <h3>Calcula tu Crédito</h3>
-            <div class="container">
+            <h2>Simula tu Crédito</h2>
+            <div class="container p-0">
               <div class="contenedorValor">
-                <p class="subTitulo">¿Cuanto dinero necesitas?</p>
-                <p class="v">Valor: <span id="valor"></span></p>
-                <div id="etiqueta"></div>
+                <label for="rangoValor" class="subTitulo"
+                  >¿Cuánto dinero necesitas?</label
+                >
                 <input
                   type="range"
                   min="1000000"
@@ -167,13 +144,15 @@
                   value="1000000"
                   class="sliderV"
                   id="rangoValor"
-                  step="500000"
+                  step="100"
                 />
+                <div class="range-value" id="rangeV"></div>
               </div>
 
-              <div class="contenedorTiempo">
-                <p class="subTitulo">¿Cuándo puedes pagar?</p>
-                <p class="v">Meses: <span id="tiempo"></span></p>
+              <div class="contenedorValor mt-4">
+                <label for="rangoTiempo" class="subTitulo"
+                  >¿Cuándo puedes pagar?</label
+                >
                 <input
                   type="range"
                   min="3"
@@ -183,16 +162,65 @@
                   id="rangoTiempo"
                   step="1"
                 />
+                <div class="range-value2" id="rangeV2"></div>
               </div>
-              <hr />
-              <p class="resumenCuota">
-                Valor cuota Mensual: <span id="cuota">$353,530</span>
+
+              <div class="contenedorValor mt-4">
+                <p class="resumenCuota">
+                  Cuota mensual: <br />
+                  <span id="cuota">$353,530</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulador-info">
+            <div class="contenedorResumen">
+              <p class="valorsolicitado">
+                Valor Solicitado: <span id="valor">$353,530</span>
               </p>
+              <p class="resumenIntereses">
+                Intereses: <span id="intereses">$60,591</span>
+              </p>
+              <p class="resumenava">
+                Aval + IVA: <span id="aval">$353,530</span>
+              </p>
+              <hr class="hr" />
+              <p class="resumenTotal">
+                Total a pagar: <span id="total">$1,060,591</span>
+              </p>
+            </div>
+            <div class="btn-simulador">
+              <a href="https://app.financiate.com.co/login">
+              <button class="btn-stc">¡Solicitalo ahora!</button>
+            </a>
             </div>
           </div>
         </div>
       </main>
+      <footer class="info-contacto row m-0">
+        <ul>
+          <li>
+            <a href="https://goo.gl/maps/yfcsUpp1BxeaAnWo6"
+              ><span class="fa-sharp fa-solid fa-location-dot"></span> &nbsp
+              Calle 33 # 6B-24, Piso 9 - Edificio Casa de Bolsa
+            </a>
+          </li>
+          <li>
+            <a href="tel:6015186633"
+              ><span class="fa-solid fa-phone"></span> &nbsp (601) 518 6633</a
+            >
+          </li>
+          <li>
+            <a href="mailto:servicioalcliente@financiate.com.co"
+              ><span class="fa-solid fa-envelope"></span> &nbsp
+              servicioalcliente@financiate.com.co</a
+            >
+          </li>
+        </ul>
+      </footer>
     </div>
+
 
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
