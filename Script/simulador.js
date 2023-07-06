@@ -6,25 +6,65 @@ const formatCurrency = (value) => {
   }).format(value);
 };
 
-const rangeValor = document.getElementById('rangoValor');
-const rangeTiempo = document.getElementById('rangoTiempo');
-const rangeVValor = document.getElementById('rangeV');
-const rangeVTiempo = document.getElementById('rangeV2');
-const valor = document.getElementById('valor');
+
+//Input Valor
+var inputValor = document.getElementById('rangoValor');
+var burbujaValor = document.getElementById('burbujaValor');
+
+//Input Tiempo
+var inputTiempo = document.getElementById('rangoTiempo');
+var burbujaTiempo = document.getElementById('burbujaTiempo');
+
+//Resumen crédito
+var valor = document.getElementById('valor');
+var intereses = document.getElementById('intereses');
+var aval = document.getElementById('aval');
+var cuota = document.getElementById('cuota');
+var admi = document.getElementById('admi');
+var total = document.getElementById('total');
+
+//Tasas
+var tasaFinanciacion = 0.028;
+var tasaAval = 0.03;
+
+
+//Admi
+var firma = 8500;
+var cuatroxmil = 0.004;
+var iva = 0.19;
+
+
+burbujaValor.innerHTML = `<span>${formatCurrency(inputValor.value)}</span>`;
+valor.innerHTML = formatCurrency(inputValor.value);
+inputTiempo.innerHTML = `<span>${inputTiempo.value} meses</span>`;
+total.innerHTML = formatCurrency(Number(valor.textContent));
 
 const setValueValor = () => {
-  const newValue = Number((rangeValor.value - rangeValor.min) * 100 / (rangeValor.max - rangeValor.min));
+  const newValue = Number((inputValor.value - inputValor.min) * 100 / (inputValor.max - inputValor.min));
   const newPosition = 10 - (newValue * 0.2);
-  rangeVValor.innerHTML = `<span>${formatCurrency(rangeValor.value)}</span>`;
-  valor.innerHTML = `<span>${formatCurrency(rangeValor.value)}</span>`;
-  rangeVValor.style.left = `calc(${newValue}% + (${newPosition}px))`;
+  burbujaValor.innerHTML = `<span>${formatCurrency(inputValor.value)}</span>`;
+  burbujaValor.style.left = `calc(${newValue}% + (${newPosition}px))`;
+  
+  valor.innerHTML = formatCurrency(inputValor.value);
+  intereses.innerHTML = formatCurrency(((tasaFinanciacion * inputValor.value) / (1 - Math.pow(1+(tasaFinanciacion), -1 * inputTiempo.value))*inputTiempo.value) - inputValor.value);
+  aval.innerHTML = formatCurrency((tasaAval * ((cuatroxmil * inputValor.value) + (firma) + Number(inputValor.value) +Number((tasaAval * inputValor.value) + ((tasaAval * inputValor.value) * iva)) + Number(((tasaFinanciacion * inputValor.value) / (1 - Math.pow(1+(tasaFinanciacion), -1 * inputTiempo.value))*inputTiempo.value) - inputValor.value))) + ((tasaAval * ((cuatroxmil * inputValor.value) + (firma) + Number(inputValor.value) +Number((tasaAval * inputValor.value) + ((tasaAval * inputValor.value) * iva)) + Number(((tasaFinanciacion * inputValor.value) / (1 - Math.pow(1+(tasaFinanciacion), -1 * inputTiempo.value))*inputTiempo.value) - inputValor.value))) * iva));
+  admi.innerHTML = formatCurrency((cuatroxmil * inputValor.value) + (firma));
+  cuota.innerHTML = formatCurrency(((cuatroxmil * inputValor.value) + (firma) + Number(inputValor.value) +Number((tasaAval * inputValor.value) + ((tasaAval * inputValor.value) * iva)) + Number(((tasaFinanciacion * inputValor.value) / (1 - Math.pow(1+(tasaFinanciacion), -1 * inputTiempo.value))*inputTiempo.value) - inputValor.value))/inputTiempo.value);
+  total.innerHTML = formatCurrency(((cuatroxmil * inputValor.value) + (firma) + Number(inputValor.value) +Number((tasaAval * inputValor.value) + ((tasaAval * inputValor.value) * iva)) + Number(((tasaFinanciacion * inputValor.value) / (1 - Math.pow(1+(tasaFinanciacion), -1 * inputTiempo.value))*inputTiempo.value) - inputValor.value)));
+  
 };
 
 const setValueTiempo = () => {
-  const newValue = Number((rangeTiempo.value - rangeTiempo.min) * 100 / (rangeTiempo.max - rangeTiempo.min));
+  const newValue = Number((inputTiempo.value - inputTiempo.min) * 100 / (inputTiempo.max - inputTiempo.min));
   const newPosition = 10 - (newValue * 0.2);
-  rangeVTiempo.innerHTML = `<span>${rangeTiempo.value} meses </span>`;
-  rangeVTiempo.style.left = `calc(${newValue}% + (${newPosition}px))`;
+  burbujaTiempo.innerHTML = `<span>${inputTiempo.value} meses</span>`;
+  burbujaTiempo.style.left = `calc(${newValue}% + (${newPosition}px))`;
+  
+  valor.innerHTML = formatCurrency(inputValor.value);
+  intereses.innerHTML = formatCurrency(((tasaFinanciacion * inputValor.value) / (1 - Math.pow(1+(tasaFinanciacion), -1 * inputTiempo.value))*inputTiempo.value) - inputValor.value);
+  cuota.innerHTML = formatCurrency(((cuatroxmil * inputValor.value) + (firma) + Number(inputValor.value) +Number((tasaAval * inputValor.value) + ((tasaAval * inputValor.value) * iva)) + Number(((tasaFinanciacion * inputValor.value) / (1 - Math.pow(1+(tasaFinanciacion), -1 * inputTiempo.value))*inputTiempo.value) - inputValor.value))/inputTiempo.value);
+  total.innerHTML = formatCurrency(((cuatroxmil * inputValor.value) + (firma) + Number(inputValor.value) +Number((tasaAval * inputValor.value) + ((tasaAval * inputValor.value) * iva)) + Number(((tasaFinanciacion * inputValor.value) / (1 - Math.pow(1+(tasaFinanciacion), -1 * inputTiempo.value))*inputTiempo.value) - inputValor.value)));
+  
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -32,38 +72,11 @@ document.addEventListener("DOMContentLoaded", () => {
   setValueTiempo();
 });
 
-rangeValor.addEventListener('input', setValueValor);
-rangeTiempo.addEventListener('input', setValueTiempo);
+inputValor.addEventListener('input', setValueValor);
+inputTiempo.addEventListener('input', setValueTiempo);
 
+if (cuota < 180000) {
+  window.alert('Advertencia: La cuota es menor a $180,000');
+}
 ////
-
-var outputValor = document.getElementById("valor");
-var sliderTiempo = document.getElementById("rangeV2");
-var sliderValor = document.getElementById("rangeV");
-var outputIntereses = document.getElementById("intereses");
-var outputAval = document.getElementById("aval");
-var outputCuota = document.getElementById("cuota");
-var outputTotal = document.getElementById("total");
-var tasa = 0.03;
-
-
-outputValor.innerHTML = f.format(sliderValor.value);
-outputTiempo.innerHTML = sliderTiempo.value;
-
-alert ("arepa");
-//Evento Cambio de Valor en Spans
-sliderValor.oninput = function() {
-	outputValor.innerHTML= f.format(this.value);
-  outputCuota.innerHTML= f.format((tasa * sliderValor.value) / (1 - Math.pow(1+(tasa), -1 * sliderTiempo.value)));
-  outputIntereses.innerHTML= f.format(((tasa * sliderValor.value) / (1 - Math.pow(1+(tasa), -1 * sliderTiempo.value))*sliderTiempo.value) - sliderValor.value);
-  outputTotal.innerHTML= f.format(((tasa * sliderValor.value) / (1 - Math.pow(1+(tasa), -1 * sliderTiempo.value))*sliderTiempo.value));
-}
-
-sliderTiempo.oninput = function() {
-	outputTiempo.innerHTML= this.value;
-	outputCuota.innerHTML= f.format((tasa * sliderValor.value) / (1 - Math.pow(1+(tasa), -1 * sliderTiempo.value)));
-  outputIntereses.innerHTML= f.format(((tasa * sliderValor.value) / (1 - Math.pow(1+(tasa), -1 * sliderTiempo.value))*sliderTiempo.value) - sliderValor.value);
-  outputTotal.innerHTML= f.format(((tasa * sliderValor.value) / (1 - Math.pow(1+(tasa), -1 * sliderTiempo.value))*sliderTiempo.value));
-}
-
 
