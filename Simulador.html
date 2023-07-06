@@ -168,7 +168,7 @@
               <div class="contenedorValor mt-4">
                 <p class="resumenCuota">
                   Cuota mensual: <br />
-                  <span id="cuota"></span>
+                  <span id="cuota"></span>*
                 </p>
               </div>
             </div>
@@ -194,9 +194,12 @@
               </p>
             </div>
             <div class="btn-simulador">
-              <a href="https://app.financiate.com.co/login">
-              <button class="btn-stc">¡Solicitalo ahora!</button>
+              <a id="link-acceso" href="https://app.financiate.com.co/login">
+              <button id="btn-solicitud" class="btn-stc">¡Solicitalo ahora!</button>
             </a>
+            </div>
+            <div class="nota">
+              <p>*Recuerda que el valor de la cuota mostrado acá es una aproximado y no es promesa de cuota. Valor de referencia sujeto a aprobación de crédito</p>
             </div>
           </div>
         </div>
@@ -236,5 +239,6 @@
       AOS.init();
     </script>
     <script src="Script/simulador.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

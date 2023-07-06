@@ -1031,7 +1031,7 @@ body {
 
 /*============================================Simulador=========================================*/
 
-.container-2{
+.container-2 {
   background: url("/Img/Fondos/Ladrillos.png");
   background-position: center;
   background-size: cover;
@@ -1052,7 +1052,7 @@ body {
 .simulador-card {
   display: flex;
   width: 65%;
-  padding: 40px;
+  padding: 20px 40px 0 40px;
   border-radius: 30px;
   background: rgba(1, 104, 109, 0.8);
   color: #fff;
@@ -1067,6 +1067,15 @@ body {
 
 .simulador-range {
   width: 100%;
+}
+.nota {
+  margin-top: 35px;
+}
+
+.nota p {
+  font-size: 12px;
+  font-style: normal;
+  text-align: end;
 }
 
 .simulador-range h2 {
@@ -1220,12 +1229,11 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: -1px;
 }
 
-.btn-simulador{
+.btn-simulador {
   position: relative;
 }
-.btn-simulador button{
+.btn-simulador button {
   position: absolute;
   bottom: -15px;
   left: -30px;
 }
-
