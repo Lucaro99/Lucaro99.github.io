@@ -129,6 +129,7 @@ boton.addEventListener('click', ()=>{
       icon: 'error',
       title: 'Oops...',
       text: 'El valor de la cuota debe ser mayor de $ 180.000!',
+      confirmButtonColor: '#01686d'
     });
     document.getElementById('link-acceso').setAttribute('href', "#");
   }else{

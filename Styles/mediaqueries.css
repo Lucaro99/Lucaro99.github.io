@@ -575,6 +575,9 @@
   .nota p {
     font-size: 10px;
   }
+  .simulador-1 footer{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -722,6 +725,9 @@
   }
   .nota p {
     font-size: 10px;
+  }
+  .simulador-1 footer{
+    display: none;
   }
 }
 
