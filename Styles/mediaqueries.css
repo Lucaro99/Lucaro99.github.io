@@ -543,6 +543,9 @@
   .nota p {
     font-size: 10px;
   }
+  .simulador-1 footer{
+    display: none;
+  }
 }
 @media screen and (max-width: 393px) {
   .persona-1 img {
@@ -574,6 +577,9 @@
   }
   .nota p {
     font-size: 10px;
+  }
+  .simulador-1 footer{
+    display: none;
   }
   .simulador-1 footer{
     display: none;
@@ -618,6 +624,12 @@
   .nosotros-icon img {
     height: 50%;
   }
+  .simulador-1 footer{
+    display: none;
+  }
+  .simulador-1 footer{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -645,6 +657,9 @@
   }
   .simulador-card {
     width: 95%;
+  }
+  .simulador-1 footer{
+    display: none;
   }
 }
 @media screen and (max-width: 360px) {
@@ -704,6 +719,9 @@
   .nota p {
     font-size: 10px;
   }
+  .simulador-1 footer{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -725,6 +743,9 @@
   }
   .nota p {
     font-size: 10px;
+  }
+  .simulador-1 footer{
+    display: none;
   }
   .simulador-1 footer{
     display: none;
@@ -772,5 +793,8 @@
   .logo_Fin_Poli a img {
     width: auto;
     height: 36px;
+  }
+  .simulador-1 footer{
+    display: none;
   }
 }
