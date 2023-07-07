@@ -207,6 +207,9 @@
   .Form_poli {
     margin: 30px 250px 30px 60px;
   }
+  .persona-1 img {
+    height: 83%;
+  }
 }
 @media screen and (max-width: 712px) {
   .persona-1 img {
@@ -431,6 +434,12 @@
     font-size: 12px;
   }
 }
+@media screen and (max-width: 565px) {
+  .persona-1 img {
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .persona-1 img {
     height: 94%;
