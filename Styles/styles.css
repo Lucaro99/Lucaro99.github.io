@@ -513,6 +513,7 @@ body {
   padding: 5% 10% 3% 10%;
 }
 /*============================================FORMS=========================================*/
+
 .contact_form {
   width: 460px;
   height: auto;
@@ -812,7 +813,7 @@ body {
   background-position: center;
   background-size: cover;
 }
-.banner{
+.banner-g{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -868,6 +869,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .Unete .unete-2 .btn-stc {
