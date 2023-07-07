@@ -35,6 +35,16 @@
   .Grupo img {
     width: 80%;
   }
+  .banner-text h1{
+    font-size: 65px;
+  }
+  .banner-text p {
+    font-size: 40px;
+  }
+
+  .video-1 iframe{
+    height: 600px;
+  }
   .dudas_2 {
     font-size: 3rem;
   }
@@ -77,6 +87,13 @@
     font-size: 15px;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .main-2 {
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: 1108px) {
   .slogan-green,
   .slogan-white {
@@ -129,6 +146,13 @@
   .slogan-green-2 {
     font-size: 62px;
   }
+
+  .Grupo {
+    height: 55%;
+  }
+  .Grupo img {
+    width: 25%;
+  }
   .text-2 {
     font-size: 25px;
   }
@@ -144,6 +168,9 @@
   }
   .nosotros-info .text-2-1 {
     font-size: 0.8em;
+  }
+  .banner-text {
+    padding: 30px;
   }
 }
 @media screen and (max-width: 912px) {
@@ -210,6 +237,19 @@
   .persona-1 img {
     height: 83%;
   }
+  .Grupo {
+    height: 57%;
+  }
+  .Grupo img {
+    width: 32%;
+  }
+
+  .banner-text p {
+    font-size: 15px;
+  }
+  .banner-text {
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 712px) {
   .persona-1 img {
@@ -250,18 +290,32 @@
   .header {
     height: 8vh;
   }
-  #grupo-1 {
-    display: none;
-  }
   .Grupo {
     height: 50%;
   }
   .Grupo img {
-    width: 50%;
+    width: 33%;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner-text h1{
+    font-size: 45px;
   }
   .simulador-card {
     flex-direction: column;
   }
+  .banner-text p {
+    font-size: 20px;
+  }
+  .banner-text {
+    width: 100%;
+    padding: 15px;
+  }
+  .video-1{
+    width: 100%;
+  }
+ 
 }
 @media screen and (max-width: 820px) {
   .main-1 {
@@ -415,10 +469,7 @@
     font-size: 13px;
   }
   .Grupo img {
-    width: 70%;
-  }
-  .amigos {
-    height: 70%;
+    width: 45%;
   }
   .nosotros-icon img {
     height: 75%;
@@ -432,6 +483,10 @@
 
   .tyc label a {
     font-size: 12px;
+  }
+  .video-1 iframe{
+    height: 300px;
+    padding-bottom: 35px;
   }
 }
 @media screen and (max-width: 565px) {
@@ -466,9 +521,7 @@
   .nosotros-5 .nosotros-icon {
     display: none;
   }
-  .amigos {
-    height: 60%;
-  }
+
   .nosotros-icon {
     height: 60%;
   }
@@ -552,7 +605,7 @@
   .nota p {
     font-size: 10px;
   }
-  .simulador-1 footer{
+  .simulador-1 footer {
     display: none;
   }
 }
@@ -587,10 +640,10 @@
   .nota p {
     font-size: 10px;
   }
-  .simulador-1 footer{
+  .simulador-1 footer {
     display: none;
   }
-  .simulador-1 footer{
+  .simulador-1 footer {
     display: none;
   }
 }
@@ -633,11 +686,17 @@
   .nosotros-icon img {
     height: 50%;
   }
-  .simulador-1 footer{
+  .simulador-1 footer {
     display: none;
   }
-  .simulador-1 footer{
+  .simulador-1 footer {
     display: none;
+  }
+  .banner-text h1{
+    font-size: 35px;
+  }
+  .banner-text p {
+    font-size: 15px;
   }
 }
 
@@ -667,7 +726,7 @@
   .simulador-card {
     width: 95%;
   }
-  .simulador-1 footer{
+  .simulador-1 footer {
     display: none;
   }
 }
@@ -728,7 +787,7 @@
   .nota p {
     font-size: 10px;
   }
-  .simulador-1 footer{
+  .simulador-1 footer {
     display: none;
   }
 }
@@ -753,10 +812,10 @@
   .nota p {
     font-size: 10px;
   }
-  .simulador-1 footer{
+  .simulador-1 footer {
     display: none;
   }
-  .simulador-1 footer{
+  .simulador-1 footer {
     display: none;
   }
 }
@@ -803,7 +862,7 @@
     width: auto;
     height: 36px;
   }
-  .simulador-1 footer{
+  .simulador-1 footer {
     display: none;
   }
 }

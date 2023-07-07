@@ -700,7 +700,7 @@ body {
   display: flex;
   height: 100%;
   justify-content: center;
-  align-self: end;
+  align-items: end;
 }
 .Grupo img {
   width: 87%;
@@ -806,20 +806,43 @@ body {
 }
 
 /*============================================Banner-grupo=========================================*/
-
-.banner .grupo-1 {
+.banner-video {
+  background: url("/Img/Fondos/Ladrillos.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner{
   display: flex;
-  align-content: end;
-  height: 100%;
-  padding: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
 }
 
-.banner .grupo-1 img {
-  margin: 0%;
+.banner-text {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 50px;
+}
+
+.video-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.video-1 iframe{
   width: 100%;
-  align-self: end;
+  height: 400px;
 }
 
+.banner-text  p {
+  color: var(--green);
+  text-justify: center;
+}
 .slogan-green-2 {
   color: var(--green);
   font-family: "Century Gothic Paneuropean", sans-serif;
