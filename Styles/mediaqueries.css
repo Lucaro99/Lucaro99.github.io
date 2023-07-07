@@ -47,6 +47,35 @@
   .acordeon .etiqueta {
     font-size: 50px;
   }
+  .simulador-card {
+    height: 600px;
+    padding: 50px 50px 0 50px;
+  }
+  .contenedorResumen {
+    height: 450px;
+  }
+  .contenedorResumen p {
+    margin-bottom: 21px;
+    font-size: 30px;
+  }
+  .contenedorValor {
+    margin: 50px 0 30px 0;
+  }
+  .subTitulo {
+    font-size: 30px;
+  }
+  .simulador-range h2 {
+    font-size: 70px;
+  }
+  .btn-simulador button {
+    bottom: -35px;
+  }
+  .nota {
+    margin-top: 60px;
+  }
+  .nota p {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 1108px) {
   .slogan-green,
@@ -73,6 +102,23 @@
 @media screen and (max-width: 1024px) {
   .persona-1 {
     height: 75%;
+  }
+  .simulador-card {
+    padding: 20px 20px 0 20px;
+    width: 85%;
+  }
+  .contenedorResumen p {
+    margin-bottom: 21px;
+  }
+  .btn-simulador button {
+    bottom: -15px;
+    left: -35px;
+  }
+  .nota {
+    margin-top: 30px;
+  }
+  .info-contacto {
+    padding: 0.8% 2% 0.8% 2%;
   }
 }
 @media screen and (max-width: 992px) {
@@ -116,6 +162,39 @@
   }
   .banner .persona-1 {
     height: 100%;
+  }
+  .simulador-card {
+    padding: 20px 20px 0 20px;
+    width: 85%;
+  }
+  .contenedorResumen p {
+    margin-bottom: 21px;
+    font-size: 15px;
+  }
+  .contenedorResumen span {
+    font-size: 20px;
+  }
+  .subTitulo {
+    font-size: 18px;
+  }
+  .simulador-range h2 {
+    font-size: 35px;
+  }
+  .btn-simulador button {
+    bottom: -15px;
+    left: -55px;
+  }
+  .nota {
+    margin-top: 30px;
+  }
+  .nota p {
+    font-size: 10px;
+  }
+  .simulador-1 {
+    min-height: 52vh;
+  }
+  .info-contacto {
+    padding: 0.8% 2% 0.8% 2%;
   }
 }
 @media screen and (max-width: 829px) {
@@ -197,6 +276,40 @@
   }
   .banner .persona-1 {
     height: 100%;
+  }
+
+  .simulador-card {
+    padding: 20px 20px 0 20px;
+    width: 85%;
+  }
+  .contenedorResumen p {
+    margin-bottom: 21px;
+    font-size: 13px;
+  }
+  .contenedorResumen span {
+    font-size: 20px;
+  }
+  .subTitulo {
+    font-size: 18px;
+  }
+  .simulador-range h2 {
+    font-size: 35px;
+  }
+  .btn-simulador button {
+    bottom: -15px;
+    left: -55px;
+  }
+  .nota {
+    margin-top: 40px;
+  }
+  .nota p {
+    font-size: 10px;
+  }
+  .simulador-1 {
+    min-height: 60vh;
+  }
+  .info-contacto {
+    padding: 0.8% 2% 0.8% 2%;
   }
 }
 @media screen and (max-width: 670px) {
@@ -403,11 +516,64 @@
     width: auto;
     height: 55px;
   }
-
+  .simulador-card {
+    padding: 20px 20px 0 20px;
+    width: 85%;
+  }
+  .contenedorResumen p {
+    margin-bottom: 21px;
+    font-size: 13px;
+  }
+  .contenedorResumen span {
+    font-size: 20px;
+  }
+  .subTitulo {
+    font-size: 18px;
+  }
+  .simulador-range h2 {
+    font-size: 35px;
+  }
+  .btn-simulador button {
+    bottom: -15px;
+    left: -55px;
+  }
+  .nota {
+    margin-top: 30px;
+  }
+  .nota p {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 393px) {
   .persona-1 img {
     height: 100%;
+  }
+  .simulador-card {
+    padding: 20px 20px 0 20px;
+    width: 85%;
+  }
+  .contenedorResumen p {
+    margin-bottom: 21px;
+    font-size: 13px;
+  }
+  .contenedorResumen span {
+    font-size: 20px;
+  }
+  .subTitulo {
+    font-size: 18px;
+  }
+  .simulador-range h2 {
+    font-size: 35px;
+  }
+  .btn-simulador button {
+    bottom: -15px;
+    left: -55px;
+  }
+  .nota {
+    margin-top: 30px;
+  }
+  .nota p {
+    font-size: 10px;
   }
 }
 
@@ -449,7 +615,6 @@
   .nosotros-icon img {
     height: 50%;
   }
-
 }
 
 @media screen and (max-width: 375px) {
@@ -474,6 +639,9 @@
   }
   .amigos {
     height: 60%;
+  }
+  .simulador-card {
+    width: 95%;
   }
 }
 @media screen and (max-width: 360px) {
@@ -506,7 +674,57 @@
     width: auto;
     height: 40px;
   }
+
+  .simulador-card {
+    padding: 20px 20px 0 20px;
+  }
+  .contenedorResumen p {
+    margin-bottom: 21px;
+    font-size: 13px;
+  }
+  .contenedorResumen span {
+    font-size: 20px;
+  }
+  .subTitulo {
+    font-size: 18px;
+  }
+  .simulador-range h2 {
+    font-size: 35px;
+  }
+  .btn-simulador button {
+    bottom: -15px;
+    left: -55px;
+  }
+  .nota {
+    margin-top: 40px;
+  }
+  .nota p {
+    font-size: 10px;
+  }
 }
+
+@media screen and (max-width: 320px) {
+  .simulador-card {
+    padding: 20px 20px 0 20px;
+  }
+  .contenedorResumen p {
+    margin-bottom: 21px;
+    font-size: 12px;
+  }
+  .contenedorResumen span {
+    font-size: 15px;
+  }
+  .btn-simulador button {
+    left: -85px;
+  }
+  .nota {
+    margin-top: 60px;
+  }
+  .nota p {
+    font-size: 10px;
+  }
+}
+
 @media screen and (max-width: 280px) {
   .slogan-green,
   .slogan-white {

@@ -1113,6 +1113,7 @@ body {
 .contenedorResumen p {
   font-weight: 700;
   text-align: left;
+  margin-bottom:10px;
 }
 
 .contenedorResumen span {
