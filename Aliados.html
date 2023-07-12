@@ -32,7 +32,7 @@
     <link rel="icon" type="image/x-icon" href="Img/Logos/favicon.svg" />
   </head>
 
-  <body class="container-fluid p-0 m-0">
+  <body class="container-fluid p-0 m-0" style="overflow-x: hidden">
     <div class="bg-image">
       <!------------------------------------------MENU--------------------------------------------->
 
@@ -147,16 +147,28 @@
               así de fácil
             </h2>
           </div>
-          <div class="btn row">
-            <form action="#formulario">
-              <button
-                class="btn-stc"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              > ¡Empieza ahora!
-              </button>
-            </form>
-          </div>
+          <form action="#video_prestagil" class="Arrow">
+            <button
+              class="arrow-content"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <svg id="more-arrows">
+                <polygon
+                  class="arrow-top"
+                  points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "
+                />
+                <polygon
+                  class="arrow-middle"
+                  points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "
+                />
+                <polygon
+                  class="arrow-bottom"
+                  points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "
+                />
+              </svg>
+            </button>
+          </form>
         </div>
         <div class="Grupo col-lg-6 p-0 m-0">
           <img src="Img/Empresas/Grupo1-8.png" alt="Grupo1-8" />
@@ -164,23 +176,32 @@
       </main>
       <!------------------------------------------------Banner-grupo---------------------------------------------------->
 
-      <div class="banner-video">
+      <div id="video_prestagil" class="banner-video">
         <div class="banner-g">
-
-          <div class="banner-text ">
+          <div class="banner-text">
             <h1 class="text-1-1">Presta Ágil</h1>
-            <p> La oportunidad perfecta para impulsar tus ventas al ofrecer a tus clientes una opción de financiación superior que garantiza un mayor poder adquisitivo y satisfacción</p>
+            <p>
+              La oportunidad perfecta para impulsar tus ventas al ofrecer a tus
+              clientes una opción de financiación superior que garantiza un
+              mayor poder adquisitivo y satisfacción
+            </p>
             <div class="btn">
               <form class="" action="#formulario">
-                <button
-                  class="btn-stc"
-                > ¡Empieza ahora!
-                </button>
+                <button class="btn-stc">¡Empieza ahora!</button>
               </form>
             </div>
           </div>
           <div class="video-1" id="grupo-1">
-           <iframe  src="https://www.youtube.com/embed/BBp5QkNcoA4" title="Antes del aval - Asoclips" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
+            <iframe
+              width="713"
+              height="401"
+              src="https://www.youtube.com/embed/lnbwrM2U5vw?controls=0"
+              title="Descubre presta Ágil"
+              controls="0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
@@ -188,7 +209,7 @@
       <!------------------------------------------------Ventajas---------------------------------------------------->
       <div class="ventajas m-0 row">
         <div class="titulo row">
-          <h2 class="titulo-2 m-0">Vende a crédito sin riesgos</h2>    
+          <h2 class="titulo-2 m-0">Vende a crédito sin riesgos</h2>
           <p class="text-2-1 m-0">Aumenta tus ingresos vendiendo a crédito</p>
         </div>
         <hr />
@@ -264,7 +285,6 @@
       <!-----------------------------------------------afiliación---------------------------------------------------->
       <div class="bg-image-4 m-0 row justify-content-center">
         <div class="afiliacion row m-0 p-0">
-
           <div class="afiliacion-bg1 col-sm-6 col-md-3">
             <div class="afiliacion-icon">
               <img src="Img/Empresas/Formulario.svg" alt="Formulario" />
@@ -318,7 +338,7 @@
       </div>
       <!-----------------------------------------------Unete---------------------------------------------------->
 
-      <div class="Unete ">
+      <div class="Unete">
         <div class="unete-2">
           <h2 class="titulo-2 m-0">Aumenta las ventas</h2>
           <p class="text-2-1 m-0">
@@ -326,7 +346,8 @@
             riesgos
           </p>
           <form class="p-0 m-0" action="#formulario">
-            <button class="btn-stc" data-aos="fade-up" data-aos-duration="1000">¡Empieza ahora!
+            <button class="btn-stc" data-aos="fade-up" data-aos-duration="1000">
+              ¡Empieza ahora!
             </button>
           </form>
         </div>
@@ -546,5 +567,5 @@
     <script>
       AOS.init();
     </script>
-   </body>
+  </body>
 </html>
