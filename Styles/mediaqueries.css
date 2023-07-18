@@ -134,9 +134,6 @@
   .nota {
     margin-top: 30px;
   }
-  .info-contacto {
-    padding: 0.8% 2% 0.8% 2%;
-  }
 }
 @media screen and (max-width: 992px) {
   .slogan-green,
@@ -220,9 +217,6 @@
   .simulador-1 {
     min-height: 52vh;
   }
-  .info-contacto {
-    padding: 0.8% 2% 0.8% 2%;
-  }
 }
 @media screen and (max-width: 829px) {
   #grupo-2 {
@@ -275,9 +269,6 @@
   .banner h1 {
     font-size: 25px;
   }
-  .info-contacto ul {
-    display: none;
-  }
   .requisitos-icon {
     width: 100%;
   }
@@ -314,6 +305,26 @@
   }
   .video-1{
     width: 100%;
+  }
+  .footer-quick-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+  footer h6 {
+    text-align: center;
+  }
+  .footer-logo img {
+    margin: 0;
+  }
+  .footer-derechos {
+    margin: 0;
+  }
+  .info-contacto ul {
+    display: none;
+
   }
  
 }
@@ -365,9 +376,6 @@
   .simulador-1 {
     min-height: 60vh;
   }
-  .info-contacto {
-    padding: 0.8% 2% 0.8% 2%;
-  }
 }
 @media screen and (max-width: 670px) {
   .paso img {
@@ -383,6 +391,9 @@
 
   .tyc label a {
     font-size: 13px;
+  }
+  .footer-derechos {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 624px) {
@@ -605,9 +616,6 @@
   .nota p {
     font-size: 10px;
   }
-  .simulador-1 footer {
-    display: none;
-  }
 }
 @media screen and (max-width: 393px) {
   .persona-1 img {
@@ -640,12 +648,7 @@
   .nota p {
     font-size: 10px;
   }
-  .simulador-1 footer {
-    display: none;
-  }
-  .simulador-1 footer {
-    display: none;
-  }
+
 }
 
 @media screen and (max-width: 390px) {
@@ -686,12 +689,7 @@
   .nosotros-icon img {
     height: 50%;
   }
-  .simulador-1 footer {
-    display: none;
-  }
-  .simulador-1 footer {
-    display: none;
-  }
+
   .banner-text h1{
     font-size: 35px;
   }
@@ -726,9 +724,8 @@
   .simulador-card {
     width: 95%;
   }
-  .simulador-1 footer {
-    display: none;
-  }
+
+
 }
 @media screen and (max-width: 360px) {
   .main-1 {
@@ -787,9 +784,7 @@
   .nota p {
     font-size: 10px;
   }
-  .simulador-1 footer {
-    display: none;
-  }
+  
 }
 
 @media screen and (max-width: 320px) {
@@ -811,12 +806,6 @@
   }
   .nota p {
     font-size: 10px;
-  }
-  .simulador-1 footer {
-    display: none;
-  }
-  .simulador-1 footer {
-    display: none;
   }
 }
 
@@ -862,7 +851,5 @@
     width: auto;
     height: 36px;
   }
-  .simulador-1 footer {
-    display: none;
-  }
+ 
 }
