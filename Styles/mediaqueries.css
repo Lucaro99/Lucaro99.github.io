@@ -117,7 +117,6 @@
   }
 }
 @media screen and (max-width: 1024px) {
-
   .simulador-card {
     padding: 20px 20px 0 20px;
     width: 85%;
@@ -169,7 +168,6 @@
   }
 }
 @media screen and (max-width: 912px) {
-  
   .slogan-green {
     font-size: 60px;
     width: 100%;
@@ -232,7 +230,6 @@
   }
 }
 @media screen and (max-width: 820px) {
-
   .slogan-green {
     font-size: 60px;
     width: 100%;
@@ -267,13 +264,12 @@
   .simulador-1 {
     min-height: 60vh;
   }
-  .banner-g{
-flex-direction: column;
+  .banner-g {
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width: 767px) {
-
   .persona-1 {
     height: 60%;
   }
@@ -298,7 +294,7 @@ flex-direction: column;
   .requisitos-icon {
     width: 100%;
   }
- 
+
   .banner-text h1 {
     font-size: 45px;
   }
@@ -353,11 +349,17 @@ flex-direction: column;
   .persona-1 img {
     height: 100%;
   }
+  .amigos {
+    height: 70%;
+  }
 }
 
 @media screen and (max-width: 670px) {
   .paso img {
     width: 30%;
+  }
+  .amigos {
+    height: 65%;
   }
   .slogan-green,
   .slogan-white {
@@ -382,6 +384,11 @@ flex-direction: column;
     margin: 30px 200px 30px 60px;
   }
 }
+@media screen and (max-width: 640px) {
+  .amigos {
+    height: 60%;
+  }
+}
 
 @media screen and (max-width: 576px) {
   .pasos {
@@ -391,6 +398,9 @@ flex-direction: column;
   }
   .paso img {
     width: 150px;
+  }
+  .amigos {
+    height: 55%;
   }
   .slogan-green,
   .slogan-white {
@@ -482,6 +492,9 @@ flex-direction: column;
   .persona-1 img {
     height: 100%;
   }
+  .conocenos .amigos {
+    height: 60%;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -498,21 +511,35 @@ flex-direction: column;
     width: auto;
     height: 60px;
   }
-}
-
-@media screen and (max-width: 412px) {
-  .main-3 {
-    height: 30vh;
+  .conocenos .amigos {
+    height: 55%;
   }
-  .nosotros-icon {
+}
+@media screen and (max-width: 500px) {
+  .amigos {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 411px) {
+  .main-3 {
+    height: 100vh;
+  }
+  .conocenos {
+    height: 100%;
+  }
+  .conocenos .text-1-1 {
     height: 40%;
+    margin: 0;
+  }
+  .conocenos .amigos {
+    height: 60%;
   }
   .nosotros-5 .nosotros-icon {
     display: none;
   }
 
   .nosotros-icon {
-    height: 60%;
+    height: 100%;
   }
   .acordeon .etiqueta {
     font-size: 25px;
@@ -520,8 +547,6 @@ flex-direction: column;
   .acordeon .contenedor.activa .contenido {
     height: 310px;
   }
-}
-@media screen and (max-width: 411px) {
   .persona-1 {
     height: 50%;
   }
@@ -626,6 +651,9 @@ flex-direction: column;
   .nota p {
     font-size: 10px;
   }
+  .nosotros-icon img {
+    height: 45%;
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -720,7 +748,7 @@ flex-direction: column;
     height: 60%;
   }
   .nosotros-icon img {
-    height: 60%;
+    height: 45%;
   }
   .acordeon .etiqueta {
     font-size: 15px;
@@ -780,6 +808,9 @@ flex-direction: column;
   }
   .nota p {
     font-size: 10px;
+  }
+  .nosotros-info .titulo-2 {
+    font-size: 22px;
   }
 }
 

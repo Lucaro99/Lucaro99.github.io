@@ -931,18 +931,19 @@ polygon.arrow-top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
-  height: 100%;
+  justify-content: space-between;
+  height: 95vh;
   width: 100%;
 }
 .conocenos h1 {
   font-size: 90px;
+  margin: 0;
 }
 .amigos {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 75%;
+  height: 70%;
   width: 100%;
 }
 .amigos img {
