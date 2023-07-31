@@ -524,6 +524,9 @@
   .main-3 {
     height: 100vh;
   }
+  .amigos {
+    height: 50%;
+  }
   .conocenos {
     height: 100%;
   }
@@ -576,8 +579,16 @@
   .nosotros-info .text-2-1 {
     font-size: 0.6em;
   }
-  .amigos {
-    height: 40%;
+
+  .conocenos {
+    height: 100%;
+  }
+  .conocenos .text-1-1 {
+    height: 100%;
+    margin: 0;
+  }
+  .conocenos .amigos {
+    height: 48%;
   }
   .nosotros-icon img {
     height: 30%;
