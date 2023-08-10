@@ -193,7 +193,25 @@ body {
   margin: 0;
   justify-content: center;
 }
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:20px;
+  left:20px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  z-index:100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
 
+.whatsapp-icon {
+font-size: 30px;
+}
 /*============================================NAV-BAR=========================================*/
 
 .header {
