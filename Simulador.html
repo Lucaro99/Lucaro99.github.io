@@ -33,17 +33,11 @@
 
   <body class="container-2">
     <div class="simulador-1">
-      <a href="https://wa.me/+573223213915" class="whatsapp"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-
       <!------------------------------------------MENU--------------------------------------------->
 
       <div class="full-menu" id="full-menu">
         <div class="wrap">
           <nav class="navegacion">
-            <div class="close" id="btn-close">
-              <span onclick="cerrarmenu()" class="fa fa-close"></span>
-            </div>
-
             <ul class="menu-principal">
               <li><a href="Nosotros.html">Nosotros</a></li>
               <li><a href="index.html">Personas</a></li>
@@ -56,6 +50,9 @@
               </li>
               <li><a href="dudas.html">¿Dudas?</a></li>
             </ul>
+            <div class="close" id="btn-close">
+              <span onclick="cerrarmenu()" class="fa fa-close"></span>
+            </div>
           </nav>
         </div>
         <div id="Menu-images">
@@ -184,12 +181,8 @@
               <p class="resumenIntereses">
                 Intereses: <span id="intereses"></span>
               </p>
-              <p class="resumenava">
-                Aval + IVA: <span id="aval"></span>
-              </p>
-              <p class="resumenava">
-                Administrativos: <span id="admi"></span>
-              </p>
+              <p class="resumenava">Aval + IVA: <span id="aval"></span></p>
+              <p class="resumenava">Administrativos: <span id="admi"></span></p>
               <hr class="hr" />
               <p class="resumenTotal">
                 Total a pagar: <span id="total"></span>
@@ -197,16 +190,20 @@
             </div>
             <div class="btn-simulador">
               <a id="link-acceso" href="https://app.financiate.com.co/login">
-              <button id="btn-solicitud" class="btn-stc">¡Solicitalo ahora!</button>
-            </a>
+                <button id="btn-solicitud" class="btn-stc">¡Solicitalo ahora!</button>
+              </a>
             </div>
             <div class="nota">
-              <p>*Recuerda que el valor de la cuota mostrado acá es una aproximado y no es promesa de cuota. Valor de referencia sujeto a aprobación de crédito</p>
+              <p>
+                *Recuerda que el valor de la cuota mostrado acá es una
+                aproximado y no es promesa de cuota. Valor de referencia sujeto
+                a aprobación de crédito
+              </p>
             </div>
           </div>
         </div>
       </main>
-      <footer class="info-contacto ">
+      <footer class="info-contacto">
         <ul>
           <li>
             <a href="https://goo.gl/maps/yfcsUpp1BxeaAnWo6"
@@ -228,7 +225,9 @@
         </ul>
       </footer>
     </div>
-
+    <a href="https://wa.me/+573223213915" class="whatsapp">
+      <i class="fa fa-whatsapp whatsapp-icon"></i
+    ></a>
 
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
