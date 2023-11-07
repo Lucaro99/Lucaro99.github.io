@@ -1457,7 +1457,6 @@ a {
 
 /*============================================CONTACTO=========================================*/
 
-
 .info-contacto ul {
   background: var(--green);
   display: flex;
@@ -1473,4 +1472,97 @@ a {
   text-decoration: none;
   color: var(--white);
   font-size: 0.8em;
+}
+
+/*============================================LEGAL=========================================*/
+.bg-image-legal {
+  background: url("/Img/Fondos/Ladrillos.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+.legal{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.Plegal{
+  color: var(--D-Negro);
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 50px 100px 10px 100px;
+  text-align: justify;
+}
+.acordeon-cuerpo-legal {
+  display: flex;
+  justify-content: center;
+}
+.acordeon-legal {
+  text-align: justify;
+  width: 90%;
+  color: var(--D-Negro);
+  margin-bottom: 20px;
+  padding: 0 45px;
+}
+.acordeon-legal .contenedor {
+  position: relative;
+  margin:  0px;
+}
+.acordeon-legal .etiqueta {
+  position: relative;
+  padding: 2px 0;
+  font-size: 25px;
+  color: var(--green);
+  cursor: 30px;
+  cursor: pointer;
+  text-align: start;
+}
+.acordeon-legal .etiqueta::before {
+  content: "+";
+  color: var(--D-Negro);
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: -11px;
+  font-size: 50px;
+  transform: translateY(-50%);
+}
+.acordeon-legal .contenido {
+  position: relative;
+  height: 0;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 500;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.acordeon-legal .contenido a{
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--Fucsia)
+}
+.acordeon-legal .contenido ul li{
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.acordeon-legal hr {
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+}
+
+.acordeon-legal .contenedor.activa .contenido {
+  height: auto;
+}
+
+.acordeon-legal .contenedor.activa .etiqueta::before {
+  content: "-";
+  font-size: 50px;
 }
