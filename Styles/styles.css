@@ -194,15 +194,15 @@ body {
   justify-content: center;
 }
 .whatsapp {
-  position:fixed;
-  width:60px;
-  height:60px;
-  bottom:20px;
-  left:20px;
-  background-color:#25d366;
-  color:#FFF;
-  border-radius:50px;
-  z-index:100;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,7 +210,7 @@ body {
 }
 
 .whatsapp-icon {
-font-size: 30px;
+  font-size: 30px;
 }
 /*============================================NAV-BAR=========================================*/
 
@@ -334,7 +334,6 @@ font-size: 30px;
   color: var(--green);
   justify-content: center;
   align-items: center;
-
 }
 
 .btn-stc {
@@ -1331,7 +1330,7 @@ input[type="range"]::-webkit-slider-thumb {
 footer {
   background: var(--green);
 }
-footer ul  {
+footer ul {
   padding: 0;
 }
 footer ul li {
@@ -1348,7 +1347,7 @@ footer h6 {
   color: var(--white);
   font-size: 20px;
 }
-footer hr{
+footer hr {
   color: var(--white);
 }
 .footer-logo {
@@ -1382,8 +1381,7 @@ footer hr{
   font-size: 15px;
   font-weight: 100;
 }
-.footer-derechos
-a {
+.footer-derechos a {
   text-decoration: none;
 
   color: var(--white);
@@ -1463,7 +1461,6 @@ a {
   justify-content: space-evenly;
   margin: 0;
   width: 100%;
-
 }
 .info-contacto ul li {
   list-style: none;
@@ -1482,12 +1479,15 @@ a {
   background-size: cover;
   height: auto;
 }
-.legal{
+.PQRS {
+  align-items: center;
+}
+.legal {
   text-align: center;
   justify-content: center;
   align-items: center;
 }
-.Plegal{
+.Plegal {
   color: var(--D-Negro);
   font-style: normal;
   font-size: 17px;
@@ -1495,74 +1495,65 @@ a {
   margin: 50px 100px 10px 100px;
   text-align: justify;
 }
-.acordeon-cuerpo-legal {
-  display: flex;
-  justify-content: center;
+.contenedor-acordeon {
+  align-self: center;
+  margin: 50px 100px 10px 100px;
 }
-.acordeon-legal {
-  text-align: justify;
-  width: 90%;
-  color: var(--D-Negro);
-  margin-bottom: 20px;
-  padding: 0 45px;
+.contenedor-acordeon h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 35px;
 }
-.acordeon-legal .contenedor {
-  position: relative;
-  margin:  0px;
+.acordeon {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
-.acordeon-legal .etiqueta {
-  position: relative;
-  padding: 2px 0;
+.acordeon label {
+  display: block;
+  padding: 15px;
   font-size: 25px;
   color: var(--green);
-  cursor: 30px;
   cursor: pointer;
-  text-align: start;
+  margin-bottom: 2px;
+  transition: all 300ms ease;
 }
-.acordeon-legal .etiqueta::before {
-  content: "+";
-  color: var(--D-Negro);
-  position: absolute;
-  cursor: pointer;
-  top: 50%;
-  right: -11px;
-  font-size: 50px;
-  transform: translateY(-50%);
+
+.acordeon label:hover {
+  background: var(--D-Fucsia-iz);
+  color: var(--white);
 }
-.acordeon-legal .contenido {
-  position: relative;
-  height: 0;
-  font-style: normal;
-  font-size: 17px;
-  font-weight: 500;
-  width: 100%;
+.acordeon .contenido-acordeon {
+  padding: 0px;
+  margin: 0px 20px;
+  max-height: 0px;
   overflow: hidden;
-  transition: 0.5s;
-}
-.acordeon-legal .contenido a{
+  transition: all 300ms ease;
+  color: #000;
   font-style: normal;
   font-size: 17px;
   font-weight: 500;
-  text-decoration: none;
-  color: var(--Fucsia)
+  text-align: justify;
 }
-.acordeon-legal .contenido ul li{
+.acordeon .contenido-acordeon ul li {
+  color: #000;
   font-style: normal;
   font-size: 17px;
   font-weight: 500;
+  text-align: justify;
+}
+.acordeon .contenido-acordeon a {
+  color: var(--Fucsia);
   text-decoration: none;
+  font-style: italic;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: justify;
 }
-.acordeon-legal hr {
-  width: 100%;
-  height: auto;
-  margin-left: 0;
+.btn-acordeon:checked ~ .contenido-acordeon {
+  max-height: 600px;
+  padding: 15px 0px;
 }
-
-.acordeon-legal .contenedor.activa .contenido {
-  height: auto;
-}
-
-.acordeon-legal .contenedor.activa .etiqueta::before {
-  content: "-";
-  font-size: 50px;
+.btn-acordeon {
+  display: none;
 }
