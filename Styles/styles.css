@@ -1057,63 +1057,81 @@ polygon.arrow-top {
   width: 95%;
   color: var(--white);
   text-shadow: var(--text-shadow);
-  margin: 2% 0 2% 2%;
+  margin: 2% 0 0 2%;
   font-size: 2rem;
 }
-.acordeon-cuerpo {
-  display: flex;
-  justify-content: center;
+.dudas_3 {
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
-.acordeon {
-  text-align: justify;
-  width: 90%;
+
+.contenedor_acordeon_dudas {
+  align-self: center;
+  margin: 10px 100px 10px 100px;
+}
+.contenedor_acordeon_dudas h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+.acordeon_dudas {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.contenedor_acordeon_dudas .acordeon_dudas label {
+  display: block;
+  padding: 15px;
+  font-size: 25px;
   color: var(--white);
-  padding: 0 45px;
-}
-.acordeon .contenedor {
-  position: relative;
-  margin: 10px 10px;
-}
-.acordeon .etiqueta {
-  position: relative;
-  padding: 10px 0;
-  font-size: 30px;
-  color: #fff;
-  cursor: 30px;
   cursor: pointer;
-  text-align: start;
+  margin-bottom: 2px;
+  transition: all 300ms ease;
+  border-radius: 100px;
+
 }
-.acordeon .etiqueta::before {
-  content: "+";
-  color: #fff;
-  position: absolute;
-  cursor: pointer;
-  top: 50%;
-  right: -11px;
-  font-size: 50px;
-  transform: translateY(-50%);
+.acordeon_dudas label:hover {
+  background: var(--D-Fucsia-iz);
+  border-radius: 100px;
 }
-.acordeon .contenido {
-  position: relative;
-  height: 0;
-  font-size: 1em;
-  width: 100%;
+.acordeon_dudas .contenido-acordeon {
+  padding: 0px;
+  margin: 0px 20px;
+  max-height: 0px;
   overflow: hidden;
-  transition: 0.5s;
+  transition: all 300ms ease;
+  color: var(--white);
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: justify;
+  text-shadow: var(--text-shadow);
+ 
 }
-.acordeon hr {
-  width: 100%;
-  margin-left: 0;
+.acordeon_dudas .contenido-acordeon ul li {
+  color: #000;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: justify;
+}
+.acordeon_dudas .contenido-acordeon a {
+  color: var(--white);
+  text-decoration: none;
+  font-style: italic;
+  font-size: 17px;
+  font-weight: 800;
+  text-align: justify;
+}
+.btn-acordeon:checked ~ .contenido-acordeon {
+  max-height: 600px;
+  padding: 15px 0px;
+}
+.btn-acordeon {
+  display: none;
 }
 
-.acordeon .contenedor.activa .contenido {
-  height: 100px;
-}
-
-.acordeon .contenedor.activa .etiqueta::before {
-  content: "-";
-  font-size: 50px;
-}
 
 /*============================================Simulador=========================================*/
 
@@ -1517,11 +1535,13 @@ footer hr {
   cursor: pointer;
   margin-bottom: 2px;
   transition: all 300ms ease;
-}
+  border-radius: 100px;
 
+}
 .acordeon label:hover {
   background: var(--D-Fucsia-iz);
   color: var(--white);
+  border-radius: 100px;
 }
 .acordeon .contenido-acordeon {
   padding: 0px;
