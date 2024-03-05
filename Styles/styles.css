@@ -261,7 +261,7 @@ body {
 }
 .menu ul li {
   list-style: none;
-  margin: 15px;
+  margin: 15px 10px;
 }
 
 .menu ul li:hover {
@@ -271,6 +271,7 @@ body {
 .menu ul li a {
   text-decoration: none;
   color: var(--green);
+  font-size: 0.9rem;
 }
 
 .menu ul li:hover a {
