@@ -131,6 +131,12 @@
   .nota {
     margin-top: 30px;
   }
+  .pa{
+    font-size: 4rem;
+  }
+  .pc{
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 991px) {
   .slogan-green,
@@ -165,6 +171,12 @@
   }
   .banner-text {
     padding: 30px;
+  }
+  .pa{
+    font-size: 3.5rem;
+  }
+  .pc{
+    font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 912px) {
@@ -228,6 +240,13 @@
   .banner-text {
     padding: 20px;
   }
+  .pa{
+    font-size: 3.2rem;
+  }
+  .pc{
+    font-size: 1.5rem;
+  }
+  
 }
 @media screen and (max-width: 820px) {
   .slogan-green {
@@ -344,6 +363,7 @@
   .info-contacto ul {
     display: none;
   }
+  
 }
 @media screen and (max-width: 712px) {
   .persona-1 img {
@@ -388,6 +408,9 @@
   .amigos {
     height: 60%;
   }
+#persona-pa img{
+  display: none;
+}
 }
 
 @media screen and (max-width: 576px) {

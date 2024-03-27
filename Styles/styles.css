@@ -1642,9 +1642,9 @@ nav .menu_pa ul li:active .underline {
 }
 
 .pa {
-  -webkit-text-stroke: 3px #fbe0ee;
+  -webkit-text-stroke: 0.1rem #fbe0ee;
   color: transparent;
-  font-size: 100px;
+  font-size: 5rem;
   transform: rotate(-5deg);
 
   text-shadow: 0 0 20px #ff80ee, 0 0 40px #ff00de, 0 0 70px #ff00de,
@@ -1655,7 +1655,7 @@ nav .menu_pa ul li:active .underline {
 .pc {
   color: #fff;
   font-family: "Oswald", sans-serif;
-  font-size: 50px;
+  font-size: 2.5rem;
   transform: rotate(-5deg);
   padding: 0;
   margin: 0;
