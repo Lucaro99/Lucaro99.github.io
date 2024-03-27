@@ -3,9 +3,21 @@ window.onscroll = function scrollFunction() {
     document.body.scrollTop > 100 ||
     document.documentElement.scrollTop > 100
   ) {
+    var links = document.getElementsByClassName("link");
+    for (var i = 0; i < links.length; i++) {
+      links[i].style.color = "#01686d";
+    }
     document.getElementById("navbar").style.background = "#fff";
+    document.getElementById("logo-blanco").style.display = "block";
+    document.getElementById("logo-blanco").src = "Img/Logos/Logotipo-Original.svg";
   } else {
+    var links = document.getElementsByClassName("link");
+    for (var i = 0; i < links.length; i++) {
+      links[i].style.color = "";
+    }
     document.getElementById("navbar").style.background = "";
+    document.getElementById("logo-blanco").style.display = "";
+    document.getElementById("logo-blanco").src = "Img/Logos/Logotipo-Blanco.svg";
   }
 };
 

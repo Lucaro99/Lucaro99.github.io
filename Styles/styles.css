@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,600&display=swap");
 @import url("https://fonts.cdnfonts.com/css/century-gothic-paneuropean?styles=90072,90073,90075,90070,90065,90067,90063&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -219,7 +220,7 @@ body {
   margin: 0px;
   position: sticky;
   top: 0;
-  z-index: 5;
+  z-index: 100;
   align-items: center;
   width: 100%;
   height: 15vh;
@@ -330,13 +331,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-.text-15{
-    width: 65%;
-    padding: 30px 40px 0 40px;
-    margin-bottom: 1%;
-    border-radius: 30px;
-    background: rgba(1, 104, 109, 0.8);
-    color: #fff;
+.text-15 {
+  width: 65%;
+  padding: 30px 40px 0 40px;
+  margin-bottom: 1%;
+  border-radius: 30px;
+  background: rgba(1, 104, 109, 0.8);
+  color: #fff;
 }
 .text-1-1 {
   color: var(--green);
@@ -1097,7 +1098,6 @@ polygon.arrow-top {
   margin-bottom: 2px;
   transition: all 300ms ease;
   border-radius: 100px;
-
 }
 .acordeon_dudas label:hover {
   background: var(--D-Fucsia-iz);
@@ -1115,7 +1115,6 @@ polygon.arrow-top {
   font-weight: 500;
   text-align: justify;
   text-shadow: var(--text-shadow);
- 
 }
 .acordeon_dudas .contenido-acordeon ul li {
   color: #000;
@@ -1139,7 +1138,6 @@ polygon.arrow-top {
 .btn-acordeon {
   display: none;
 }
-
 
 /*============================================Simulador=========================================*/
 
@@ -1544,7 +1542,6 @@ footer hr {
   margin-bottom: 2px;
   transition: all 300ms ease;
   border-radius: 100px;
-
 }
 .acordeon label:hover {
   background: var(--D-Fucsia-iz);
@@ -1584,4 +1581,203 @@ footer hr {
 }
 .btn-acordeon {
   display: none;
+}
+
+/*============================================PRESTA ÁGIL=========================================*/
+
+.body_pa {
+  background: url("/Img/Fondos/Presta\ agil.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  z-index: 0;
+}
+nav .menu_pa {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+nav .menu_pa ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+nav .menu_pa ul li {
+  list-style: none;
+  margin: 15px 10px;
+}
+
+nav .menu_pa ul li:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+nav .menu_pa ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+nav .menu_pa ul li:hover a {
+  text-shadow: 0 0 2px #ff80ee, 0 0 4px #ff00de, 0 0 7px #ff00de,
+    0 0 8px #ff00de, 0 0 10px #ff00de;
+}
+nav .menu_pa ul li .underline {
+  height: 3px;
+  background-color: transparent;
+  width: 0%;
+  transition: width 0.2s, background-color 0.5s;
+  margin: 0 auto;
+}
+
+nav .menu_pa ul li:hover .underline {
+  background-color: var(--Fucsia);
+  width: 100%;
+}
+
+nav .menu_pa ul li:active .underline {
+  transition: none;
+  background-color: var(--Fucsia);
+}
+
+.pa {
+  -webkit-text-stroke: 3px #fbe0ee;
+  color: transparent;
+  font-size: 100px;
+  transform: rotate(-5deg);
+
+  text-shadow: 0 0 20px #ff80ee, 0 0 40px #ff00de, 0 0 70px #ff00de,
+    0 0 80px #ff00de, 0 0 100px #ff00de;
+
+  animation: 0.5s ease infinite reverse glow;
+}
+.pc {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  transform: rotate(-5deg);
+  padding: 0;
+  margin: 0;
+
+  text-shadow: 0 0 20px #6ec6d8, 0 0 40px #6ec6d8, 0 0 70px #00ffff,
+    0 0 80px #00ffff, 0 0 90px #00ffff;
+  animation: 0.3s ease infinite reverse glowb;
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 20px #ff80ee, 0 0 40px #ff00de, 0 0 70px #ff00de,
+      0 0 80px #ff00de, 0 0 90px #ff00de;
+  }
+  75% {
+    text-shadow: 0 0 20px #ff80ee, 0 0 40px #ff00de, 0 0 70px #ff00de,
+      0 0 80px #ff00de, 0 0 100px #ff00de;
+    filter: brightness(120%);
+  }
+}
+@keyframes glowb {
+  0% {
+    text-shadow: 0 0 20px #6ec6d8, 0 0 40px #6ec6d8, 0 0 70px #00ffff,
+      0 0 80px #00ffff, 0 0 80px #00ffff;
+  }
+  75% {
+    text-shadow: 0 0 20px #6ec6d8, 0 0 40px #6ec6d8, 0 0 70px #00ffff,
+      0 0 80px #00ffff, 0 0 90px #00ffff;
+    filter: brightness(110%);
+  }
+}
+.btn-stc-2 {
+  cursor: pointer;
+  color: var(--white);
+  box-shadow: 0 0 10px #ff80ee, 0 0 10px #ff80ee inset, 0 0 20px #ff00de;
+  background: transparent;
+  border: 3px solid #fbe0ee;
+  padding: 0px 25px;
+
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 500;
+  text-shadow: 0 0 5px #ff80ee, 0 0 10px #ff00de, 0 0 20px #ff00de,
+    0 0 40px #ff00de;
+  border-radius: 50px;
+  height: 60px;
+  margin-top: 40px;
+}
+.btn-stc-2:hover {
+  text-shadow: 0 0 15px #ff80ee, 0 0 20px #ff00de, 0 0 30px #ff00de,
+    0 0 50px #ff00de;
+  box-shadow: 0 0 30px #ff80ee, 0 0 20px #ff80ee inset, 0 0 40px #ff00de,
+    0 0 30px #ff00de inset;
+}
+.btn:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+.pasos-pa {
+  background: var(--white);
+  padding: 0% 10% 5% 10%;
+}
+
+.titulo-pa {
+  padding: 2%;
+}
+.titulo-pa h2 {
+  margin-left: 6%;
+}
+.titulo-pa p {
+  margin-left: 6%;
+}
+
+.titulo-2-pa {
+  color: var(--green);
+  margin-top: 10%;
+  font-size: 2rem;
+}
+.text-2-pa {
+  color: var(--green);
+  font-size: 1.5rem;
+}
+.text-2-1-pa {
+  color: var(--green);
+  font-style: normal;
+  margin: 0;
+  line-height: 130%;
+  font-size: 1rem;
+}
+.paso-pa {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paso-pa img {
+  width: 100%;
+  margin: 10% 10% 10% 0;
+  padding: 0;
+}
+.paso-1-2-pa .paso-pa img:hover {
+  filter: 
+  drop-shadow(0 0 5px #ff80ee) 
+  drop-shadow(0 0 10px #ff00de)
+  drop-shadow(0 0 30px #ff00de);
+}
+.paso-3-4-pa .paso-pa img:hover {
+  filter: 
+  drop-shadow(0 0 5px #6ec6d8) 
+  drop-shadow(0 0 10px #00ffff)
+  drop-shadow(0 0 30px #00ffff);
+}
+
+.paso-pa:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+.paso-1-pa {
+  margin: 0%;
+}
+.paso-1-pa a {
+  text-decoration: none;
 }
