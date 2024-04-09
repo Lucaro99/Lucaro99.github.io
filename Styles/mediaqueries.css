@@ -92,6 +92,12 @@
   .main-2 {
     height: 100%;
   }
+  .pa{
+    font-size: 4rem;
+  }
+  .pc{
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 1108px) {
@@ -171,6 +177,10 @@
   }
   .banner-text {
     padding: 30px;
+  }
+  nav .menu_pa {
+    display: none;
+    width: 0%;
   }
   .pa{
     font-size: 3.5rem;
@@ -363,7 +373,12 @@
   .info-contacto ul {
     display: none;
   }
-  
+  #persona-pa img{
+    display: none;
+  }
+  .main-1{
+    overflow-x: hidden;
+  } 
 }
 @media screen and (max-width: 712px) {
   .persona-1 img {
