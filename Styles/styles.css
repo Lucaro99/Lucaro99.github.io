@@ -136,7 +136,7 @@ body {
   display: flex;
   justify-content: end;
   padding-left: 6%;
-  margin-bottom:0px;
+  margin-bottom: 0px;
 }
 
 .full-menu .navegacion ul li a {
@@ -227,7 +227,7 @@ body {
   width: 100%;
   height: 15vh;
   justify-content: space-evenly;
-  transition: all 0.3s;  
+  transition: all 0.3s;
   z-index: 2;
 }
 .nav-bar {
@@ -453,6 +453,9 @@ body {
   background-position: center;
   background-size: cover;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner {
@@ -1594,10 +1597,9 @@ footer hr {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   z-index: 0;
 }
-
 
 nav .menu_pa {
   display: flex;
@@ -1720,8 +1722,74 @@ nav .menu_pa ul li:active .underline {
   transition: all 0.3s;
 }
 
+.beneficios {
+  display: flex;
+  align-self: center;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+}
+.beneficios_card {
+  text-align: center;
+  position: relative;
+}
+.beneficios_card:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+  filter: drop-shadow(0 0 5px #ff80ee) drop-shadow(0 0 10px #ff00de)
+  drop-shadow(0 0 30px #ff00de);
+}
+.beneficios_card img {
+  width: 80%;
+}
+.text-ben {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btx1 {
+  position: relative;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  transform: rotate(-5deg);
+  padding: 0;
+  margin: 0;
+  z-index: 3;
+
+  text-shadow: 0 0 5px #ff80ee, 0 0 10px #ff00de, 0 0 15px #ff00de,
+    0 0 20px #ff00de, 0 0 25px #ff00de;
+  animation: 0.3s ease infinite reverse glowb2;
+}
+.btx2 {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.1rem;
+  transform: rotate(-5deg);
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+
+  text-shadow: 0 0 5px #ff80ee, 0 0 10px #ff00de, 0 0 15px #ff00de,
+    0 0 20px #ff00de, 0 0 25px #ff00de;
+  animation: 0.3s ease infinite reverse glowb2;
+}
+@keyframes glowb2 {
+  0% {
+    text-shadow: 0 0 5px #ff80ee, 0 0 10px #ff00de, 0 0 15px #ff00de,
+    0 0 20px #ff00de, 0 0 25px #ff00de;
+  }
+  75% {
+    text-shadow: 0 0 5px #ff80ee, 0 0 10px #ff00de, 0 0 15px #ff00de,
+    0 0 20px #ff00de, 0 0 25px #ff00de;
+    filter: brightness(120%);
+  }
+}
+
 .pasos-pa {
-  background: var(--white);
+  background: var(--D-Cyan-De);
   padding: 0% 10% 5% 10%;
 }
 
@@ -1736,21 +1804,22 @@ nav .menu_pa ul li:active .underline {
 }
 
 .titulo-2-pa {
-  color: var(--green);
+  color: var(--white);
   margin-top: 10%;
   font-size: 2rem;
 }
 .text-2-pa {
-  color: var(--green);
+  color: var(--white);
   font-size: 1.5rem;
 }
 .text-2-1-pa {
-  color: var(--green);
+  color: var(--white);
   font-style: normal;
   margin: 0;
   line-height: 130%;
   font-size: 1rem;
 }
+
 .paso-pa {
   width: 100%;
   padding: 0;
@@ -1764,16 +1833,12 @@ nav .menu_pa ul li:active .underline {
   padding: 0;
 }
 .paso-1-2-pa .paso-pa img:hover {
-  filter: 
-  drop-shadow(0 0 5px #ff80ee) 
-  drop-shadow(0 0 10px #ff00de)
-  drop-shadow(0 0 30px #ff00de);
+  filter: drop-shadow(0 0 5px #ff80ee) drop-shadow(0 0 10px #ff00de)
+    drop-shadow(0 0 30px #ff00de);
 }
 .paso-3-4-pa .paso-pa img:hover {
-  filter: 
-  drop-shadow(0 0 5px #6ec6d8) 
-  drop-shadow(0 0 10px #00ffff)
-  drop-shadow(0 0 30px #00ffff);
+  filter: drop-shadow(0 0 5px #6ec6d8) drop-shadow(0 0 10px #00ffff)
+    drop-shadow(0 0 30px #00ffff);
 }
 
 .paso-pa:hover {
