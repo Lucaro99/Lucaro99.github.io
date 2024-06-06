@@ -1621,7 +1621,7 @@ nav .menu_pa ul li:hover {
   transform: scale(1.1);
   transition: all 0.3s;
 }
-nav .menu_pa ul li a {
+.menu_pa ul li a {
   text-decoration: none;
   color: var(--white);
   font-size: 0.9rem;
@@ -1848,7 +1848,68 @@ nav .menu_pa ul li:active .underline {
 
 .paso-1-pa {
   margin: 0%;
+  align-self: center;
 }
 .paso-1-pa a {
   text-decoration: none;
+}
+.ventajas{
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ventajas_green{
+  background-color: var(--green);
+  border-radius: 30px;
+  margin-top: 10%;
+  width: 80%;
+}
+.ven_green1{
+  display: flex;
+  align-items: start;
+  margin: 2% 2%;
+  justify-content: center;
+}
+.ven_green2{
+  display: flex;
+  align-items: start;
+  margin: 2% 2%;
+  justify-content: center;
+}
+.ventajas_box{
+  width: 25%;
+  margin: 2%;
+  text-justify: center;
+}
+.ventajas_icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
+  filter: drop-shadow(0 0 5px #ff80ee) drop-shadow(0 0 10px #ff00de)
+    drop-shadow(0 0 30px #ff00de);
+  animation: 0.3s ease infinite reverse glowb3;
+}
+.ventajas_icon img{
+  height: 70px;
+  align-self: center;
+  justify-self: center;
+}
+@keyframes glowb3 {
+  0% {
+    filter: drop-shadow(0 0 5px #ff80ee) drop-shadow(0 0 10px #ff00de)
+    drop-shadow(0 0 30px #ff00de);
+  }
+  75% {
+    filter: drop-shadow(0 0 5px #ff80ee) drop-shadow(0 0 10px #ff00de)
+      drop-shadow(0 0 30px #ff00de) brightness(120%);
+  }
+}
+.ven_text{
+  color: var(--white);
+  font-style: normal;
+  margin: 0;
+  line-height: 130%;
+  font-size: 0.6rem;
 }
