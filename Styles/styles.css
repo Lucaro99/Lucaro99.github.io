@@ -1721,14 +1721,23 @@ nav .menu_pa ul li:active .underline {
   transform: scale(1.2);
   transition: all 0.3s;
 }
-
+.bg-image-3 {
+  background: var(--D-Cyan-De);
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px #000, 0 0 30px #000, 0 0 50px #000, 0 0 60px #000,
+    0 0 70px #000;
+}
 .beneficios {
   display: flex;
   align-self: center;
+  align-items: center;
   justify-items: center;
-  margin: 0;
   padding: 0;
-  width: 90%;
+  width: 70%;
 }
 .beneficios_card {
   text-align: center;
@@ -1738,10 +1747,10 @@ nav .menu_pa ul li:active .underline {
   transform: scale(1.2);
   transition: all 0.3s;
   filter: drop-shadow(0 0 5px #ff80ee) drop-shadow(0 0 10px #ff00de)
-  drop-shadow(0 0 30px #ff00de);
+    drop-shadow(0 0 30px #ff00de);
 }
 .beneficios_card img {
-  width: 80%;
+  width: 75%;
 }
 .text-ben {
   position: absolute;
@@ -1753,7 +1762,7 @@ nav .menu_pa ul li:active .underline {
   position: relative;
   color: #fff;
   font-family: "Oswald", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.33vw;
   transform: rotate(-5deg);
   padding: 0;
   margin: 0;
@@ -1766,7 +1775,7 @@ nav .menu_pa ul li:active .underline {
 .btx2 {
   color: #fff;
   font-family: "Oswald", sans-serif;
-  font-size: 2.1rem;
+  font-size: 2.5vw;
   transform: rotate(-5deg);
   padding: 0;
   margin: 0;
@@ -1779,11 +1788,11 @@ nav .menu_pa ul li:active .underline {
 @keyframes glowb2 {
   0% {
     text-shadow: 0 0 5px #ff80ee, 0 0 10px #ff00de, 0 0 15px #ff00de,
-    0 0 20px #ff00de, 0 0 25px #ff00de;
+      0 0 20px #ff00de, 0 0 25px #ff00de;
   }
   75% {
     text-shadow: 0 0 5px #ff80ee, 0 0 10px #ff00de, 0 0 15px #ff00de,
-    0 0 20px #ff00de, 0 0 25px #ff00de;
+      0 0 20px #ff00de, 0 0 25px #ff00de;
     filter: brightness(120%);
   }
 }
@@ -1853,36 +1862,36 @@ nav .menu_pa ul li:active .underline {
 .paso-1-pa a {
   text-decoration: none;
 }
-.ventajas{
-  background: none;
+.ventajas {
+  background: url("/Img/Fondos/Ladrillos.png");
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.ventajas_green{
+.ventajas_green {
   background-color: var(--green);
   border-radius: 30px;
   margin-top: 10%;
   width: 80%;
 }
-.ven_green1{
+.ven_green1 {
   display: flex;
   align-items: start;
   margin: 2% 2%;
   justify-content: center;
 }
-.ven_green2{
+.ven_green2 {
   display: flex;
   align-items: start;
   margin: 2% 2%;
   justify-content: center;
 }
-.ventajas_box{
+.ventajas_box {
   width: 25%;
   margin: 2%;
   text-justify: center;
 }
-.ventajas_icon{
+.ventajas_icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1891,7 +1900,7 @@ nav .menu_pa ul li:active .underline {
     drop-shadow(0 0 30px #ff00de);
   animation: 0.3s ease infinite reverse glowb3;
 }
-.ventajas_icon img{
+.ventajas_icon img {
   height: 70px;
   align-self: center;
   justify-self: center;
@@ -1899,17 +1908,20 @@ nav .menu_pa ul li:active .underline {
 @keyframes glowb3 {
   0% {
     filter: drop-shadow(0 0 5px #ff80ee) drop-shadow(0 0 10px #ff00de)
-    drop-shadow(0 0 30px #ff00de);
+      drop-shadow(0 0 30px #ff00de);
   }
   75% {
     filter: drop-shadow(0 0 5px #ff80ee) drop-shadow(0 0 10px #ff00de)
       drop-shadow(0 0 30px #ff00de) brightness(120%);
   }
 }
-.ven_text{
+.ventajas_text {
+  text-align: center;
+}
+.ven_text {
   color: var(--white);
   font-style: normal;
   margin: 0;
   line-height: 130%;
-  font-size: 0.6rem;
+  font-size: 1.1vw;
 }
