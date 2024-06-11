@@ -1734,7 +1734,6 @@ nav .menu_pa ul li:active .underline {
 .beneficios {
   display: flex;
   align-self: center;
-  align-items: center;
   justify-items: center;
   padding: 0;
   width: 70%;
@@ -1742,6 +1741,7 @@ nav .menu_pa ul li:active .underline {
 .beneficios_card {
   text-align: center;
   position: relative;
+  height: 100%;
 }
 .beneficios_card:hover {
   transform: scale(1.2);

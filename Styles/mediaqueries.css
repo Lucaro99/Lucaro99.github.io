@@ -478,7 +478,7 @@
     font-size: 75px;
   }
   .banner {
-    padding: 0%
+    padding: 0%;
   }
   .banner h1 {
     font-size: 25px;
@@ -551,21 +551,62 @@
 
   .bg-image-3 {
     height: auto;
-    }
-
-   .beneficios {
+  }
+  .pa {
+    font-size: 4rem;
+  }
+  .pc {
+    font-size: 2.5rem;
+  }
+  .btx1 {
+    font-size: 1.1rem;
+  }
+  .btx2 {
+    font-size: 2.2rem;
+  }
+  .titulo-2-pa {
+    font-size: 3rem;
+  }
+  .text-2-pa {
+    font-size: 1.7rem;
+  }
+  .text-2-1-pa {
+    font-size: 1.5rem;
+  }
+  .beneficios {
     flex-direction: column;
+    padding-bottom: 12%;
+    align-items: center;
   }
   .beneficios_card {
-    width: 40%;
-    margin-top: 45px;
+    width: 80%;
+    margin-top: 15%;
   }
   .beneficios_card img {
     width: 100%;
   }
+  .ven_green1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ven_green2 {
+    align-items: center;
+    flex-direction: column;
+  }
+  .ventajas_box {
+    width: 80%;
+  }
+  .ven_text {
+    font-size: 3.5vw;
+  }
+  .ventajas_icon img {
+    height: 150px;
+  }
   body {
     overflow-x: hidden;
-
+  }
+  #Persona-2 {
+    display: none;
   }
 }
 @media screen and (max-width: 712px) {
@@ -574,6 +615,12 @@
   }
   .amigos {
     height: 70%;
+  }
+  .btx1 {
+    font-size: 1rem;
+  }
+  .btx2 {
+    font-size: 2rem;
   }
 }
 
@@ -598,6 +645,27 @@
   .footer-derechos {
     flex-direction: column;
   }
+  .ventajas {
+    padding: 0% 7% 5% 7%;
+  }
+  .ventajas_green {
+    width: 95%;
+  }
+  .ven_text {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 640px) {
+  .amigos {
+    height: 60%;
+  }
+  .btx1 {
+    font-size: 0.9rem;
+  }
+  .btx2 {
+    font-size: 1.8rem;
+  }
+
 }
 @media screen and (max-width: 624px) {
   .btn-enviar {
@@ -606,15 +674,14 @@
   .Form_poli {
     margin: 30px 200px 30px 60px;
   }
-}
-@media screen and (max-width: 640px) {
-  .amigos {
-    height: 60%;
+  .btx1 {
+    font-size: 0.9rem;
   }
-  #persona-pa img {
-    display: none;
+  .btx2 {
+    font-size: 1.7rem;
   }
 }
+
 
 @media screen and (max-width: 576px) {
   .pasos {
@@ -713,6 +780,12 @@
     height: 300px;
     padding-bottom: 35px;
   }
+  .btx1 {
+    font-size: 0.8rem;
+  }
+  .btx2 {
+    font-size: 1.6rem;
+  }
 }
 @media screen and (max-width: 565px) {
   .persona-1 img {
@@ -744,6 +817,12 @@
 @media screen and (max-width: 500px) {
   .amigos {
     height: 50%;
+  }
+  .btx1 {
+    font-size: 0.7rem;
+  }
+  .btx2 {
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 411px) {
@@ -779,10 +858,27 @@
   .persona-1 {
     height: 50%;
   }
+  .main-1 {
+    height: 100vh;
+  }
+  
+  .pa {
+    font-size: 3rem;
+  }
+  .pc {
+    font-size: 2rem;
+  }
+  .beneficios_card {
+    width: 100%;
+    margin-top: 15%;
+  }
+  .ventajas_icon img {
+    height: 100px;
+  }
 }
 @media screen and (max-width: 414px) {
   .main-1 {
-    height: 90vh;
+    height: 75vh;
   }
   .persona-1 img {
     height: 100%;
@@ -942,7 +1038,7 @@
 
 @media screen and (max-width: 375px) {
   .main-1 {
-    height: 90vh;
+    height: 75vh;
   }
   .persona-1 {
     height: 70%;
@@ -966,10 +1062,26 @@
   .simulador-card {
     width: 95%;
   }
+  .btx1 {
+    font-size: 0.6rem;
+  }
+  .btx2 {
+    font-size: 1.3rem;
+  }
+  .titulo-2-pa {
+    font-size: 2rem;
+    justify-self: center;
+  }
+  .text-2-pa {
+    font-size: 1.5rem;
+  }
+  .text-2-1-pa {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 360px) {
   .main-1 {
-    height: 90vh;
+    height: 75vh;
   }
   .persona-1 {
     height: 65%;
