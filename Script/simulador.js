@@ -60,12 +60,12 @@ var total = document.getElementById('total');
 const boton = document.getElementById('btn-solicitud');
 
 //Tasas
-var tasaFinanciacion = 0.028;
+var tasaFinanciacion = 0.025;
 var tasaAval = 0.03;
 
 
 //Admi
-var firma = 8500;
+var firma = 18500;
 var cuatroxmil = 0.004;
 var iva = 0.19;
 
