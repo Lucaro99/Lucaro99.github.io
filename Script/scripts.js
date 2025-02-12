@@ -76,3 +76,43 @@ const f = new Intl.NumberFormat('es-us', {
   currency: 'USD'
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const review = [
+    { id: 1, img: "Img/Campañas/campana_1.jpg", imgMobile: "Img/Campañas/campana_1_m.jpg", link: "https://www.instagram.com/financiateya/" },
+    { id: 2, img: "Img/Campañas/campana_2.jpg", imgMobile: "Img/Campañas/campana_2_m.jpg", link: "https://www.facebook.com/financiateya/" },
+    { id: 3, img: "Img/Campañas/campana_3.jpg", imgMobile: "Img/Campañas/campana_3_m.jpg", link: "https://ejemplo.com/3" },
+    { id: 4, img: "Img/Campañas/campana_4.jpg", imgMobile: "Img/Campañas/campana_4_m.jpg", link: "https://ejemplo.com/4" }
+  ];
+
+  const img = document.getElementById("img");
+  const link = document.getElementById("link_carrusel");
+  const atras = document.querySelector(".atras");
+  const adelante = document.querySelector(".adelante");
+
+  let startItem = 0;
+
+  function actualizarImagen() {
+    img.classList.add("fade-out"); // Agrega la clase para la transición
+    setTimeout(() => {
+      const nuevaImg = window.innerWidth < 900 ? review[startItem].imgMobile : review[startItem].img;
+      img.src = nuevaImg;
+      link.href = review[startItem].link; // Cambia el enlace
+      img.classList.remove("fade-out"); // Quita la clase después del cambio
+    }, 300);
+  }
+
+  actualizarImagen();
+
+  adelante.addEventListener("click", function () {
+    startItem = (startItem + 1) % review.length;
+    actualizarImagen();
+  });
+
+  atras.addEventListener("click", function () {
+    startItem = (startItem - 1 + review.length) % review.length;
+    actualizarImagen();
+  });
+
+  // Cambiar imagen si la ventana se redimensiona
+  window.addEventListener("resize", actualizarImagen);
+});
