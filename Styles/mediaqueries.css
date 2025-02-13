@@ -205,6 +205,18 @@
   .btn_redes .fa-brands {
     font-size: 20px;
   }
+  /* .main-carrusel {
+    width: 100%;
+    height: 75vh;
+    .contenedor-botones {
+      .prev {
+        left: -600px;
+      }
+      .next {
+        right: -600px;
+      }
+    }
+  } */
 }
 
 @media screen and (max-width: 1108px) {
@@ -382,10 +394,6 @@
   .beneficios_card img {
     width: 90%;
   }
-  .contenedor-imagen{
-    height: 70%;
-  }
-
 }
 @media screen and (max-width: 829px) {
   #grupo-2 {
@@ -611,9 +619,6 @@
   #Persona-2 {
     display: none;
   }
-  .contenedor-imagen{
-    height: 60%;
-  }
 }
 @media screen and (max-width: 712px) {
   .persona-1 img {
@@ -671,11 +676,9 @@
   .btx2 {
     font-size: 1.8rem;
   }
-  .contenedor-imagen{
-    height: 80%;
+  .main-carrusel {
     aspect-ratio: 4 / 3;
   }
- 
 }
 @media screen and (max-width: 624px) {
   .btn-enviar {
@@ -691,7 +694,6 @@
     font-size: 1.7rem;
   }
 }
-
 
 @media screen and (max-width: 576px) {
   .pasos {
@@ -796,9 +798,6 @@
   .btx2 {
     font-size: 1.6rem;
   }
-  .contenedor-imagen{
-    height: 75%;
-  }
 }
 @media screen and (max-width: 565px) {
   .persona-1 img {
@@ -837,13 +836,6 @@
   .btx2 {
     font-size: 1.4rem;
   }
-  .main-carrusel {
-    height: 80vh;
-  }
-  .contenedor-imagen{
-    height: 65%;
-    margin-bottom: 0;
-  }
 }
 @media screen and (max-width: 411px) {
   .main-3 {
@@ -881,7 +873,7 @@
   .main-1 {
     height: 100vh;
   }
-  
+
   .pa {
     font-size: 3rem;
   }
@@ -970,18 +962,6 @@
   }
   .nota p {
     font-size: 10px;
-  }
-  .main-carrusel {
-    height: 75vh;
-  }
-  .contenedor-imagen{
-    height: 60%;
-  }
-  .contenedor-botones  button i{
-    font-size: 40px;
-      &:hover {
-        font-size: 50px;
-      }
   }
 }
 @media screen and (max-width: 393px) {
@@ -1109,9 +1089,6 @@
   .text-2-1-pa {
     font-size: 1rem;
   }
-  .main-carrusel {
-    height: 70vh;
-  }
 }
 @media screen and (max-width: 360px) {
   .main-1 {
@@ -1195,13 +1172,6 @@
   .nosotros-info .titulo-2 {
     font-size: 22px;
   }
-
-  .main-carrusel {
-    height: 58vh;
-  }
-  .contenedor-imagen{
-    height: 60%;
-  }
 }
 
 @media screen and (max-width: 280px) {
@@ -1245,17 +1215,5 @@
   .logo_Fin_Poli a img {
     width: auto;
     height: 36px;
-  }
-  .main-carrusel {
-    height: 50vh;
-  }
-  .contenedor-imagen{
-    height: 60%;
-  }
-  .contenedor-botones  button i{
-    font-size: 35px;
-      &:hover {
-        font-size: 40px;
-      }
   }
 }
