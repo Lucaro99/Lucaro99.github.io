@@ -1,7 +1,7 @@
 window.onscroll = function scrollFunction() {
   if (
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 100
+    document.body.scrollTop > 10 ||
+    document.documentElement.scrollTop > 10
   ) {
     var links = document.getElementsByClassName("link");
     for (var i = 0; i < links.length; i++) {

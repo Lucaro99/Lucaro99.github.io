@@ -18,6 +18,7 @@ body {
   background-size: cover;
   height: 100vh;
 }
+
 :root {
   --green: #01686d;
   --Fucsia: #ed1e79;
@@ -228,7 +229,7 @@ body {
   height: 15vh;
   justify-content: space-evenly;
   transition: all 0.3s;
-  z-index: 2;
+  z-index: 10000;
 }
 .nav-bar {
   display: flex;
