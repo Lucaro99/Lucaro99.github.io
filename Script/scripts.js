@@ -77,42 +77,53 @@ const f = new Intl.NumberFormat('es-us', {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const review = [
-    { id: 1, img: "Img/Campañas/campana_1.jpg", imgMobile: "Img/Campañas/campana_1_m.jpg", link: "https://www.instagram.com/financiateya/" },
-    { id: 2, img: "Img/Campañas/campana_2.jpg", imgMobile: "Img/Campañas/campana_2_m.jpg", link: "https://www.facebook.com/financiateya/" },
-    { id: 3, img: "Img/Campañas/campana_3.jpg", imgMobile: "Img/Campañas/campana_3_m.jpg", link: "https://ejemplo.com/3" },
-    { id: 4, img: "Img/Campañas/campana_4.jpg", imgMobile: "Img/Campañas/campana_4_m.jpg", link: "https://ejemplo.com/4" }
-  ];
-
-  const img = document.getElementById("img");
-  const link = document.getElementById("link_carrusel");
-  const atras = document.querySelector(".atras");
-  const adelante = document.querySelector(".adelante");
-
-  let startItem = 0;
-
-  function actualizarImagen() {
-    img.classList.add("fade-out"); // Agrega la clase para la transición
-    setTimeout(() => {
-      const nuevaImg = window.innerWidth < 900 ? review[startItem].imgMobile : review[startItem].img;
-      img.src = nuevaImg;
-      link.href = review[startItem].link; // Cambia el enlace
-      img.classList.remove("fade-out"); // Quita la clase después del cambio
-    }, 300);
+  const sliders = document.querySelectorAll('.slider');
+  const btnNext = document.getElementById('next');
+  const btnPrev = document.getElementById('prev');
+  let sliderInterval = setInterval(siguienteSlider, 5000);
+  let contador = 0;
+  
+  sliders.forEach((slider, i) => {
+      slider.style.left = `${i * 100}%`;
+  });
+  
+  btnNext.addEventListener('click', () => {
+      contador++;
+      moverSlider();
+      reiniciarIntervalo();
+  });
+  
+  btnPrev.addEventListener('click', () => {
+      contador--;
+      moverSlider();
+      reiniciarIntervalo();
+  });
+  
+  function moverSlider() {
+      if(contador < sliders.length && contador >= 0){
+          sliders.forEach((item) => {
+              item.style.transform = `translateX(-${contador * 100}%)`;
+          });
+      }else if(contador < 0){
+          contador = sliders.length - 1;
+          sliders.forEach((item) => {
+              item.style.transform = `translateX(-${contador * 100}%)`;
+          });
+      }else{
+          contador = 0;
+          sliders.forEach((item) => {
+              item.style.transform = `translateX(-${contador * 100}%)`;
+          });
+      }
   }
-
-  actualizarImagen();
-
-  adelante.addEventListener("click", function () {
-    startItem = (startItem + 1) % review.length;
-    actualizarImagen();
-  });
-
-  atras.addEventListener("click", function () {
-    startItem = (startItem - 1 + review.length) % review.length;
-    actualizarImagen();
-  });
-
-  // Cambiar imagen si la ventana se redimensiona
-  window.addEventListener("resize", actualizarImagen);
+  
+  function reiniciarIntervalo() {
+      clearInterval(sliderInterval);
+      sliderInterval = setInterval(siguienteSlider, 5000);
+  }
+  
+  function siguienteSlider() {
+      contador++;
+      moverSlider();
+  }
 });

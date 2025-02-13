@@ -1902,7 +1902,7 @@ nav .menu_pa ul li:active .underline {
   animation: 0.3s ease infinite reverse glowb3;
   &:hover {
     transform: scale(1.5);
-      transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
   }
 }
 .ventajas_icon img {
@@ -1931,7 +1931,6 @@ nav .menu_pa ul li:active .underline {
   font-size: 1.1vw;
 }
 
-
 .main-carrusel {
   display: flex;
   justify-content: center;
@@ -1941,125 +1940,75 @@ nav .menu_pa ul li:active .underline {
   width: 100%;
   background: none;
 }
-.review {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 75%;
-  width: auto;
+.contenedor-imagen {
   position: relative;
-}
-.review a{
-  cursor: pointer;
-}
-.review img {
-  box-shadow: 6px 6px 26px -2px rgba(0, 0, 0, 0.33);
-  width: 100%;
-  height: auto;
+  border-radius: 10px;
+  width: auto;
+  height: 80%;
   aspect-ratio: 2.35 / 1;
-  object-fit: cover;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 1;
+  overflow: hidden;
+  box-shadow: 6px 6px 26px -2px rgba(0, 0, 0, 0.33);
+  margin-bottom: 30px;
+
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+
+    picture {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: opacity 0.3s ease-in-out;
+      opacity: 1;
+    }
+  }
 }
-.review img.fade-out {
-  opacity: 0;
-}
-.arrow {
+
+.contenedor-botones {
   position: absolute;
-  height:85%;
   width: 95%;
+  height: 100%;
   display: flex;
-  align-items: center;
   pointer-events: none;
-}
-.arrow i {
-  color: #01686d;
-  font-size: 60px;
-  cursor: pointer;
-}
-.arrow i:hover {
-  font-size: 70px;
-}
-.arrow button {
-  border: none;
-  background: none;
-  pointer-events: auto;
-}
-.atras {
-  position: absolute;
-  left: 60px;
-}
+  align-items: center;
 
-.adelante {
-  position: absolute;
-  right: 60px;
-}
-
-@media screen and (max-width: 1280px){
-  .main-carrusel {
-    height: 60vh;
+  button {
+    width: auto;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    transition: all 0.5s ease;
+    background: none;
+    color: #01686d;
+    pointer-events: auto;
+    i {
+      font-size: 60px;
+      &:hover {
+        font-size: 80px;
+      }
+    }
+  }
+  .prev {
+    position: absolute;
+    left: 15px;
   }
 
-  .review {
-    height: 90%;
-  }
-
-  .review img {
-    height: 100%;
-  }
-
-}
-@media screen and (max-width: 1200px){
-  .review img {
-    height: 95%;
-  }
-}
-@media screen and (max-width: 1024px){
-  .review img {
-    height: 75%;
+  .next {
+    position: absolute;
+    right: 15px;
   }
 }
 
-@media screen and (max-width: 900px){
-  .review img {
-    height: 100%;
-    aspect-ratio: 4 / 3;
-  }
-  .atras {
-    left: 130px;
-  }
-  .adelante {
-    right: 130px;
-  }
-}
-@media screen and (max-width: 768px){
-  .atras {
-    left: 70px;
-  }
-  .adelante {
-    right: 70px;
-  }
-}
-@media screen and (max-width: 640px){
-  .review img {
-    height: 90%;
-  }
-  .atras {
-    left: 20px;
-  }
-  .adelante {
-    right: 20px;
-  }
-}
-@media screen and (max-width: 576px){
-  .review img {
-    height: 80%;
-  }
-  .atras {
-    left: -7px;
-  }
-  .adelante {
-    right: -7px;
-  }
-}
+

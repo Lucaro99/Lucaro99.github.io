@@ -35,16 +35,21 @@
     <link rel="icon" type="image/x-icon" href="Img/Logos/favicon.svg" />
     <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCTDJL7XRV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-JCTDJL7XRV');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-JCTDJL7XRV"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-JCTDJL7XRV");
+  </script>
 
   <body class="container-fluid p-0 m-0">
     <div class="bg-image">
@@ -73,7 +78,7 @@
             </div>
           </nav>
         </div>
-  
+
         <div id="Menu-images">
           <div
             class="Menu-image"
@@ -120,9 +125,10 @@
       <nav class="nav-bar m-0 col-9">
         <div class="menu">
           <ul class="nav">
-
             <li class="nav-item">
-              <a class="link active-link" id="link" href="index.html"> Personas</a>
+              <a class="link active-link" id="link" href="index.html">
+                Personas</a
+              >
               <div class="underline"></div>
             </li>
             <li class="nav-item">
@@ -130,13 +136,12 @@
               <div class="underline"></div>
             </li>
             <li class="nav-item">
-              <a class="link" id="link" href="presta-agil.html">
-                Presta Ágil</a
-              >
+              <a class="link" id="link" href="presta-agil.html"> Presta Ágil</a>
               <div class="underline"></div>
             </li>
             <li class="nav-item">
-              <a class="link" id="link" href="Simulador.html"> Simula tu crédito</a>
+              <a class="link" id="link" href="Simulador.html">
+                Simula tu crédito</a>
               <div class="underline"></div>
             </li>
             <li class="nav-item">
@@ -156,7 +161,7 @@
     </header>
 
     <!------------------------------------------------Main---------------------------------------------------->
-   <!-- <main class="main-1 pt-0 m-0 row">
+    <!-- <main class="main-1 pt-0 m-0 row">
       <div class="text-1 col-md-5 align-items-center">
         <div class="row text-center">
           <h1 class="text-1-1 mb-0" data-aos="fade-up" data-aos-duration="1000">
@@ -201,19 +206,48 @@
       </div>
     </main> -->
     <main class="main-carrusel">
-      <div class="review">
-        <a id="link_carrusel" href="https://www.instagram.com/financiateya/">
-            <img src="Img/Campañas/campana_1.jpg" alt="Imagen del carrusel" id="img"/>
+      <section class="contenedor-imagen">
+        <a href="https://wa.me/573157783110">
+          <div class="slider">
+            <picture>
+              <source media="(max-width: 640px)" srcset="Img/Campañas/campana_1_m.jpg">
+              <img src="Img/Campañas/campana_1.jpg" alt="imagen 1">
+            </picture>
+          </div>
         </a>
-    </div>
-        <div class="arrow">
-            <button class="atras" id="atras">
-                <i class="fa-solid fa-angle-left"></i>
-            </button>
-            <button class="adelante" id="adelante">
-                <i class="fa-solid fa-angle-right"></i>
-            </button>
-        </div>
+        <a href="https://app.financiate.com.co/easy-payments">
+          <div class="slider">
+            <picture>
+              <source media="(max-width: 640px)" srcset="Img/Campañas/campana_2_m.jpg">
+              <img src="Img/Campañas/campana_2.jpg" alt="imagen 2">
+            </picture>
+          </div>
+        </a>
+        <a href="https://wa.me/573157783110">
+          <div class="slider">
+            <picture>
+              <source media="(max-width: 640px)" srcset="Img/Campañas/campana_3_m.jpg">
+              <img src="Img/Campañas/campana_3.jpg" alt="imagen 3">
+            </picture>
+          </div>
+        </a>
+        <a href="https://wa.me/573157783110">
+          <div class="slider">
+            <picture>
+              <source media="(max-width: 640px)" srcset="Img/Campañas/campana_4_m.jpg">
+              <img src="Img/Campañas/campana_4.jpg" alt="imagen 4">
+            </picture>
+          </div>
+        </a>
+      </section>
+      <section class="contenedor-botones">
+        <button id="prev" class="prev">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button id="next" class="next">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </section>
     </main>
 
     <!------------------------------------------------Pasos---------------------------------------------------->
@@ -240,7 +274,7 @@
 
         <div class="paso-1 col-md">
           <a href="Simulador.html">
-            <h3 class="text-2">Simula tú crédito</h3>
+            <h3 class="text-2">Simula tu crédito</h3>
           </a>
           <p class="text-2-1">
             Cuéntanos...¿Cuánto dinero necesitas? Para alcanzar tu meta
@@ -325,7 +359,7 @@
                 class="btn-stc"
                 data-aos="fade-up"
                 data-aos-duration="1000"
-              > Simula tu crédito
+              >Simula tu crédito
               </button>
             </a>
           </div>
@@ -400,7 +434,7 @@
     </div>
 
     <!-----------------------------------------------Pagos---------------------------------------------------->
-  <!--
+    <!--
     <div class="bg-image-3 m-0 row justify-content-center">
       <div class="titulo row">
         <h2 class="titulo-2" id="titulo-pagos">Pagos</h2>
